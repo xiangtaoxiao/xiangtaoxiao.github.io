@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Arduino on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/arduino/</link>
+    <description>Recent content in Arduino on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/arduino/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>交互装置入门基础知识</title>
+      <link>https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/</guid> 
+      <description>&lt;p&gt;&lt;strong&gt;欧姆定律&lt;/strong&gt; - I=U/R&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;面包板的用法&lt;/strong&gt; - 面包板通常指免焊面包板，板子上有很多小插孔，专为电子电路的无焊接实验设计制造。由于各种电子元器件可根据需要随意插入或拔出，免去了焊接，节省了电路的组装时间，而且元件可以重复使用，所以非常适合电子电路的组装、调试和训练。 &lt;a href=&#34;//baike.baidu.com/item/E9%5Cx9D%5CxA2%5CxE5%5Cx8C%5Cx85%5CxE6%5Cx9D%5CxBF/4703361?fr=aladdin&#34;&gt;百度百科&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/08f790529822720e1fe8fb4c7bcb0a46f21fab65.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上拉/下拉电阻&lt;/strong&gt; - 如果一个线路中的电压处于不确定的状态（例如一个引脚不和任何其它回路连通时），那我们就说它的电压是浮动的，他会随着时间不断变化，跳动，而且很容易受到外界环境的影响。处于这种不确定状态的电路会被随机解释为高或者低电平。 这种现象也叫电子噪声。为了让某个引脚保持高电平或者低电平，我们可以将该引脚接地或者接一个大阻值电阻（arduino的引脚内置了上拉电阻，如果需要外接上拉电阻，arduino建议的上拉电阻为10KΩ）。 &lt;a href=&#34;//blog.csdn.net/qianxuedegushi/article/details/82252077&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二极管&lt;/strong&gt; - 二极管是用半导体材料(硅、硒、锗等)制成的一种电子器件。它具有单向导电性能， 即给二极管阳极和阴极加上正向电压时，二极管导通。 当给阳极和阴极加上反向电压时，二极管截止。 因此，二极管的导通和截止，则相当于开关的接通与断开。其电路图如图所示。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/500fd9f9d72a6059014ffd4b2b34349b033bba07.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;电容&lt;/strong&gt; - 两个相互靠近的导体，中间夹一层不导电的绝缘介质，这就构成了电容器。当电容器的两个极板之间加上电压时，电容器就会储存电荷。电容器的电容量在数值上等于一个导电极板上的电荷量与两个极板之间的电压之比。电容器的电容量的基本单位是法拉(F)。在电路图中通常用字母C表示电容元件。 &lt;a href=&#34;//baike.baidu.com/item/E7%5Cx94%5CxB5%5CxE5%5CxAE%5CxB9%5CxE5%5Cx99%5CxA8/1087619?fromtitle=%5CxE7%5Cx94%5CxB5%5CxE5%5CxAE%5CxB9&amp;amp;fromid=12031635&amp;amp;fr=aladdin&#34;&gt;百度百科&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/e1fe9925bc315c602ae227cd89b1cb1349547798.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arduino 入门基础知识总结</title>
+      <link>https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/</guid> 
+      <description>&lt;p&gt;根据arduino uno板子的接口进行解释，如图&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/1437476-af1157edc21babf9.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;L指示灯&lt;/strong&gt; - 接13号引脚（13号引脚内置了电阻），arduino出厂烧录了闪烁程度，板子通电后L灯闪烁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TX/RX指示灯&lt;/strong&gt; - 串口通信时闪烁，分别在传输数据与接收数据时闪烁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上排0~13接口&lt;/strong&gt; - 数字I/O口，可以接受以及接受数字信号（二进制形式表示的信号），arduino用电平高低来表示0,1，低电平（-0.5&lt;del&gt;1.5V）表示0，高电平（3&lt;/del&gt;5.5V）表示1。用 pinMode(pin, mode) 函数来指定要用的引脚编号以及其配置模式（INPUT 输入0，OUTPUT 输出1，INPUT_PULLUP输入上拉模式）。在输入模式下，可以用 digitalRead(pin) 读取输入的数字信号；在输出模式下，用 digitalWrite(pin, value) 来指定引脚及输出的电平高低（LOW 0， HIGH 1）。&lt;/p&gt;
+&lt;p&gt;？digitalRead()函数返回什么，！digitalRead()代表什么？如果代表true，则digitalRead（）返回一个false，人体热释电持续输出低电平，在检测到人时输出高电平（范围和持续时间可以用电位器来调节），则正常情况下！digitalRead是！低电平，其代表了什么，还是说没有输出值，做个试验检测。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PWM Pulse Width Modulation 脉冲宽度调制 ~符号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- 模拟信号Output，模拟信号用连续变化的物理量来表示信息，上排接口中有 &lt;strong&gt;~&lt;/strong&gt; 标志的接口可用于输出模拟信号。Arduino用0&lt;del&gt;5V的电压来表示模拟信号，通过输出周期固定（约490HZ）的方波，通过改变高低电平在每个周期中的比例（占空比）来得到近似输出不同电压的效果。具体方法为调用analogWrite(pin, value)函数，pin为指定引脚，value是PWM的脉冲宽度，范围为0&lt;/del&gt;255（将5v电压模拟成255段进行调整，8位精度，255=11111111）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下排A0~A5&lt;/strong&gt; - 模拟信号输入引脚，用analogRead(pin)函数读取引脚上输入电压的大小。模拟输入引脚带有ADC（Analog-to-Digital Converter，模/数转换器）功能，arduino的模拟输入功能有10位精度，可以将读取到的0&lt;del&gt;5V电压转换为0&lt;/del&gt;1023（1023的二进制为1111111111）的整数形式表示。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TX/RX引脚（1,0号）&lt;/strong&gt; - transmit/receive，用于串行通信，Arduino的USB口通过一个转换芯片（通常为ATmege16u2）与这两个串口的引脚连接。该转换芯片通过USB接口在计算机上虚拟出一个用于与arduino通信的串口。串行通信是相对于并行通信的概念，并行通信占用的I/O口较多，而arduino的I/O口资源较少，因此采用串行通信方式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下排左侧&lt;/strong&gt; - VCC表示电源，有3.5和5V两个接口，GND（阴极，接地）两个比较常用。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

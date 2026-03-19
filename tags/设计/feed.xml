@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>设计 on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 设计 on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/%E8%AE%BE%E8%AE%A1/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>反电信诈骗洗钱与风控</title>
+      <link>https://xiangtaoxiao.github.io/posts/anti-telecom-fraud-money-laundering-and-risk-control/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/anti-telecom-fraud-money-laundering-and-risk-control/</guid> 
+      <description>&lt;p&gt;最近接触到了一些关于反诈骗洗钱的工作，对电信诈骗洗钱等有了比较直观的认知。电商平台很容易被犯罪份子利用，作为产品经理，设计产品时一定要有风险意识，否则产品上出现犯罪情况，轻则有自责感、负罪感，重则接受行政处罚，双罚制实施后上至平台下至负责人均会受罚，打击犯罪，人人有责。&lt;/p&gt;
+&lt;h3 id=&#34;相关资料&#34;&gt;相关资料&lt;/h3&gt;
+&lt;p&gt;充值提现平台，缘何沦为诈骗犯“洗钱工具”？ &lt;a href=&#34;//zhuanlan.zhihu.com/p/151289531&#34;&gt;//zhuanlan.zhihu.com/p/151289531&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;中华人民共和国反电信网络诈骗法（全文） &lt;a href=&#34;//zhuanlan.zhihu.com/p/560714960&#34;&gt;//zhuanlan.zhihu.com/p/560714960&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;风控系统设计&#34;&gt;风控系统设计&lt;/h3&gt;
+&lt;p&gt;对于电商平台的账户系统，一般会有开户、储值、交易、提现几个主要功能。在设计之初，每个功能都需要针对业务场景做限制，功能上线后，需要考虑可能被利用或存在风险的场景，对用户数据做监控，及时识别异常用户行为，做对应的限制、告警、以及拦截。&lt;/p&gt;
+&lt;p&gt;开户环节，要充分落实KYC，非目标用户无需开放开户入口，如果账户权限有多种类别，则对用户也要严格分类对应，满足指定条件用户可开对应账户。不要为了后期功能改造的灵活性，或者为了业务的快速扩张，而放松限制，设计时务必要在业务和安全方面做好衡量，追求业务指标而忽视安全可能导致严重后果。&lt;/p&gt;
+&lt;p&gt;储值环节，要考虑支持哪些支付渠道储值，一般来说信用卡支付要禁止，公私账支付也要根据平台虚拟账户性质做对应处理。另外，用户是否有储值的需要？一般需要储值多少额度？用户一般在什么时间操作储值？这些特征都需要研究并做对应风控，比如限制储值额度，禁止部分用户储值，禁止部分业务使用余额支付，异常时间储值告警等。&lt;/p&gt;
+&lt;p&gt;交易的监控是电商平台的核心工作之一，一般来说平台对用户和商家入驻已经做了限制和审核，平台仅需要核对买卖双方的交易真实性即可。从分账系统的角度看，交易的概念更为广泛，从A账户到B账户的转账，即是一笔交易，在用户购买商品行为之外，其他业务场景也可能出现交易。这里我们需要检查交易的合理性，不仅针对正常的用户购买行为，还需检查用户账户之间和商家账户之间可能的转账行为。对于特殊业务场景导致的和购买行为不对应的交易，应该做严格限制，最低程度的满足业务场景需求即可，超出此场景的交易一律禁止。对于用户购买产生的交易，则要检查其购买频次、金额，以避免用户和商家串通，伪造交易利用平台洗钱，必要时需要校验付款用户身份以防范盗号、卖号等情况。&lt;/p&gt;
+&lt;p&gt;原路退款一般没有风险，提现是用户账户出金的唯二路径（不含平台转账扣费等），不管前面出现了哪些问题，最后一道防火墙如果拦住了，就可以避免资金损失。提现本身需要做安全校验，另外提现还需要严格限制资金去向。对于提现金额、笔数、到账时效都需要做风控，如果是提现次数不多的B端平台，交给人工审核也是个好主意。&lt;/p&gt;
+&lt;p&gt;总的来说，风控既要防竞对，又要防内鬼，还要防未知的犯罪份子，设计产品时不能只想到一方，不同坏人做坏事，手段会有所区别，做产品的，对于本身存在较大风险的业务，能不做尽量别做，一定要做的话，还是想想清楚什么方案风险最小。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>交互装置入门基础知识</title>
+      <link>https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/</guid> 
+      <description>&lt;p&gt;&lt;strong&gt;欧姆定律&lt;/strong&gt; - I=U/R&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;面包板的用法&lt;/strong&gt; - 面包板通常指免焊面包板，板子上有很多小插孔，专为电子电路的无焊接实验设计制造。由于各种电子元器件可根据需要随意插入或拔出，免去了焊接，节省了电路的组装时间，而且元件可以重复使用，所以非常适合电子电路的组装、调试和训练。 &lt;a href=&#34;//baike.baidu.com/item/E9%5Cx9D%5CxA2%5CxE5%5Cx8C%5Cx85%5CxE6%5Cx9D%5CxBF/4703361?fr=aladdin&#34;&gt;百度百科&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/08f790529822720e1fe8fb4c7bcb0a46f21fab65.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上拉/下拉电阻&lt;/strong&gt; - 如果一个线路中的电压处于不确定的状态（例如一个引脚不和任何其它回路连通时），那我们就说它的电压是浮动的，他会随着时间不断变化，跳动，而且很容易受到外界环境的影响。处于这种不确定状态的电路会被随机解释为高或者低电平。 这种现象也叫电子噪声。为了让某个引脚保持高电平或者低电平，我们可以将该引脚接地或者接一个大阻值电阻（arduino的引脚内置了上拉电阻，如果需要外接上拉电阻，arduino建议的上拉电阻为10KΩ）。 &lt;a href=&#34;//blog.csdn.net/qianxuedegushi/article/details/82252077&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二极管&lt;/strong&gt; - 二极管是用半导体材料(硅、硒、锗等)制成的一种电子器件。它具有单向导电性能， 即给二极管阳极和阴极加上正向电压时，二极管导通。 当给阳极和阴极加上反向电压时，二极管截止。 因此，二极管的导通和截止，则相当于开关的接通与断开。其电路图如图所示。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/500fd9f9d72a6059014ffd4b2b34349b033bba07.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;电容&lt;/strong&gt; - 两个相互靠近的导体，中间夹一层不导电的绝缘介质，这就构成了电容器。当电容器的两个极板之间加上电压时，电容器就会储存电荷。电容器的电容量在数值上等于一个导电极板上的电荷量与两个极板之间的电压之比。电容器的电容量的基本单位是法拉(F)。在电路图中通常用字母C表示电容元件。 &lt;a href=&#34;//baike.baidu.com/item/E7%5Cx94%5CxB5%5CxE5%5CxAE%5CxB9%5CxE5%5Cx99%5CxA8/1087619?fromtitle=%5CxE7%5Cx94%5CxB5%5CxE5%5CxAE%5CxB9&amp;amp;fromid=12031635&amp;amp;fr=aladdin&#34;&gt;百度百科&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/e1fe9925bc315c602ae227cd89b1cb1349547798.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arduino 入门基础知识总结</title>
+      <link>https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/</guid> 
+      <description>&lt;p&gt;根据arduino uno板子的接口进行解释，如图&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/1437476-af1157edc21babf9.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;L指示灯&lt;/strong&gt; - 接13号引脚（13号引脚内置了电阻），arduino出厂烧录了闪烁程度，板子通电后L灯闪烁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TX/RX指示灯&lt;/strong&gt; - 串口通信时闪烁，分别在传输数据与接收数据时闪烁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上排0~13接口&lt;/strong&gt; - 数字I/O口，可以接受以及接受数字信号（二进制形式表示的信号），arduino用电平高低来表示0,1，低电平（-0.5&lt;del&gt;1.5V）表示0，高电平（3&lt;/del&gt;5.5V）表示1。用 pinMode(pin, mode) 函数来指定要用的引脚编号以及其配置模式（INPUT 输入0，OUTPUT 输出1，INPUT_PULLUP输入上拉模式）。在输入模式下，可以用 digitalRead(pin) 读取输入的数字信号；在输出模式下，用 digitalWrite(pin, value) 来指定引脚及输出的电平高低（LOW 0， HIGH 1）。&lt;/p&gt;
+&lt;p&gt;？digitalRead()函数返回什么，！digitalRead()代表什么？如果代表true，则digitalRead（）返回一个false，人体热释电持续输出低电平，在检测到人时输出高电平（范围和持续时间可以用电位器来调节），则正常情况下！digitalRead是！低电平，其代表了什么，还是说没有输出值，做个试验检测。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PWM Pulse Width Modulation 脉冲宽度调制 ~符号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- 模拟信号Output，模拟信号用连续变化的物理量来表示信息，上排接口中有 &lt;strong&gt;~&lt;/strong&gt; 标志的接口可用于输出模拟信号。Arduino用0&lt;del&gt;5V的电压来表示模拟信号，通过输出周期固定（约490HZ）的方波，通过改变高低电平在每个周期中的比例（占空比）来得到近似输出不同电压的效果。具体方法为调用analogWrite(pin, value)函数，pin为指定引脚，value是PWM的脉冲宽度，范围为0&lt;/del&gt;255（将5v电压模拟成255段进行调整，8位精度，255=11111111）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下排A0~A5&lt;/strong&gt; - 模拟信号输入引脚，用analogRead(pin)函数读取引脚上输入电压的大小。模拟输入引脚带有ADC（Analog-to-Digital Converter，模/数转换器）功能，arduino的模拟输入功能有10位精度，可以将读取到的0&lt;del&gt;5V电压转换为0&lt;/del&gt;1023（1023的二进制为1111111111）的整数形式表示。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TX/RX引脚（1,0号）&lt;/strong&gt; - transmit/receive，用于串行通信，Arduino的USB口通过一个转换芯片（通常为ATmege16u2）与这两个串口的引脚连接。该转换芯片通过USB接口在计算机上虚拟出一个用于与arduino通信的串口。串行通信是相对于并行通信的概念，并行通信占用的I/O口较多，而arduino的I/O口资源较少，因此采用串行通信方式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下排左侧&lt;/strong&gt; - VCC表示电源，有3.5和5V两个接口，GND（阴极，接地）两个比较常用。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>摄影技术分享网站</title>
+      <link>https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/</guid> 
+      <description>&lt;h2 id=&#34;fuji-x-weekly&#34;&gt;Fuji X Weekly&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/fujixweekly-1024x723.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;关于富士x系列的博客，提供富士胶片模拟参数设置教程，各种胶片风格模拟，图片质量很不错。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//fujixweekly.com/recipes/&#34;&gt;点此前往&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;150胶片模拟参数表&#34;&gt;150胶片模拟参数表&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/150fujifilm-1024x510.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;摄影师David收集并整理，谷歌文档。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//docs.google.com/spreadsheets/d/1R7Zau2LIoy5vd5sPXrIGmtGbrSGlj_fPYPPG2rsWMFg/htmlview?fbclid=IwAR0OIBC8MAG8CyeZIU5-YOI_S_vaovETn5iUzTEKLFN__Glf6owWuUDyuxA#&#34;&gt;查看&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;f16click&#34;&gt;f16.click&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/f16click-1024x558.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;富士官方X摄影师，有许多关于富士相机的体验与使用经验。提供了一组适用X70与XF10的胶片模拟参数。其中 黑白+红色滤镜 的设置效果是我比较喜欢的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//www.f16.click/blog/gear/fujifilm-x70-settings.html&#34;&gt;点此前往&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;知乎胶片模拟参数设置回答&#34;&gt;知乎胶片模拟参数设置回答&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/v2-a8146ea48b7970255f8d69580e210041_r.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;提供了一个日系参数设置感觉效果还不错。&lt;/p&gt;
+&lt;p&gt;FILM:ASTIA　DR:400%　WB:AUTO　HIGHLIGHT:-2　SHADOW:-2　COLOR:+1　SHARP:-2　NR:0&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//www.zhihu.com/question/40105658/answer/363818752&#34;&gt;点此前往&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;持续更新ing&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>设计杂志类网站</title>
+      <link>https://xiangtaoxiao.github.io/posts/core77-industrial-design-magazine/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/core77-industrial-design-magazine/</guid> 
+      <description>&lt;h2 id=&#34;core77--industrial-design-magazine&#34;&gt;Core77 / Industrial Design Magazine&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/core77-industrial-design-magazine/core77-1024x655.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;关于工业设计的新闻、点子、访谈等各种内容，网站很好看，访问不是很快。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//www.core77.com/&#34;&gt;点此前往&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不断更新ing&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>平面构成方法总结</title>
+      <link>https://xiangtaoxiao.github.io/posts/pingmiangouchengfangfazongjie/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/pingmiangouchengfangfazongjie/</guid> 
+      <description>&lt;h2 id=&#34;平面构成的三大元素&#34;&gt;平面构成的三大元素&lt;/h2&gt;
+&lt;h3 id=&#34;构成题的基本要求&#34;&gt;构成题的基本要求&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;完成度高&lt;/li&gt;
+&lt;li&gt;画面丰富，层次感强&lt;/li&gt;
+&lt;li&gt;笔触细腻&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;建议：配色明快，色彩明度高，纯度不要太高。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/pingmiangouchengfangfazongjie/af260516807bee01596b22dcc07ad863.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/pingmiangouchengfangfazongjie/f141dae82dc57f959ffce2fb2c1d7a98.jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;点&#34;&gt;点&lt;/h3&gt;
+&lt;p&gt;点的大小不固定：点的形态大小在于比较，没有比较，点的大小不确定，点也可以被看做面。&lt;/p&gt;
+&lt;p&gt;点的形状不固定：点可以是任意形状，只要这个形态在画面上与其他元素的大小关系满足我们从感性的角度判断其为一点。&lt;/p&gt;
+&lt;p&gt;点能够塑造空间感：点可以塑造空间的明暗和虚实关系。&lt;/p&gt;
+&lt;p&gt;点能够作为肌理。&lt;/p&gt;
+&lt;h3 id=&#34;线&#34;&gt;线&lt;/h3&gt;
+&lt;p&gt;线有多种类型，包括直线、曲线、虚线等。线的形态不固定。&lt;/p&gt;
+&lt;p&gt;线有粗细变化，一般满足近实远虚、在转折处加粗的特点。&lt;/p&gt;
+&lt;p&gt;线能够勾勒轮廓，闭合的线就形成了面。&lt;/p&gt;
+&lt;p&gt;与点类似，线也可以塑造肌理和空间感。&lt;/p&gt;
+&lt;p&gt;线能够表达情感：直线一般代表着坚定、硬朗、速度等，曲线代表着韵动、柔韧、感性等。&lt;/p&gt;
+&lt;h3 id=&#34;面&#34;&gt;面&lt;/h3&gt;
+&lt;p&gt;面分为 几何面 与 自由面 ，自由面是不规律的，随意的面，或者边界不明确、随意，类似于水墨晕开形成的面。&lt;/p&gt;
+&lt;p&gt;面也分为 虚面 与 实面 ，点和线构成的面便是虚面。&lt;/p&gt;
+&lt;p&gt;面具有正负形态：面正负形产生的错视。也就是我们常说的图与底的关系。图，就是形，也叫正形，位于画面醒目的位置，表达主要思想的元素，底，就是背景，也叫负形，位于正形的后面，对正形起衬托装饰的作用，让人感觉正形的存在。任何的图形都由正形和负形两部分组成，正形靠负形来衬托，负形需正形来界定。图底分明的图像层次感鲜明，更容易吸引关注的目光。不仅如此，还有一种矛盾图形，比如说太极图，分辨不出图与底。&lt;/p&gt;
+&lt;p&gt;面可以突出重点，增加对比效果。&lt;/p&gt;
+&lt;p&gt;面与面有许多不同的结合方式：重叠、透叠、分离、相切、重合等。&lt;/p&gt;
+&lt;h3 id=&#34;构成法则&#34;&gt;构成法则&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;重复&lt;br&gt;
+    有规律的进行排列组合。&lt;/li&gt;
+&lt;li&gt;近似&lt;br&gt;
+    确定基本形不变，基本形的内容与组成形式改变。&lt;/li&gt;
+&lt;li&gt;特异&lt;br&gt;
+    有规律的形态中进行小部分的变异，形成视觉中心点，使画面生动活泼。&lt;/li&gt;
+&lt;li&gt;渐变&lt;br&gt;
+    指基本形进行规律化的渐变处理：比如产品造型上有植物渐变到灯具。带来节奏感和韵律感（进行构图和构思比较耗时），渐变可以是九宫格的形式或者综合的形式。重点在于渐变过程的展现。&lt;/li&gt;
+&lt;li&gt;发射&lt;br&gt;
+    从画面的视觉中心点出发，带来空间感和动感，发射的基本形可以任意变化（不是非要直线）。&lt;/li&gt;
+&lt;li&gt;对比&lt;br&gt;
+    具有差异元素构成的作品，对比包括色彩、大小、虚实、曲直对比等。&lt;/li&gt;
+&lt;li&gt;密集&lt;br&gt;
+    疏密关系，画面具有节奏感。&lt;/li&gt;
+&lt;li&gt;分割&lt;br&gt;
+    可以以等形、等量、重复、自由等形式进行分割。参考毕加索的画作。&lt;/li&gt;
+&lt;li&gt;异构（同构）&lt;br&gt;
+    基本形局部元素图形变化，比如一个肺部形状，内容替换为西蓝花。一般变化的就是要表达的主题本身。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一般在画面中会使用多种构成法则进行组合，综合体现效果。&lt;/p&gt;
+&lt;h2 id=&#34;平面构成的表现形式&#34;&gt;平面构成的表现形式&lt;/h2&gt;
+&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+&lt;p&gt;元素：构成画面的基本形，由造型基本元素点线面组成。&lt;/p&gt;
+&lt;p&gt;构成法则：对元素进行组合的一些规则。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/pingmiangouchengfangfazongjie/f8319a3430c40b127216254613efe173.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>空间/色彩构成简介</title>
+      <link>https://xiangtaoxiao.github.io/posts/kongjian-secaigouchengjianjie/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/kongjian-secaigouchengjianjie/</guid> 
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/kongjian-secaigouchengjianjie/0ea4b6181cb5326fcce98ae7b4018818.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/kongjian-secaigouchengjianjie/03335300b5144b0cdefab37330a194f9.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/kongjian-secaigouchengjianjie/13bd94ded55b1ced978015321b9d289e.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;空间构成的方法&#34;&gt;空间构成的方法&lt;/h2&gt;
+&lt;p&gt;图形重叠 大小变化 倾斜变化 弯曲变化 投影效果 透视效果 面的链接 疏密变化&lt;/p&gt;
+&lt;h2 id=&#34;色彩构成基本原理与法则&#34;&gt;色彩构成基本原理与法则&lt;/h2&gt;
+&lt;h3 id=&#34;曼塞尔色环&#34;&gt;曼塞尔色环&lt;/h3&gt;
+&lt;h3 id=&#34;色彩概念&#34;&gt;色彩概念&lt;/h3&gt;
+&lt;p&gt;基于纸上绘画的体系，是色彩颜料调色为准的显色系。&lt;/p&gt;
+&lt;p&gt;色相：不同的颜色，红色对应绿色，蓝色对应黄色等。&lt;/p&gt;
+&lt;p&gt;明度：由黑到白，明度最高为白色，明度最低为黑色，对于同一色相的颜色，明度越高颜色给人感觉越亮，反之则暗，接近黑色。&lt;/p&gt;
+&lt;p&gt;纯度：色彩的纯度越低越接近灰色，最终纯度最低就是灰色。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/kongjian-secaigouchengjianjie/c1e18aab0491905f5a197bc79c021449-1.jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;基本配色法则&#34;&gt;基本配色法则&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;色彩对比构成：&lt;br&gt;
+    将颜色分为主色、搭配色和点缀色，注意三者之间的比例关系&lt;/li&gt;
+&lt;li&gt;色彩的调和构成：&lt;br&gt;
+    属性统一调和：即色相、明度或者纯度三者之一保持相同使画面和谐（但配色应当注意突出重点）&lt;br&gt;
+    连贯统一调和：用黑色或白色勾边，将对比强烈的色彩贯穿起来&lt;/li&gt;
+&lt;li&gt;建议使用低明度高纯度的色彩（应试）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;色彩情感&#34;&gt;色彩情感&lt;/h3&gt;
+&lt;p&gt;通过不同的色彩搭配烘托氛围，给人以忧伤或者喜悦的感受。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is Generative Design?</title>
+      <link>https://xiangtaoxiao.github.io/posts/what-is-generative-design/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/what-is-generative-design/</guid> 
+      <description>&lt;p&gt;Generative design is an &lt;a href=&#34;%22//en.wikipedia.org/wiki/Iteration%22&#34;&gt;iterative&lt;/a&gt; &lt;a href=&#34;%22//en.wikipedia.org/wiki/Design%22&#34;&gt;design&lt;/a&gt; &lt;a href=&#34;%22//en.wikipedia.org/wiki/Process_(engineering)%22&#34;&gt;process&lt;/a&gt; that involves a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Computer_program%22&#34;&gt;program&lt;/a&gt; that will &lt;a href=&#34;%22//en.wikipedia.org/wiki/Generator_(mathematics)%22&#34;&gt;generate&lt;/a&gt; a certain number of &lt;a href=&#34;%22//en.wikipedia.org/wiki/Output_(computing)%22&#34;&gt;outputs&lt;/a&gt; that meet certain &lt;a href=&#34;%22//en.wikipedia.org/wiki/Constraint_(mathematics)%22&#34;&gt;constraints&lt;/a&gt;, and a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Designer%22&#34;&gt;designer&lt;/a&gt; that will fine tune the &lt;a href=&#34;%22//en.wikipedia.org/wiki/Feasible_region%22&#34;&gt;feasible region&lt;/a&gt; by changing &lt;a href=&#34;%22//en.wikipedia.org/wiki/Maxima_and_minima%22&#34;&gt;minimal and maximal&lt;/a&gt; values of an &lt;a href=&#34;%22//en.wikipedia.org/wiki/Interval_(mathematics)%22&#34;&gt;interval&lt;/a&gt; in which a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Variable_(mathematics)%22&#34;&gt;variable&lt;/a&gt; of the program meets the &lt;a href=&#34;%22//en.wikipedia.org/wiki/Set_(mathematics)%22&#34;&gt;set&lt;/a&gt; of constraints, in order to reduce or augment the number of outputs to &lt;a href=&#34;%22//en.wikipedia.org/wiki/Choice%22&#34;&gt;choose&lt;/a&gt; from. The program doesn&amp;rsquo;t need to be run on a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Machine%22&#34;&gt;machine&lt;/a&gt; like a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Digital_computer%22&#34;&gt;digital computer&lt;/a&gt;, it can be run by a human for example with &lt;a href=&#34;%22//en.wikipedia.org/wiki/Pen_and_paper%22&#34;&gt;pen and paper&lt;/a&gt;. &lt;a href=&#34;%22//en.wikipedia.org/wiki/Generative_Design#cite_note-1%22&#34;&gt;[1]&lt;/a&gt; The designer doesn&amp;rsquo;t need to be a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Human%22&#34;&gt;human&lt;/a&gt;, it can be a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Test_(assessment)%22&#34;&gt;test&lt;/a&gt; program in a testing environment or an &lt;a href=&#34;%22//en.wikipedia.org/wiki/Artificial_intelligence%22&#34;&gt;artificial intelligence&lt;/a&gt; (see for example &lt;a href=&#34;%22//en.wikipedia.org/wiki/Generative_adversarial_network%22&#34;&gt;Generative adversarial networks&lt;/a&gt;). The designer &lt;a href=&#34;%22//en.wikipedia.org/wiki/Learning%22&#34;&gt;learns&lt;/a&gt; to &lt;a href=&#34;%22//en.wikipedia.org/wiki/Refinement_(computing)%22&#34;&gt;refine&lt;/a&gt; the program (usually involving &lt;a href=&#34;%22//en.wikipedia.org/wiki/Algorithm%22&#34;&gt;algorithms&lt;/a&gt;) with each iteration as his design &lt;a href=&#34;%22//en.wikipedia.org/wiki/Goal%22&#34;&gt;goals&lt;/a&gt; become better &lt;a href=&#34;%22//en.wikipedia.org/wiki/Definition%22&#34;&gt;defined&lt;/a&gt; over time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>什么是服务设计？</title>
+      <link>https://xiangtaoxiao.github.io/posts/shenmeshifuwusheji/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/shenmeshifuwusheji/</guid> 
+      <description>&lt;p&gt;服务是一种无形的经济活动，它以满足用户需求为基础，创造服务价值为目标，在服务提供者与服务接受者（用户）之间进行价值传递的互动行为。 &lt;strong&gt;服务设计是以用户为主要视角，协同多方利益相关者共创，通过人员、场所、产品、信息等要素创新的综合集成，实现服务提供、服务流程、服务触点的系统创新，从而提升服务体验、服务品质和服务价值的设计活动。[1]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务设计强调：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.服务具备系统的特质：服务是一整个逻辑严密的流程，要从全局、整体的角度考虑，在各个环节都为客户创造良好的体验，在进行服务设计时，一个环节的服务失败会引发连锁反应导致后续环节出现一系列问题，用户有时会因为一个触点的糟糕体验而否定整个服务的提供，这也就是我们常说的服务周到，“周到”就是照顾到了方方面面，给用户带来了一个完整舒心的体验。&lt;/p&gt;
+&lt;p&gt;2.服务设计的内容包括了 服务设施、服务产品、服务系统、服务规则、服务流程和服务政策等，服务设计将服务质量视为前提条件，特别关注服务介面和用户体验，重在设计整个使用流程中可以引发体验的不同触点。服务是被提供给用户的，从设计的角度看，设计服务的主要目的就是为用户提供良好的体验，而服务对企业效益、效率等的帮助，对企业品牌的打造等都建立在这个基础之上，无法给顾客提供良好的体验，其他都是空谈。&lt;/p&gt;
+&lt;p&gt;3.服务设计强调用户视角，服务设计可以帮助企业全面的、共情的理解用户需求，探索用户旅程的不同接触点。和系统设计类似，服务设计要去了解用户需求，了解用户达到目的的流程，在此基础上进行优化，提供良好的服务满足用户需求。服务在给用户带来帮助的同时还需要给用户带来深刻的印象，提高用户的忠诚度。&lt;/p&gt;
+&lt;p&gt;4.服务设计强调不同利益相关者的参与、协作与共创。服务是一个服务提供者与服务接受者交互的过程，服务通常不是单一组织或者个体提供的，而是不同利益相关者共同提供的，因此需要参与、协作、共创。举例来说，一个简单的服务：为客户提供一杯水，这个服务由递水的人（服务员或者与客户交谈的人），供应水的人（饮水机的购置、位置摆放），送饮用水的人共同完成，他们的工作都由这项服务产生并为此获得回报，任何一方的失误都导致服务的提供出现问题。&lt;/p&gt;
+&lt;p&gt;5.强调服务设计的跨领域、跨学科。服务设计整合了设计、管理和过程工程中的多种技能和方法，实际产出系统、流程的设计旨在为客户提供全面的服务。&lt;/p&gt;
+&lt;p&gt;相较其他学科对服务的研究，“用户视角”是设计学科服务研究的一个独特视角；“服务体验”是设计学科研究服务的重要关注点之一。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;理解服务设计定义：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;服务设计的原则：以用户为中心，协同多方利益相关者&lt;br&gt;
+服务设计的内涵：对服务提供、流程、触点的全局优化和系统创新&lt;br&gt;
+服务设计的外延：服务设计引导人员、环境、设施、信息等要素创新及其综合集成&lt;br&gt;
+服务设计的作用：提升服务体验、效率和价值&lt;/p&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;p&gt;[1]胡飞,李顽强.定义“服务设计”[J].包装工程,2019,40(10):37-51.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于未来设计的一点想法</title>
+      <link>https://xiangtaoxiao.github.io/posts/guanyuweilaishejideyidianxiangfa/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/guanyuweilaishejideyidianxiangfa/</guid> 
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/guanyuweilaishejideyidianxiangfa/5736585.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;工业设计起源于工业革命，技术的革新带来了工业设计，带来了一系列人类工具的创新和不同的可能性，这些带来了设计的需求。那么工业设计是不是受限于技术呢？技术发展的停滞或速度趋缓是否导致设计变成了外观设计？&lt;/p&gt;
+&lt;p&gt;当前看到的两个方向，一个是拥抱信息技术，既信息革命，最基本的就是交互设计领域，信息技术，媒体的革新给交互设计带来了巨大的发展空间，单一的屏幕由于内容可改变实际带来了无穷尽的显示空间，VR、AR带来的更是3维的现实空间，这里就会有很多的设计需求。&lt;/p&gt;
+&lt;p&gt;另一个方向就是整合设计、社会设计、服务设计等设计方向，当技术发展放缓，人们可以基于预测技术进行设计，这就是超前的设计，或者将现有技术进行充分利用，对现有技术进行排列组合式的再创造，而服务设计、社会设计、系统设计一定程度上脱离了对实物的设计，实际上就是将设计的思想运用到各个领域去创造价值。超前的设计，各个领域全方位的设计对企业的战略和竞争力提升很有帮助。&lt;/p&gt;
+&lt;p&gt;信息是降低不确定性的，它帮助人们做决定，那么设计呢？设计是解决问题的，它要解决的是什么问题？设计也面对着充满不确定性的世界，设计也降低不确定性吗？&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

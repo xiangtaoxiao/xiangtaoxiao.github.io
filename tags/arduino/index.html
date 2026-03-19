@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Arduino | Xiangtao&#39;s log</title>
+<meta name="keywords" content="">
+<meta name="description" content="翔涛的个人网站  © 2019-2026">
+<meta name="author" content="">
+<link rel="canonical" href="https://xiangtaoxiao.github.io/tags/arduino/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.4c9741be0343600f14d5886dc8c02495dd964671dd5db66c61c36d0d56fcb253.css" integrity="sha256-TJdBvgNDYA8U1YhtyMAkld2WRnHdXbZsYcNtDVb8slM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xiangtaoxiao.github.io/smarty.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xiangtaoxiao.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xiangtaoxiao.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xiangtaoxiao.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xiangtaoxiao.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xiangtaoxiao.github.io/tags/arduino/feed.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://xiangtaoxiao.github.io/tags/arduino/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:url" content="https://xiangtaoxiao.github.io/tags/arduino/">
+  <meta property="og:site_name" content="Xiangtao&#39;s log">
+  <meta property="og:title" content="Arduino">
+  <meta property="og:description" content="翔涛的个人网站  © 2019-2026">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arduino">
+  <meta name="twitter:description" content="翔涛的个人网站  © 2019-2026">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xiangtaoxiao.github.io/" accesskey="h" title="Xiangtao&#39;s log (Alt + H)">Xiangtao&#39;s log</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://xiangtaoxiao.github.io/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xiangtaoxiao.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xiangtaoxiao.github.io/tags/" title="Tag">
+                    <span>Tag</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xiangtaoxiao.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xiangtaoxiao.github.io/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xiangtaoxiao.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xiangtaoxiao.github.io/tags/">Tags</a></div>
+  <h1>
+    Arduino
+    <a href="/tags/arduino/feed.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">交互装置入门基础知识
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>欧姆定律 - I=U/R
+面包板的用法 - 面包板通常指免焊面包板，板子上有很多小插孔，专为电子电路的无焊接实验设计制造。由于各种电子元器件可根据需要随意插入或拔出，免去了焊接，节省了电路的组装时间，而且元件可以重复使用，所以非常适合电子电路的组装、调试和训练。 百度百科
+上拉/下拉电阻 - 如果一个线路中的电压处于不确定的状态（例如一个引脚不和任何其它回路连通时），那我们就说它的电压是浮动的，他会随着时间不断变化，跳动，而且很容易受到外界环境的影响。处于这种不确定状态的电路会被随机解释为高或者低电平。 这种现象也叫电子噪声。为了让某个引脚保持高电平或者低电平，我们可以将该引脚接地或者接一个大阻值电阻（arduino的引脚内置了上拉电阻，如果需要外接上拉电阻，arduino建议的上拉电阻为10KΩ）。 参考
+二极管 - 二极管是用半导体材料(硅、硒、锗等)制成的一种电子器件。它具有单向导电性能， 即给二极管阳极和阴极加上正向电压时，二极管导通。 当给阳极和阴极加上反向电压时，二极管截止。 因此，二极管的导通和截止，则相当于开关的接通与断开。其电路图如图所示。
+电容 - 两个相互靠近的导体，中间夹一层不导电的绝缘介质，这就构成了电容器。当电容器的两个极板之间加上电压时，电容器就会储存电荷。电容器的电容量在数值上等于一个导电极板上的电荷量与两个极板之间的电压之比。电容器的电容量的基本单位是法拉(F)。在电路图中通常用字母C表示电容元件。 百度百科
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-10-15 00:00:00 +0000 UTC'>October 15, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
+  <a class="entry-link" aria-label="post link to 交互装置入门基础知识" href="https://xiangtaoxiao.github.io/posts/basic-knowledge-of-interactive-devices/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Arduino 入门基础知识总结
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>根据arduino uno板子的接口进行解释，如图
+L指示灯 - 接13号引脚（13号引脚内置了电阻），arduino出厂烧录了闪烁程度，板子通电后L灯闪烁。
+TX/RX指示灯 - 串口通信时闪烁，分别在传输数据与接收数据时闪烁。
+上排0~13接口 - 数字I/O口，可以接受以及接受数字信号（二进制形式表示的信号），arduino用电平高低来表示0,1，低电平（-0.51.5V）表示0，高电平（35.5V）表示1。用 pinMode(pin, mode) 函数来指定要用的引脚编号以及其配置模式（INPUT 输入0，OUTPUT 输出1，INPUT_PULLUP输入上拉模式）。在输入模式下，可以用 digitalRead(pin) 读取输入的数字信号；在输出模式下，用 digitalWrite(pin, value) 来指定引脚及输出的电平高低（LOW 0， HIGH 1）。
+？digitalRead()函数返回什么，！digitalRead()代表什么？如果代表true，则digitalRead（）返回一个false，人体热释电持续输出低电平，在检测到人时输出高电平（范围和持续时间可以用电位器来调节），则正常情况下！digitalRead是！低电平，其代表了什么，还是说没有输出值，做个试验检测。
+PWM Pulse Width Modulation 脉冲宽度调制 ~符号
+- 模拟信号Output，模拟信号用连续变化的物理量来表示信息，上排接口中有 ~ 标志的接口可用于输出模拟信号。Arduino用05V的电压来表示模拟信号，通过输出周期固定（约490HZ）的方波，通过改变高低电平在每个周期中的比例（占空比）来得到近似输出不同电压的效果。具体方法为调用analogWrite(pin, value)函数，pin为指定引脚，value是PWM的脉冲宽度，范围为0255（将5v电压模拟成255段进行调整，8位精度，255=11111111）。
+下排A0~A5 - 模拟信号输入引脚，用analogRead(pin)函数读取引脚上输入电压的大小。模拟输入引脚带有ADC（Analog-to-Digital Converter，模/数转换器）功能，arduino的模拟输入功能有10位精度，可以将读取到的05V电压转换为01023（1023的二进制为1111111111）的整数形式表示。
+TX/RX引脚（1,0号） - transmit/receive，用于串行通信，Arduino的USB口通过一个转换芯片（通常为ATmege16u2）与这两个串口的引脚连接。该转换芯片通过USB接口在计算机上虚拟出一个用于与arduino通信的串口。串行通信是相对于并行通信的概念，并行通信占用的I/O口较多，而arduino的I/O口资源较少，因此采用串行通信方式。
+下排左侧 - VCC表示电源，有3.5和5V两个接口，GND（阴极，接地）两个比较常用。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-10-13 00:00:00 +0000 UTC'>October 13, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
+  <a class="entry-link" aria-label="post link to Arduino 入门基础知识总结" href="https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://xiangtaoxiao.github.io/">Xiangtao&#39;s log</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

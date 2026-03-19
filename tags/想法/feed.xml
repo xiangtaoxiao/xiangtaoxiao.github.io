@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>想法 on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/%E6%83%B3%E6%B3%95/</link>
+    <description>Recent content in 想法 on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/%E6%83%B3%E6%B3%95/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微信8.0感受</title>
+      <link>https://xiangtaoxiao.github.io/posts/wechat-8-0/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/wechat-8-0/</guid> 
+      <description>&lt;p&gt;昨晚后知后觉微信更新了一个大版本，关于微信向视频、文章方向的发力与改变，我感知并不明显。曾经自己一度迷上短视频，后来感到太过消耗时间，且没什么营养，所以基本不看了，抖音也卸载了。在关注了一大堆公众号后，微信里的文章开始变的五花八门，看不过来，只有通勤时偶尔看一看，对于这些文章，看多了以后感到并没有很迫切需要看的需求。当然，这也是因为自己没有养成持续关注阅读一些优秀公众号的良好习惯吧，我想对于有坚持看文章的人来说，这次更新可以较好的改善体验。&lt;/p&gt;
+&lt;p&gt;说回视频方向的发力，我深感创作的乐趣要大于观看的乐趣，明明自己对别人的视频毫无兴趣，却希望自己的视频被广泛的观看点赞，作为社交的需要，也要给别人点赞，孤独感和虚荣心被充分利用了。朋友圈里的自制视频没有什么质量可言，应该是没上年纪又或许性子孤僻吧，对于别人发的视频没有多大的兴趣。在外面看视频总让我感到非常不适，尤其是地铁等人多的地方，图像比文字清晰的多，隔了很远也可以分辨出来，虽然大多数人不会偷窥你的屏幕，但我仍然会感到不自在，我不希望有陌生人从我的手机屏幕上获取到信息，即使是毫不相干的信息，这真是个奇怪的感觉，也许是我不够自信，缺乏安全感所致。对于微信来说，我想让用户积极发视频也是很关键的，当用户发了视频，他就有了看视频的动力。&lt;/p&gt;
+&lt;p&gt;微信有建成一个大生态系统的目的，似乎一切都可以在微信上完成，可所谓的生态不也是一种垄断吗？一切似乎都被微信统治了，比如这次表情的升级，即使自己不喜欢，也没有选择的余地。表情的UI统一了，这是合理的，但也毫无疑问低龄化了，比如[敲打]的锤头变成了平底锅，毫无疑问这套UI更现代，我猜想微信考量年轻一代的消费水平更高，也更高频的使用各种表情，而年长一代对表情并不那么敏感，换了也不是很在乎，通过之前加入的少部分新表情进行测试后，大的更新也就顺理成章了。不得不承认我自己也使用新表情比较多，但是老表情的直接下架依然让人感到不那么愉快。&lt;/p&gt;
+&lt;p&gt;当这个app成为一个国民级应用后，各种用户都被迫使用它，但它势必无法迎合所有用户群体，悲伤之处就在于，那些不被迎合的用户没有别的选择。微信的产品确实很有水准，说说UI吧，这次更新的欢迎页，确实是微信的风格，很文艺，但是当一个社交应用说出‘我看见你，我看见你看见的’时候，文艺的背后，又有一种裸露在网络空间中的感觉，包括这次的状态栏，我想自己也许不会经常设置自己的状态吧。庆幸的是微信巧妙地把附加的功能隐藏了起来，因此常规使用的界面依然简洁，日常使用体验没有很大改变。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于未来设计的一点想法</title>
+      <link>https://xiangtaoxiao.github.io/posts/guanyuweilaishejideyidianxiangfa/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/guanyuweilaishejideyidianxiangfa/</guid> 
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/guanyuweilaishejideyidianxiangfa/5736585.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;工业设计起源于工业革命，技术的革新带来了工业设计，带来了一系列人类工具的创新和不同的可能性，这些带来了设计的需求。那么工业设计是不是受限于技术呢？技术发展的停滞或速度趋缓是否导致设计变成了外观设计？&lt;/p&gt;
+&lt;p&gt;当前看到的两个方向，一个是拥抱信息技术，既信息革命，最基本的就是交互设计领域，信息技术，媒体的革新给交互设计带来了巨大的发展空间，单一的屏幕由于内容可改变实际带来了无穷尽的显示空间，VR、AR带来的更是3维的现实空间，这里就会有很多的设计需求。&lt;/p&gt;
+&lt;p&gt;另一个方向就是整合设计、社会设计、服务设计等设计方向，当技术发展放缓，人们可以基于预测技术进行设计，这就是超前的设计，或者将现有技术进行充分利用，对现有技术进行排列组合式的再创造，而服务设计、社会设计、系统设计一定程度上脱离了对实物的设计，实际上就是将设计的思想运用到各个领域去创造价值。超前的设计，各个领域全方位的设计对企业的战略和竞争力提升很有帮助。&lt;/p&gt;
+&lt;p&gt;信息是降低不确定性的，它帮助人们做决定，那么设计呢？设计是解决问题的，它要解决的是什么问题？设计也面对着充满不确定性的世界，设计也降低不确定性吗？&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

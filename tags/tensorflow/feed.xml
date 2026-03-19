@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tensorflow on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/tensorflow/</link>
+    <description>Recent content in Tensorflow on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Thu, 21 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/tensorflow/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TensorFlow基础API</title>
+      <link>https://xiangtaoxiao.github.io/posts/tensorflow-basic-api/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/tensorflow-basic-api/</guid> 
+      <description>&lt;p&gt;看网课视频老师讲的一些，实际上官方文档有非常详细的介绍&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; np
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tensorflow &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; tf
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# tf基础api：常量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant([[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3.&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;4.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;6.&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# index索引操作&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t[:, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t[&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ops算数操作&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;square(t))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t &lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;transpose(t))  &lt;span style=&#34;color:#75715e&#34;&gt;# 乘转置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# numpy conversion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;square(t))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;np_t &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3.&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;4.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;6.&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant(np_t))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Scalars tensor可以使0维、1维...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant(&lt;span style=&#34;color:#ae81ff&#34;&gt;2.718&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# strings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cafe&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(t)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;length(t))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;length(t, unit&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UTF8_CHAR&amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unicode_decode(t, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UTF8&amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# string array&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cafe&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;coffee&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;咖啡&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;length(t, unit&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UTF8_CHAR&amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unicode_decode(t, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UTF8&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(r)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ragged tensor&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ragged&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant([[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt;], [], [&lt;span style=&#34;color:#ae81ff&#34;&gt;41&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# index op&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(r)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(r[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(r[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ops on ragged tensor&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ragged&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant([[&lt;span style=&#34;color:#ae81ff&#34;&gt;51&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;52&lt;/span&gt;], [], [&lt;span style=&#34;color:#ae81ff&#34;&gt;71&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;concat([r, r2], axis&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ragged&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant([[&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;], [], [&lt;span style=&#34;color:#ae81ff&#34;&gt;41&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;43&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;concat([r, r3], axis&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ragged tensor 变成 普通tensor 空位用0补齐，注意0永远在正常值的后面&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_tensor())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# sparse tensor 0可以在正常值前面&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;SparseTensor(indices&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    values&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3.&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    dense_shape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(s)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sparse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_dense(s))  &lt;span style=&#34;color:#75715e&#34;&gt;# 稀疏矩阵转密集矩阵，这样的稀疏矩阵不能用ragged tensor来表示&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ops on sparse tensors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(s2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    s3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TypeError&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; ex:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(ex)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s4 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant([[&lt;span style=&#34;color:#ae81ff&#34;&gt;10.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20.&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  [&lt;span style=&#34;color:#ae81ff&#34;&gt;30.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;40.&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  [&lt;span style=&#34;color:#ae81ff&#34;&gt;50.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;60.&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  [&lt;span style=&#34;color:#ae81ff&#34;&gt;70.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;80.&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sparse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sparse_dense_matmul(s, s4))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s5 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;SparseTensor(indices&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]],  &lt;span style=&#34;color:#75715e&#34;&gt;# 没有排好序的稀疏矩阵无法被转换为密集矩阵&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    values&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3.&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    dense_shape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(s5)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s6 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sparse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;reorder(s5)  &lt;span style=&#34;color:#75715e&#34;&gt;# 对s5进行排序&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sparse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_dense(s6))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Variable 变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Variable([[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3.&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;4.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;6.&lt;/span&gt;]])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(v)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(v&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(v&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# assign value 变量重新赋值&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;assign(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;v)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(v&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;assign(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(v&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;assign([&lt;span style=&#34;color:#ae81ff&#34;&gt;7.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;8.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;9.&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(v&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 不能用=号，只能用assign()重新赋值&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    v[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;7.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;8.&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;9.&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TypeError&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; ex:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(ex)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# &amp;#39;ResourceVariable&amp;#39; object does not support item assignment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>TensorFlow2.0安装</title>
+      <link>https://xiangtaoxiao.github.io/posts/tensorflow2/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/tensorflow2/</guid> 
+      <description>&lt;h2 id=&#34;清华镜像源安装&#34;&gt;清华镜像源安装&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install tensorflow-gpu==1.12.0 -i //pypi.tuna.tsinghua.edu.cn/simple #可改成任意版本
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;cpu版本安装&#34;&gt;CPU版本安装&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install tensorflow -i //pypi.tuna.tsinghua.edu.cn/simple
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pycharm环境配置&#34;&gt;Pycharm环境配置&lt;/h2&gt;
+&lt;h3 id=&#34;一导入tensorflow模块测试&#34;&gt;（一）导入TensorFlow模块测试&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tensorflow &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; tf
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hello &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;constant()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sess &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Session()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sess&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;run(hello)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;结果如下：ModuleNotFoundError: No module named &amp;rsquo;tensorflow&#39;&lt;/p&gt;
+&lt;h3 id=&#34;二加入运行路径&#34;&gt;（二）加入运行路径&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/tensorflow2/1582020554684026723.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设置项目的编译器为python安装位置的python.exe，勾选导入所有的模块，显示如上图所示。再次运行出现同样的错误，查了一些资料应该是电脑的CPU太老了，我下载的tensorflow2.1.0版本不支持。&lt;/p&gt;
+&lt;h3 id=&#34;三安装200版本并测试&#34;&gt;（三）安装2.0.0版本并测试&lt;/h3&gt;
+&lt;p&gt;运行代码： pip unintall tensorflow&lt;br&gt;
+重新运行安装代码：pip install tensorflow==2.0.0 -i &lt;a href=&#34;//pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;//pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;再次测试成功！&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/tensorflow2/1582032626532066694.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;由于笔记本没有英伟达显卡，配置较低，只安装了CPU版本，后续使用有较好配置的电脑尝试安装GPU版本。确实CPU版本速度比较慢。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

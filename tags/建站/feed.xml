@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>建站 on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/%E5%BB%BA%E7%AB%99/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>初步体验：用扣子生成一个雅思口语练习网页</title>
+      <link>https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/</guid> 
+      <description>&lt;p&gt;3.15更新：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//3pvtkwzwrm.coze.site&#34;&gt;//3pvtkwzwrm.coze.site&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;coze生产环境的参数是部署时系统自动赋值的，不需要自己填API key之类的参数。重新做了一个在生产环境就跑通了，具体方法是让AI基于前一个应用生成一个详细的提示词包含功能点、技术架构等内容，感觉提示词专业的话对于编码还是有帮助的，但是依然会出现细节上的bug，需要进行两三次修复。功能出了问题好排查，配置或者网络等细节出了问题不是程序员的话真的不太好排查，也许是我对一些技术细节还不够了解。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/2026031512591560-designaxt-1024x876.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最近正好考虑雅思，新东方的雅思小程序推出了一个AI练真题的功能，参考这个试了下能否用扣子直接生成一个类似的功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;功能介绍：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;根据选择的题型随机生成题目，点击开始录音可以根据题型限制录音时长。录音结束后进行语音识别，并通过AI对识别结果进行分析，给出评分、改进建议和AI扩写的答案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;首页：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/2026012814413133-designaxt-1024x680.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里题目下方的灰色提示是AI自动补全的功能，prompt并未做要求，同时录音时间的文字提示也是AI补全的，页面也是响应式，交互总体比较友好。我也没有对UI风格做要求，感觉AI味比较浓（非贬义），第一遍生成的字体较小做了一次调整。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;评分页：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/202601281501356-designaxt-1024x827.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/2026012815015559-designaxt-895x1024.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在扣子上直接部署后可能是api的原因，生成环境语音识别功能没有跑通，但是在测试环境实现了完整的功能。&lt;/p&gt;
+&lt;p&gt;整个过程大概用了两个小时，修复bug的过程比较顺畅，会进行自测基本功能问题提了都可以修复。但是涉及到接口调用，环境部署等导致的问题时，修复bug的技术要求就直线上升了，需要你能够发现比较具体的问题并准确描述，否则的话只是基于前端的报错，AI可能无法定位到准确问题，对无开发背景的人来说还是有难度。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/2026012815044317-designaxt-1024x183.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/preliminary-experience-generate-an-ielts-speaking-practice-webpage-using-buttons/2026012815041617-designaxt-1024x991.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>bitwarden_rs&#43;nginx反向代理配置记录</title>
+      <link>https://xiangtaoxiao.github.io/posts/bitwarden_-rs-nginx-reverse-proxy-configuration-record/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/bitwarden_-rs-nginx-reverse-proxy-configuration-record/</guid> 
+      <description>&lt;p&gt;bitwarden是一个开源的密码管理器，可以部署在私有服务器上。官方的bitwarden对服务器配置要求较高，网友开发了bitwardenrs适用于小用户，对配置要求低不怎么占内存。本次采用安装docker后在docker上安装bitwardenrs和nginx，通过nginx反向代理实现HTTPS加密访问bitwarden的方法。&lt;/p&gt;
+&lt;p&gt;服务器配置：Tencent Hong Kong centOS 7.6 1C1G 25GSSD 30M峰值带宽&lt;/p&gt;
+&lt;p&gt;服务器上已经运行bitnami wordpress堆栈，因此80和443端口都被apache占用，挂了个人博客。网络上大部分blog都采用nginx做反向代理，由于不懂技术因此也用nginx照做。&lt;/p&gt;
+&lt;h3 id=&#34;安装docker&#34;&gt;安装Docker&lt;/h3&gt;
+&lt;p&gt;docker是一个虚拟机，他打包了多个不同主流应用，可以很方便的安装这些应用，并且每个应用都是以容器的形式存在，与宿主机的环境是隔离的，这些应用的配置与运行可以干净的删除不会对宿主机造成影响。&lt;/p&gt;
+&lt;p&gt;docker中有images 镜像和container 容器，比如我可以在宿主机下载一个nginx镜像，然后我制作两个容器：nginx_1 和 nginx_2，两个容器中都可以通过镜像安装nginx应用，两个nginx是分开的，可以各自用于不同用途，方便管理。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yum install -y docker #安装docker
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;systemctl docker #启动docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;安装bitwarden_rs&#34;&gt;安装bitwarden_rs&lt;/h3&gt;
+&lt;p&gt;docker有几个需要事先理解的概念，比如 &lt;strong&gt;目录映射&lt;/strong&gt;。我们可以让容器的目录去映射一个宿主机的目录，简单来讲就是用一个宿主机的目录当做容器应用的目录，这样要修改应用配置或者上传文件只要动宿主机的目录就可以。&lt;/p&gt;
+&lt;p&gt;我们在run 应用的时候添加以下形式的配置：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-v /library:/library #&amp;#39;:&amp;#39;前是要映射的宿主机目录，后面是容器应用的实际目录
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;端口映射&lt;/strong&gt;：容器是一个虚拟环境，比如nginx监听的80和443端口，在我的宿主机中这两个端口被Apache占用了，因此我可以分配另外两个端口与容器的80端口和443端口进行映射。&lt;/p&gt;
+&lt;p&gt;这样一来避免了端口冲突，比如访问//domain:4444实际上就会通过容器的443端口被nginx监听到。需要注意的是通过这种方式要在防火墙打开4444端口，否则浏览器还是无法访问的。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/bitwarden_-rs-nginx-reverse-proxy-configuration-record/%E5%9B%BE%E7%89%87-1024x227.png&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-p 8088:80/tcp 4444:443/tcp #8088映射到80 4444映射到443 映射端口根据需要选择空闲端口即可
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir /data/bitwarden #建立宿主机映射目录
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run  -d \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            --rm \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            --name bitwarden \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -p 8085:80 \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -p 3012:3012 \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -e SIGNUPS_ALLOWED=true \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -e WEB_VAULT_ENABLED=true \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -e DOMAIN=//mydomain.cn \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -v /data/bitwarden:/data \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            bitwardenrs/server:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;上面命令的各个参数含义如下：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-d 在后台运行
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--rm 容器停止运行后，自动删除容器文件
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--name bitwarden容器的名字为bitwarden
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-p 8085:80 容器的端口80映射到8085，在Nginx配置
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-p 3012:3012 容器的端口3012映射到3012
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-e SIGNUPS_ALLOWED=true 设置环境变量SIGNUPS_ALLOWED=true允许用户注册
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-e WBE_VAULT_ENABLE=true 设置环境变量WBE_VAULT_ENABLE=true
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-e DOMAIN=//mydomain.cn设置域名,需要替换成自己申请的域名
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-v /data/bitwarden:/data 容器的/data/目录映射到宿主机的/data/bitwarden目录
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;安装nginx&#34;&gt;安装nginx&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir /data/nginx #建立宿主机映射目录
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 安装nginx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           --rm \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           --name nginx \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           -d \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           -p 8088:80/tcp \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           -p 2443:443/tcp \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           nginx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 由于不知道nginx目录下的内容，我们将容器的目录复制到宿主机目录/data下
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker cp nginx:/etc/nginx /data
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 创建用于存放ssl证书的文件夹，将申请到的.cert和.key证书文件上传到这个文件夹
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir /data/nginx/certs
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改/data/nginx/conf.d/default.conf文件添加以下内容，启用https访问并对bitwarden进行反向代理&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>wordpress配置问题记录</title>
+      <link>https://xiangtaoxiao.github.io/posts/wordpress-configuration-problem-record/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/wordpress-configuration-problem-record/</guid> 
+      <description>&lt;h2 id=&#34;linux基本语法&#34;&gt;Linux基本语法&lt;/h2&gt;
+&lt;p&gt;复制 cp 要复制的文件路径 目标路径 cp -r 递归复制整个目录&lt;/p&gt;
+&lt;p&gt;删除 rm -f 强制删除 -r 递归删除目录&lt;/p&gt;
+&lt;p&gt;改名 mv 原文件 新文件名&lt;/p&gt;
+&lt;p&gt;更改文件权限 chmod 777（完全写入权限） 要更改的目录或文件&lt;/p&gt;
+&lt;p&gt;vim编辑器显示行号：输入指令：set number&lt;/p&gt;
+&lt;p&gt;跳转到制定行：输入指令：n（要跳转的行号）&lt;/p&gt;
+&lt;h2 id=&#34;wp-super-cache问题解决&#34;&gt;WP-Super-Cache问题解决&lt;/h2&gt;
+&lt;p&gt;将插件wp-super-cache中的wp-cache-config.php与advanced-cache.php复制到wp-content目录下。&lt;/p&gt;
+&lt;p&gt;临时更改wp-content权限为777&lt;/p&gt;
+&lt;p&gt;在wp-config.php中增加以下内容：1.在require_once(ABSPATH.’wp-settings.php’);前增加define(&amp;lsquo;WP_CACHE&amp;rsquo;, true); 2.增加define(&amp;lsquo;WPCACHEHOME&amp;rsquo;, &amp;lsquo;插件wp-super-cache绝对路径&amp;rsquo;);&lt;/p&gt;
+&lt;p&gt;修改完成后应该可以进入设置界面，在专家模式下更新设置如果出现要求更新Mod_write规则则按要求进行更新。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;对于采用bitnami的wordpress堆栈环境，由于其对文件访问权限的安全设置较严，安装时同样会弹出以上情况的警告。无需理会，连接到服务器执行以下指令：（事实上应当优先采用这种更改权限的做法，未生效再尝试上方操作）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chmod g+w /YOURADRESS/apps/wordpress/htdocs/wp-config.php
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后禁用插件并重新激活即可。完事以后要将文件权限复原，执行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chmod g-w /YOURADRESS/apps/wordpress/htdocs/wp-config.php
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;更多内容，在bitnami.com官方文档的trouble shooting部分有详细介绍。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UEditor部署到个人站点</title>
+      <link>https://xiangtaoxiao.github.io/posts/ueditorbushudaogerenzhandian/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/ueditorbushudaogerenzhandian/</guid> 
+      <description>&lt;h2 id=&#34;一下载ueditor&#34;&gt;一、下载UEditor&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;//ueditor.baidu.com/website/download.html&#34;&gt;//ueditor.baidu.com/website/download.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在以上链接下载，选择自己需要的语言版本，我用的是jsp，就下载jsp版本。将下载的压缩包解压，可以直接将解压的文件导入到Eclipse中自己的项目中，导入到文件夹WebContent中即可。&lt;/p&gt;
+&lt;h2 id=&#34;二配置&#34;&gt;二、配置&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/ueditorbushudaogerenzhandian/1563207389404033187.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;将jsp/lib中的jar包全部复制到WEB-INF/lib下&lt;/p&gt;
+&lt;p&gt;修改输入字符数统计、上限，自定义工具栏可以参考官方说明文档，配置项可在ueditor.config.js中修改。&lt;/p&gt;
+&lt;p&gt;修改图片上传路径等在官方说明文档中有详细的介绍。&lt;/p&gt;
+&lt;p&gt;注：这里仅仅是在一个项目中使用UEditor，还用别的使用方法，也可以直接部署到tomcat中。&lt;/p&gt;
+&lt;h2 id=&#34;三在页面中插入ueditor编辑器&#34;&gt;三、在页面中插入Ueditor编辑器&lt;/h2&gt;
+&lt;p&gt;首先要引用文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;%= request.getContextPath() %&amp;gt;/thirdparts/utf8-jsp/themes/default/css/ueditor.change.css&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;%= request.getContextPath() %&amp;gt;/thirdparts/utf8-jsp/ueditor.config.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;%= request.getContextPath() %&amp;gt;/thirdparts/utf8-jsp/ueditor.all.min.js&amp;#34;&lt;/span&gt;&amp;gt; &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;%= request.getContextPath() %&amp;gt;/thirdparts/utf8-jsp/lang/zh-cn/zh-cn.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接着在需要插入编辑器的位置插入以下代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;textarea&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width:100%;height:500px&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;textarea&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;UE&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getEditor&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;content&amp;#39;&lt;/span&gt;,{&lt;span style=&#34;color:#a6e22e&#34;&gt;toolbars&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [[   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fullscreen&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;source&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;|&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;undo&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;redo&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;|&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bold&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;italic&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;underline&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fontborder&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;strikethrough&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;superscript&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;subscript&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;removeformat&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;formatmatch&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;autotypeset&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;blockquote&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pasteplain&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;|&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;forecolor&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;backcolor&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;insertorderedlist&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;insertunorderedlist&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;selectall&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cleardoc&amp;#39;&lt;/span&gt;]]});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;toolbars控制工具栏显示哪些工具&lt;/p&gt;
+&lt;p&gt;textarea是显示编辑器的容器，其id与UE.getEditor(&amp;lsquo;id&amp;rsquo;,{})要一致。&lt;/p&gt;
+&lt;p&gt;不一定要是textarea，div等都可以，可以自己试一试，我没有深入研究，凑合着用了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>理解MVC模式</title>
+      <link>https://xiangtaoxiao.github.io/posts/lijiemvcmoshi/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/lijiemvcmoshi/</guid> 
+      <description>&lt;p&gt;M：Model&lt;/p&gt;
+&lt;p&gt;V：View&lt;/p&gt;
+&lt;p&gt;C：Controller&lt;/p&gt;
+&lt;p&gt;    在JSP开发中，JSP仅负责控制页面的显示内容，Javabean仅负责存储数据，在Javabean中，数据以设计好的格式存储着，这也是为什么他叫模型，JSP可以方便的从Javabean中取得数据进行显示，Servlet则负责从数据库中读取数据，向数据库存储数据，对数据进行逻辑处理，之后将数据存储在javabean中以供显示。&lt;/p&gt;
+&lt;p&gt;    MVC与三层架构：界面、业务逻辑、数据库存取是不一样的。MVC要实现的目标是将软件用户界面和业务逻辑分离以使代码可扩展性、可复用性、可维护性、灵活性加强。&lt;/p&gt;
+&lt;p&gt;    看到有另一种说法： &lt;a href=&#34;%22//blog.csdn.net/zuiyingong6567/article/details/80150834%22&#34;&gt;//blog.csdn.net/zuiyingong6567/article/details/80150834&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;    同样是MVC，对于各层的理解有一些不同。尤其是对于数据库的连接，在PPT上看到的是C存取数据库，而网上一些资料显示是M存取数据库，而要求C尽量简单，仅仅负责在V与M间协调，大部分业务逻辑的处理，数据存取都放在Model中进行。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

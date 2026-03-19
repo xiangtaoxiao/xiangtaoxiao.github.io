@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>支付结算 on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/%E6%94%AF%E4%BB%98%E7%BB%93%E7%AE%97/</link>
+    <description>Recent content in 支付结算 on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/%E6%94%AF%E4%BB%98%E7%BB%93%E7%AE%97/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>初识跨境支付</title>
+      <link>https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/</guid> 
+      <description>&lt;p&gt;从《跨境电子商务支付与结算》一书出发，了解跨境支付领域。&lt;/p&gt;
+&lt;h2 id=&#34;跨境支付的几个基本概念&#34;&gt;跨境支付的几个基本概念&lt;/h2&gt;
+&lt;h3 id=&#34;汇外汇&#34;&gt;汇（外汇）&lt;/h3&gt;
+&lt;p&gt;外汇，英文名是Foreign currency，是货币行政当局（ &lt;a href=&#34;//baike.baidu.com/item/E4%5CxB8%5CxAD%5CxE5%5CxA4%5CxAE%5CxE9%5Cx93%5CxB6%5CxE8%5CxA1%5Cx8C/1441284?fromModule=lemma_inlink&#34;&gt;中央银行&lt;/a&gt;、货币管理机构、 &lt;a href=&#34;//baike.baidu.com/item/E5%5CxA4%5Cx96%5CxE6%5CxB1%5Cx87%5CxE5%5CxB9%5CxB3%5CxE5%5Cx87%5Cx86%5CxE5%5Cx9F%5CxBA%5CxE9%5Cx87%5Cx91/1999077?fromModule=lemma_inlink&#34;&gt;外汇平准基金&lt;/a&gt; 及财政部）以 &lt;a href=&#34;//baike.baidu.com/item/E9%5Cx93%5CxB6%5CxE8%5CxA1%5Cx8C%5CxE5%5CxAD%5Cx98%5CxE6%5CxAC%5CxBE/10010786?fromModule=lemma_inlink&#34;&gt;银行存款&lt;/a&gt;、财政部库券、长短期政府证券等形式保有的在 &lt;a href=&#34;//baike.baidu.com/item/E5%5Cx9B%5CxBD%5CxE9%5Cx99%5Cx85%5CxE6%5Cx94%5CxB6%5CxE6%5Cx94%5CxAF%5CxE9%5Cx80%5Cx86%5CxE5%5CxB7%5CxAE/9873053?fromModule=lemma_inlink&#34;&gt;国际收支逆差&lt;/a&gt; 时可以使用的债权。包括外国货币、外币存款、外币有价证券（政府公债、国库券、公司债券、股票等）、 &lt;a href=&#34;//baike.baidu.com/item/E5%5CxA4%5Cx96%5CxE5%5CxB8%5Cx81%5CxE6%5Cx94%5CxAF%5CxE4%5CxBB%5Cx98%5CxE5%5Cx87%5CxAD%5CxE8%5CxAF%5Cx81/202040?fromModule=lemma_inlink&#34;&gt;外币支付凭证&lt;/a&gt;（票据、银行存款凭证、邮政储蓄凭证等）。&lt;/p&gt;
+&lt;h4 id=&#34;广义&#34;&gt;广义&lt;/h4&gt;
+&lt;p&gt;一国拥有的一切以外币表示的资产。是指货币在各国间的流动以及把一个国家的 &lt;a href=&#34;//baike.baidu.com/item/E8%5CxB4%5CxA7%5CxE5%5CxB8%5Cx81%5CxE5%5Cx85%5Cx91%5CxE6%5Cx8D%5CxA2?fromModule=lemma_inlink&#34;&gt;货币兑换&lt;/a&gt; 成另一个国家的货币，借以清偿国际间债权、债务关系的一种专门性的经营活动。实际上就是货币行政当局（ &lt;a href=&#34;//baike.baidu.com/item/E4%5CxB8%5CxAD%5CxE5%5CxA4%5CxAE%5CxE9%5Cx93%5CxB6%5CxE8%5CxA1%5Cx8C?fromModule=lemma_inlink&#34;&gt;中央银行&lt;/a&gt;、货币管理机构、外汇平准基金及财政部）以银行存款、 &lt;a href=&#34;//baike.baidu.com/item/E8%5CxB4%5CxA2%5CxE6%5Cx94%5CxBF%5CxE9%5Cx83%5CxA8?fromModule=lemma_inlink&#34;&gt;财政部&lt;/a&gt; 库券、长短期政府债券等形式所保有的在 &lt;a href=&#34;//baike.baidu.com/item/E5%5Cx9B%5CxBD%5CxE9%5Cx99%5Cx85%5CxE6%5Cx94%5CxB6%5CxE6%5Cx94%5CxAF%5CxE9%5Cx80%5Cx86%5CxE5%5CxB7%5CxAE?fromModule=lemma_inlink&#34;&gt;国际收支逆差&lt;/a&gt; 时可以使用的债权。&lt;/p&gt;
+&lt;h4 id=&#34;狭义&#34;&gt;狭义&lt;/h4&gt;
+&lt;p&gt;以外国货币表示的，为各国普遍接受的，可用于国际间债权债务结算的各种支付手段。必须具备三个特点：可支付性（必须以外国货币表示的资产）、可获得性（必须是在国外能够得到补偿的债权）和可换性（必须是可以自由兑换为其他支付手段的外币资产）。&lt;/p&gt;
+&lt;h3 id=&#34;浮动汇率制度&#34;&gt;浮动汇率制度&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;法郎的汇率水平，并非由投机者或贸易平衡，甚至不是 &lt;a href=&#34;//www.zhihu.com/search?q=%5CxE9%5CxB2%5Cx81%5CxE5%5CxB0%5Cx94%5CxE5%5Cx8C%5CxBA&amp;amp;search_source=Entity&amp;amp;hybrid_search_source=Entity&amp;amp;hybrid_search_extra=%5Cx7B%5Cx22sourceType%5Cx22%5Cx3A%5Cx22answer%5Cx22%5Cx2C%5Cx22sourceId%5Cx22%5Cx3A%5Cx2222965187%5Cx22%5Cx7D&#34;&gt;鲁尔区&lt;/a&gt; 的冒险行为所决定的，而是法国的纳税人愿意拿出多少自己的收入，去支付给法国的食利者们。——凯恩斯&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;汇率的一个基本来源是维持购买力平价，比如在我国买一个鸡蛋1元，在美国买一个鸡蛋0.2美元，则1rmb就应该对0.2usd。如果没有汇率而是1:1兑换，那么1元人民在国内可以买一个蛋，换成美元在美国可以买几个蛋，国内的人就会把人民币换成美元买美国的蛋，导致人民币流向美国，美国的蛋流向中国。这样一来市场就对国内的蛋商失去信心，国内商品价格没有竞争力，资金都往国外跑，而美国的蛋则变得供小于求，物价飞升，美国百姓买不起蛋，中国用钞票轻松换走了美国的蛋，这么一看中美都不乐意了，为了维持国内市场的稳定和国际贸易的公平，需要有汇率来换算双方货币。&lt;/p&gt;
+&lt;p&gt;当然现实是反过来的，过去我们可以用黄金来作为衡量的基准，后来美国称霸世界美元取代了黄金，国际结算都用美元，美国可以印钞票从全世界买蛋。1973年，以美元为中心的固定汇率制完全解体，各国（或地区）纷纷实行浮动汇率制。实际情况下汇率还会受到贸易保护、金融市场、政治等因素的影响，为了摆脱美元霸权，我们开始推行人民币结算，另外我们也制定了更为稳定可靠的汇率制度。&lt;/p&gt;
+&lt;p&gt;我国实施以市场供求为基础、 &lt;a href=&#34;//www.zhihu.com/search?q=%5CxE5%5Cx8F%5Cx82%5CxE8%5Cx80%5Cx83%5CxE4%5CxB8%5Cx80%5CxE7%5CxAF%5CxAE%5CxE5%5CxAD%5Cx90%5CxE8%5CxB4%5CxA7%5CxE5%5CxB8%5Cx81&amp;amp;search_source=Entity&amp;amp;hybrid_search_source=Entity&amp;amp;hybrid_search_extra=%5Cx7B%5Cx22sourceType%5Cx22%5Cx3A%5Cx22answer%5Cx22%5Cx2C%5Cx22sourceId%5Cx22%5Cx3A%5Cx2268768295%5Cx22%5Cx7D&#34;&gt;参考一篮子货币&lt;/a&gt;， &lt;a href=&#34;//www.zhihu.com/search?q=%5CxE6%5Cx9C%5Cx89%5CxE7%5CxAE%5CxA1%5CxE7%5Cx90%5Cx86%5CxE7%5Cx9A%5Cx84%5CxE6%5CxB5%5CxAE%5CxE5%5Cx8A%5CxA8%5CxE6%5CxB1%5Cx87%5CxE7%5Cx8E%5Cx87%5CxE5%5Cx88%5CxB6%5CxE5%5CxBA%5CxA6&amp;amp;search_source=Entity&amp;amp;hybrid_search_source=Entity&amp;amp;hybrid_search_extra=%5Cx7B%5Cx22sourceType%5Cx22%5Cx3A%5Cx22answer%5Cx22%5Cx2C%5Cx22sourceId%5Cx22%5Cx3A%5Cx2268768295%5Cx22%5Cx7D&#34;&gt;有管理的浮动汇率制度&lt;/a&gt;。中国人民银行根据前一日 &lt;a href=&#34;//www.zhihu.com/search?q=%5CxE9%5Cx93%5CxB6%5CxE8%5CxA1%5Cx8C%5CxE9%5Cx97%5CxB4%5CxE5%5CxA4%5Cx96%5CxE6%5CxB1%5Cx87%5CxE5%5CxB8%5Cx82%5CxE5%5Cx9C%5CxBA&amp;amp;search_source=Entity&amp;amp;hybrid_search_source=Entity&amp;amp;hybrid_search_extra=%5Cx7B%5Cx22sourceType%5Cx22%5Cx3A%5Cx22answer%5Cx22%5Cx2C%5Cx22sourceId%5Cx22%5Cx3A%5Cx22107412890%5Cx22%5Cx7D&#34;&gt;银行间外汇市场&lt;/a&gt; 形成的价格，公布人民币对美元等主要货币的汇率，各银行以此为依据，在中国人民银行规定的浮动幅度内自行挂牌。人行本身是银行间外汇市场的重要参与者，可以根据货币政策买卖外汇，调整汇率。&lt;/p&gt;
+&lt;h3 id=&#34;传统跨境支付方式&#34;&gt;传统跨境支付方式&lt;/h3&gt;
+&lt;h4 id=&#34;汇付remittance即汇款&#34;&gt;汇付（Remittance，即汇款）&lt;/h4&gt;
+&lt;p&gt;汇付属于商业信用，银行只是接受委托提供服务，是否支付取决于买方遵守合同约定。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;信汇：汇出行寄信汇委托书给汇入行，解付金额给收款方&lt;/li&gt;
+&lt;li&gt;电汇：汇出行拍发加压电报、电传给汇入行，解付金额&lt;/li&gt;
+&lt;li&gt;票汇：付款方使用汇票、本票、支票等工具主动支付给收款方&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;托收&#34;&gt;托收&lt;/h4&gt;
+&lt;p&gt;托收属于逆汇，即单据流向与资金流相反，卖房（出口方）开具以进口方为汇款人的汇票，委托出口方银行通过其在进口方的分行或代理行向进口方收款的一种结算方式。&lt;/p&gt;
+&lt;p&gt;托收同样属于商业信用，银行完全根据卖房指示收款，是否付款取决于买房的信用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;光票托收：一般是小额、预付款、分期或者收取贸易从属费用等，金融单据不跟随商业票据&lt;/li&gt;
+&lt;li&gt;跟单托收：金融票据跟随商业票据&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;信用证letter-of-creditlc&#34;&gt;信用证（Letter of Credit，L/C）&lt;/h4&gt;
+&lt;p&gt;信用证属于银行信用。信用证不依赖于买卖商业合同（自足文件，self-sufficient instrument)，不和货物关联（纯单据业务），开证银行有首要付款责任。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/2023100402013367-designaxt-1024x739.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;新型跨境支付方式&#34;&gt;新型跨境支付方式&lt;/h3&gt;
+&lt;p&gt;传统的跨境支付贸易主要为B2B大额贸易，支付手段多依靠银行完成。伴随着互联网的发展与普及，B2B、C2C跨境电子商务以及小额B2B贸易市场不断发展，涌现了许多新型跨境支付方式，就国内来说，这些支付方式多为持有支付业务许可证（央行颁发）和外汇管理局准许开展跨境电子商务外汇支付业务试点的批复文件的第三方支付机构所开发。&lt;/p&gt;
+&lt;p&gt;以下列举了主流的新型跨境支付方式：&lt;/p&gt;
+&lt;p&gt;国内：支付宝、微信支付、连连支付、pingPong&lt;/p&gt;
+&lt;p&gt;国外：Paypal、Western Union、WebMoney（在俄语系国家、日本、欧美使用较多）&lt;/p&gt;
+&lt;p&gt;以上支付机构的主要收入来源为支付手续费和支付解决方案。另外还有汇率差等非常规性收入。&lt;/p&gt;
+&lt;p&gt;相较传统的跨境支付方式，新型跨境支付具有：手续费低、付款简单、到账时间快、能应对平台高并发交易场景等优势。&lt;/p&gt;
+&lt;h5 id=&#34;第三方机构的支付实现&#34;&gt;第三方机构的支付实现&lt;/h5&gt;
+&lt;p&gt;跨境电子商务平台一般会接入多个支付通道并进行路由，和境内支付类似。&lt;/p&gt;
+&lt;h3 id=&#34;税务&#34;&gt;税务&lt;/h3&gt;
+&lt;h3 id=&#34;金融及风险应对&#34;&gt;金融及风险应对&lt;/h3&gt;
+&lt;h3 id=&#34;有关技术&#34;&gt;有关技术&lt;/h3&gt;</description>
+    </item>
+  </channel>
+</rss>
