@@ -7,7 +7,7 @@
 &lt;li&gt;Wang, G., et al. (2024). &amp;ldquo;A Survey on Large Language Model based Autonomous Agents.&amp;rdquo; arXiv. [&lt;a href="https://arxiv.org/abs/2308.11432"&gt;论文链接&lt;/a&gt;] - Agent综述&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="一整体演进路径"&gt;一、整体演进路径&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Chatbot → Tool Use → Agent → Production Agent（工业级）
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Chatbot → Tool Use → Agent → Production Agent（工业级）
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;演进说明：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Chatbot&lt;/strong&gt;: 仅能对话，无法执行外部操作&lt;/li&gt;
