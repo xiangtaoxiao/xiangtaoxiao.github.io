@@ -1,30 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Machine-Learning on Xiangtao&#39;s log</title>
-    <link>https://www.xiaoxiangtao.cn/tags/machine-learning/</link>
-    <description>Recent content in Machine-Learning on Xiangtao&#39;s log</description>
-    <generator>Hugo</generator>
-    <language>zh-Hans</language>
-    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
-    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
-    <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.xiaoxiangtao.cn/tags/machine-learning/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI Agent（从 Chatbot 到生产级 Agent）</title>
-      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</link>
-      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</guid> 
-      <description>&lt;h1 id=&#34;ai-agent从-chatbot-到生产级-agent&#34;&gt;AI Agent（从 Chatbot 到生产级 Agent）&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Machine-Learning on Xiangtao's log</title><link>https://www.xiaoxiangtao.cn/tags/machine-learning/</link><description>Recent content in Machine-Learning on Xiangtao's log</description><generator>Hugo</generator><language>zh-Hans</language><managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor><webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster><lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xiaoxiangtao.cn/tags/machine-learning/feed.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent（从 Chatbot 到生产级 Agent）</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</link><pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</guid><description>&lt;h1 id="ai-agent从-chatbot-到生产级-agent"&gt;AI Agent（从 Chatbot 到生产级 Agent）&lt;/h1&gt;
 &lt;p&gt;AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Yao, S., et al. (2022). &amp;ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.&amp;rdquo; ICLR. [&lt;a href=&#34;https://arxiv.org/abs/2210.01691&#34;&gt;论文链接&lt;/a&gt;] - ReAct框架，Agent核心范式&lt;/li&gt;
-&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
-&lt;li&gt;Wang, G., et al. (2024). &amp;ldquo;A Survey on Large Language Model based Autonomous Agents.&amp;rdquo; arXiv. [&lt;a href=&#34;https://arxiv.org/abs/2308.11432&#34;&gt;论文链接&lt;/a&gt;] - Agent综述&lt;/li&gt;
+&lt;li&gt;Yao, S., et al. (2022). &amp;ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.&amp;rdquo; ICLR. [&lt;a href="https://arxiv.org/abs/2210.01691"&gt;论文链接&lt;/a&gt;] - ReAct框架，Agent核心范式&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2201.11903"&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wang, G., et al. (2024). &amp;ldquo;A Survey on Large Language Model based Autonomous Agents.&amp;rdquo; arXiv. [&lt;a href="https://arxiv.org/abs/2308.11432"&gt;论文链接&lt;/a&gt;] - Agent综述&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;一整体演进路径&#34;&gt;一、整体演进路径&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Chatbot → Tool Use → Agent → Production Agent（工业级）
+&lt;h2 id="一整体演进路径"&gt;一、整体演进路径&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Chatbot → Tool Use → Agent → Production Agent（工业级）
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;演进说明：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Chatbot&lt;/strong&gt;: 仅能对话，无法执行外部操作&lt;/li&gt;
@@ -33,25 +16,18 @@
 &lt;li&gt;&lt;strong&gt;Production Agent&lt;/strong&gt;: 工业级，具备错误处理、权限控制、监控等能力&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;二核心概念拆解&#34;&gt;二、核心概念拆解&lt;/h2&gt;
-&lt;h3 id=&#34;1-chatbot&#34;&gt;1️⃣ Chatbot&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;LLM + Prompt&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Prompt Engineering</title>
-      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</link>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</guid> 
-      <description>&lt;h1 id=&#34;prompt-engineering&#34;&gt;Prompt Engineering&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&#34;&gt;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="二核心概念拆解"&gt;二、核心概念拆解&lt;/h2&gt;
+&lt;h3 id="1-chatbot"&gt;1️⃣ Chatbot&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;LLM + Prompt&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Prompt Engineering</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</guid><description>&lt;h1 id="prompt-engineering"&gt;Prompt Engineering&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome"&gt;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Brown, T. B., et al. (2020). &amp;ldquo;Language Models are Few-Shot Learners.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2005.14165&#34;&gt;论文链接&lt;/a&gt;] - GPT-3论文，首次系统展示了prompt engineering的潜力&lt;/li&gt;
-&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Brown, T. B., et al. (2020). &amp;ldquo;Language Models are Few-Shot Learners.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2005.14165"&gt;论文链接&lt;/a&gt;] - GPT-3论文，首次系统展示了prompt engineering的潜力&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2201.11903"&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;1-prompting-principles提示原则&#34;&gt;1. Prompting Principles（提示原则）&lt;/h2&gt;
-&lt;h3 id=&#34;principle-1-write-clear-and-specific-instructions编写清晰具体的指令&#34;&gt;Principle 1: Write clear and specific instructions（编写清晰具体的指令）&lt;/h3&gt;
+&lt;h2 id="1-prompting-principles提示原则"&gt;1. Prompting Principles（提示原则）&lt;/h2&gt;
+&lt;h3 id="principle-1-write-clear-and-specific-instructions编写清晰具体的指令"&gt;Principle 1: Write clear and specific instructions（编写清晰具体的指令）&lt;/h3&gt;
 &lt;p&gt;清晰性（Clarity）和具体性（Specificity）是prompt设计的核心原则。研究表明，模糊的指令会导致模型输出不确定性增加，而具体的指令能显著提升输出质量。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -60,129 +36,22 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Tactic 2: Ask for a structured output&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;要求结构化输出（如JSON、HTML、Markdown表格）便于后续程序处理，是构建AI应用的最佳实践。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RAG (Retrieval-Augmented Generation)</title>
-      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</link>
-      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</guid> 
-      <description>&lt;h1 id=&#34;rag&#34;&gt;RAG&lt;/h1&gt;
+&lt;p&gt;要求结构化输出（如JSON、HTML、Markdown表格）便于后续程序处理，是构建AI应用的最佳实践。&lt;/p&gt;</description></item><item><title>RAG (Retrieval-Augmented Generation)</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</guid><description>&lt;h1 id="rag"&gt;RAG&lt;/h1&gt;
 &lt;p&gt;RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Lewis, P., et al. (2020). &amp;ldquo;Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2005.11401&#34;&gt;论文链接&lt;/a&gt;] - RAG开山之作&lt;/li&gt;
-&lt;li&gt;Guu, K., et al. (2020). &amp;ldquo;REALM: Retrieval-Augmented Language Model Pre-Training.&amp;rdquo; ICML. [&lt;a href=&#34;https://arxiv.org/abs/2002.08909&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
-&lt;li&gt;Izacard, G., &amp;amp; Grave, É. (2021). &amp;ldquo;Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.&amp;rdquo; EACL. [&lt;a href=&#34;https://arxiv.org/abs/2007.01282&#34;&gt;论文链接&lt;/a&gt;] - RAG的另一种实现&lt;/li&gt;
+&lt;li&gt;Lewis, P., et al. (2020). &amp;ldquo;Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2005.11401"&gt;论文链接&lt;/a&gt;] - RAG开山之作&lt;/li&gt;
+&lt;li&gt;Guu, K., et al. (2020). &amp;ldquo;REALM: Retrieval-Augmented Language Model Pre-Training.&amp;rdquo; ICML. [&lt;a href="https://arxiv.org/abs/2002.08909"&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Izacard, G., &amp;amp; Grave, É. (2021). &amp;ldquo;Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.&amp;rdquo; EACL. [&lt;a href="https://arxiv.org/abs/2007.01282"&gt;论文链接&lt;/a&gt;] - RAG的另一种实现&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;1-context-window上下文窗口&#34;&gt;1. Context Window（上下文窗口）&lt;/h2&gt;
-&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+&lt;h2 id="1-context-window上下文窗口"&gt;1. Context Window（上下文窗口）&lt;/h2&gt;
+&lt;h3 id="概念"&gt;概念&lt;/h3&gt;
 &lt;p&gt;Context Window 指的是 &lt;strong&gt;大语言模型在一次推理时能够读取和理解的最大文本长度&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Dai, Z., et al. (2019). &amp;ldquo;Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.&amp;rdquo; ACL. [&lt;a href=&#34;https://arxiv.org/abs/1901.02860&#34;&gt;论文链接&lt;/a&gt;] - 突破固定上下文长度的开创性工作&lt;/li&gt;
+&lt;li&gt;Dai, Z., et al. (2019). &amp;ldquo;Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.&amp;rdquo; ACL. [&lt;a href="https://arxiv.org/abs/1901.02860"&gt;论文链接&lt;/a&gt;] - 突破固定上下文长度的开创性工作&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;通常包含：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Transformer概念与理解</title>
-      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid> 
-      <description>&lt;h1 id=&#34;transformer从入门到产品视角&#34;&gt;Transformer：从入门到产品视角&lt;/h1&gt;
-&lt;h2 id=&#34;-导论为什么transformer如此重要&#34;&gt;📚 导论：为什么Transformer如此重要？&lt;/h2&gt;
-&lt;p&gt;Transformer模型是由Vaswani等人在2017年发表的论文《&lt;strong&gt;Attention Is All You Need&lt;/strong&gt;》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;核心创新&lt;/strong&gt;：完全抛弃传统的CNN/RNN架构，仅使用&lt;strong&gt;注意力机制&lt;/strong&gt;来捕捉序列依赖关系，实现了两大突破：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;并行计算&lt;/strong&gt;：解决了RNN无法并行的问题，大幅提升训练速度&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;长程依赖&lt;/strong&gt;：解决了RNN/LSTM在处理长序列时的梯度消失问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-一transformer整体架构&#34;&gt;🏗️ 一、Transformer整体架构&lt;/h2&gt;
-&lt;h3 id=&#34;11-编码器-解码器结构&#34;&gt;1.1 编码器-解码器结构&lt;/h3&gt;
-&lt;p&gt;Transformer遵循Seq2Seq模型的编码器-解码器架构：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;编码器（Encoder）&lt;/strong&gt;：将输入序列（如源语言句子）转换为连续表示&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;由N个相同的编码器层堆叠而成（原始论文中N=6）&lt;/li&gt;
-&lt;li&gt;每层包含：多头自注意力子层 + 前馈神经网络子层&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;解码器（Decoder）&lt;/strong&gt;：基于编码器输出生成目标序列（如目标语言句子）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;同样由N个相同的解码器层堆叠而成&lt;/li&gt;
-&lt;li&gt;每层包含：掩码多头自注意力 + 编码器-解码器注意力 + 前馈神经网络&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;掩码机制&lt;/strong&gt;：确保解码器在预测位置i时只能看到位置i之前的输出，防止信息泄露&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;12-核心组件概览&#34;&gt;1.2 核心组件概览&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;组件&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;功能&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;创新点&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;自注意力机制&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;捕捉序列内部任意两个位置的关系&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;全局建模、并行计算&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;多头注意力&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;从不同角度关注信息&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;并行子空间学习&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;位置编码&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;为模型提供序列位置信息&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;弥补注意力机制的位置盲点&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;前馈网络&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;对每个位置进行非线性变换&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;增强模型表达能力&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;残差连接&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;将输入直接连接到输出&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;缓解深层网络退化问题&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;层归一化&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;稳定每层的输出分布&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;加速收敛、提高稳定性&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-二核心机制详解&#34;&gt;🔍 二、核心机制详解&lt;/h2&gt;
-&lt;h3 id=&#34;21-自注意力机制self-attention&#34;&gt;2.1 自注意力机制（Self-Attention）&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：让序列中的每个词都能直接关注到所有其他词，动态计算词与词之间的相关性。&lt;/p&gt;
-&lt;h4 id=&#34;实现步骤&#34;&gt;实现步骤：&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;输入表示&lt;/strong&gt;：每个输入词$x_i$被转换为嵌入向量&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;生成Q、K、V&lt;/strong&gt;：通过三个可训练的权重矩阵$W_Q, W_K, W_V$将输入映射为查询（Query）、键（Key）、值（Value）向量&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;计算注意力分数&lt;/strong&gt;：Query与所有Key的点积，表示当前位置对其他位置的关注程度&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;缩放与归一化&lt;/strong&gt;：除以$\sqrt{d_k}$（防止点积过大导致梯度消失），经Softmax归一化为权重&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;加权聚合&lt;/strong&gt;：用权重对Value进行加权求和，得到最终输出&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;数学公式&lt;/strong&gt;：
-$$
-\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-$$&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NLP分类效果衡量指标(F1/p/r)</title>
-      <link>https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/</guid> 
-      <description>&lt;h2 id=&#34;概念&#34;&gt;概念&lt;/h2&gt;
+&lt;p&gt;通常包含：&lt;/p&gt;</description></item><item><title>Transformer概念与理解</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid><description>Transformer模型彻底改变了自然语言处理领域，成为现代大语言模型的基石。本文从产品视角深入解析Transformer的核心概念。</description></item><item><title>NLP分类效果衡量指标(F1/p/r)</title><link>https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/</link><pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/</guid><description>&lt;h2 id="概念"&gt;概念&lt;/h2&gt;
 &lt;p&gt;为什么要计算F1：避免样本分布带来的偏差，综合考量分类效果，假如有100个样本，其中1个正样本，99个负样本，如果模型的预测只输出0，那么正确率是99%，这时候用正确率来衡量模型的好坏显然是不对的。&lt;/p&gt;
 &lt;p&gt;真实 1真实 0预测 1True Positive(TP)False Positive(FP)预测 0False Negative(FN)True Negative(TN)&lt;/p&gt;
 &lt;ul&gt;
@@ -196,40 +65,33 @@ $$&lt;/p&gt;</description>
 &lt;li&gt;Micro-F1：直接计算所有类别的Precision和Recall，然后计算F1。（类别有权重，分到样本数多的类别有更大的影响力）&lt;/li&gt;
 &lt;li&gt;Macro-F1：计算出每一个类的Precision和Recall并分别计算F1，最后将F1平均。（各类别的F1权重相同）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;代码实现&#34;&gt;&lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id="代码实现"&gt;&lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;二分类&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f1&lt;/span&gt;(y_hat, y_true):
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    输入张量y_hat是输出层经过sigmoid激活的张量
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    y_true是label{0,1}的集和
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    model指的是如果是多任务分类，single会返回每个分类的f1分数，multi会返回所有类的平均f1分数（Marco-F1）
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    如果只是单个二分类任务，则可以忽略model
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    epsilon &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1e-7&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    y_hat &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;round(y_hat)&lt;span style=&#34;color:#75715e&#34;&gt;#将经过sigmoid激活的张量四舍五入变为0，1输出&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;#  输入的数据是矩阵，标签为单行矩阵，预测值为单列矩阵，如果不是需要转换&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;matmul(y_true,y_hat), &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;float&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;#tn = tf.sum(tf.cast((1-y_hat)&amp;lt;em&amp;gt;(1-y_true), &amp;#39;float&amp;#39;), axis=0)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;matmul(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;y_true,y_hat), &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;float&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fn &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;matmul(y_true,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;y_hat), &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;float&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tp: &amp;#39;&lt;/span&gt;, tp[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy(),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fp: &amp;#39;&lt;/span&gt;,  fp[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy(),&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fn: &amp;#39;&lt;/span&gt;,  fn[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy())
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tp&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(tp&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;fp&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;epsilon)&lt;span style=&#34;color:#75715e&#34;&gt;#epsilon的意义在于防止分母为0，否则当分母为0时python会报错&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tp&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(tp&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;fn&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;epsilon)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    f1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/&lt;/span&gt;em&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;em&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;r&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;r&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;epsilon)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [f1[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy(), p[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy(), r[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy()]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; result
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;多标签&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>多标签分类(multi-label)分类方法笔记</title>
-      <link>https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/</guid> 
-      <description>&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;f1&lt;/span&gt;(y_hat, y_true):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    &lt;span style="color:#e6db74"&gt;&amp;#39;&amp;#39;&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;    输入张量y_hat是输出层经过sigmoid激活的张量
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;    y_true是label{0,1}的集和
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;    model指的是如果是多任务分类，single会返回每个分类的f1分数，multi会返回所有类的平均f1分数（Marco-F1）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;    如果只是单个二分类任务，则可以忽略model
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    epsilon &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1e-7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    y_hat &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;round(y_hat)&lt;span style="color:#75715e"&gt;#将经过sigmoid激活的张量四舍五入变为0，1输出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    &lt;span style="color:#75715e"&gt;#  输入的数据是矩阵，标签为单行矩阵，预测值为单列矩阵，如果不是需要转换&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    tp &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;cast(tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;matmul(y_true,y_hat), &lt;span style="color:#e6db74"&gt;&amp;#39;float&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    &lt;span style="color:#75715e"&gt;#tn = tf.sum(tf.cast((1-y_hat)&amp;lt;em&amp;gt;(1-y_true), &amp;#39;float&amp;#39;), axis=0)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    fp &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;cast(tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;matmul(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&lt;/span&gt;y_true,y_hat), &lt;span style="color:#e6db74"&gt;&amp;#39;float&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    fn &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;cast(tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;matmul(y_true,&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&lt;/span&gt;y_hat), &lt;span style="color:#e6db74"&gt;&amp;#39;float&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    print(&lt;span style="color:#e6db74"&gt;&amp;#39;tp: &amp;#39;&lt;/span&gt;, tp[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;numpy(),&lt;span style="color:#e6db74"&gt;&amp;#39;fp: &amp;#39;&lt;/span&gt;,  fp[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;numpy(),&lt;span style="color:#e6db74"&gt;&amp;#39;fn: &amp;#39;&lt;/span&gt;,  fn[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;numpy())
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    p &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tp&lt;span style="color:#f92672"&gt;/&lt;/span&gt;(tp&lt;span style="color:#f92672"&gt;+&lt;/span&gt;fp&lt;span style="color:#f92672"&gt;+&lt;/span&gt;epsilon)&lt;span style="color:#75715e"&gt;#epsilon的意义在于防止分母为0，否则当分母为0时python会报错&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    r &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tp&lt;span style="color:#f92672"&gt;/&lt;/span&gt;(tp&lt;span style="color:#f92672"&gt;+&lt;/span&gt;fn&lt;span style="color:#f92672"&gt;+&lt;/span&gt;epsilon)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    f1 &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/&lt;/span&gt;em&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;p&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;em&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;r&lt;span style="color:#f92672"&gt;/&lt;/span&gt;(p&lt;span style="color:#f92672"&gt;+&lt;/span&gt;r&lt;span style="color:#f92672"&gt;+&lt;/span&gt;epsilon)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    result &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [f1[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;numpy(), p[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;numpy(), r[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;numpy()]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; result
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;多标签&lt;/em&gt;&lt;/p&gt;</description></item><item><title>多标签分类(multi-label)分类方法笔记</title><link>https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/</link><pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/</guid><description>&lt;h2 id="概述"&gt;概述&lt;/h2&gt;
 &lt;p&gt;multi-label是相较multi-class的概念，有关研究相对较少，multi-label指一个数据可以被分为多个类，一个输入对应多个输出，例如一篇新闻可以被同时打上娱乐、体育等多个类，类的数目也不确定；&lt;/p&gt;
 &lt;p&gt;对于multi-label问题的处理，主要看到三种思路：&lt;/p&gt;
 &lt;ol&gt;
@@ -238,143 +100,122 @@ $$&lt;/p&gt;</description>
 当然对于类别特别多(n个类)的数据集，这时候类别空间就是2n，显然类别太多了运算压力大，可以选择将类别输出的种类限制在训练集数据中存在的类别中，比如[1, 0, 0]在训练集中没有这个输出，就把他从类别中去除，当然这会影响模型的准确程度，因为它不再识别那些被踢出的可能性。&lt;/li&gt;
 &lt;li&gt;最后一种就是改进算法使其能够直接处理多标签问题，输出多个类。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;多标签分类算法&#34;&gt;多标签分类算法&lt;/h2&gt;
+&lt;h2 id="多标签分类算法"&gt;多标签分类算法&lt;/h2&gt;
 &lt;p&gt;对于神经网络，简单的做法是在最后输出层使用sigmoid激活函数，输出数目为类别数，每个输出都是一个概率，注意输出的多个类别的概率总和不再是1，因为是多标签问题，然后损失函数用binary_crossentrophy，相当于对每个输出分别判断属不属于该类，从而使每一个可能属于的类的概率都趋近1。&lt;/p&gt;
-&lt;p&gt;在简单的单层CNN算法的实验上效果并不是很好，确实得到了多输出的结果，但是出现了某个类概率接近1，另一个所属类概率虽然也比较突出但数值偏小，比如0.5左右的样子，同时属于3个或4个类效果就更差些，可以通过修改阈值比如threshold=0.3，大于0.3就算做该类，但改善不明显。应该和数据集不同类对应存在的样本不同有关。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>卷积神经网络(CNN)理论与实现</title>
-      <link>https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/</link>
-      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/</guid> 
-      <description>&lt;h2 id=&#34;一理论&#34;&gt;一、理论&lt;/h2&gt;
+&lt;p&gt;在简单的单层CNN算法的实验上效果并不是很好，确实得到了多输出的结果，但是出现了某个类概率接近1，另一个所属类概率虽然也比较突出但数值偏小，比如0.5左右的样子，同时属于3个或4个类效果就更差些，可以通过修改阈值比如threshold=0.3，大于0.3就算做该类，但改善不明显。应该和数据集不同类对应存在的样本不同有关。&lt;/p&gt;</description></item><item><title>卷积神经网络(CNN)理论与实现</title><link>https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/</link><pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/</guid><description>&lt;h2 id="一理论"&gt;一、理论&lt;/h2&gt;
 &lt;p&gt;卷积神经网络结构：（卷积层+（可选）池化层）*N+全连接层*M（M&amp;gt;=0），卷积层的输入输出是矩阵，全连接层输入输出是向量，在卷积层的最后一层做一个展平。&lt;/p&gt;
 &lt;p&gt;主要用于分类任务&lt;/p&gt;
 &lt;p&gt;全卷积神经网络：（卷积层+（可选）池化层）*N+反卷积层*K，可以做物体分割类任务&lt;/p&gt;
-&lt;h3 id=&#34;卷积操作&#34;&gt;卷积操作&lt;/h3&gt;
+&lt;h3 id="卷积操作"&gt;卷积操作&lt;/h3&gt;
 &lt;p&gt;解决参数过多导致的计算资源不足，容易过拟合的问题。解决方法：局部连接（基于图像的区域性）、参数共享（基于图像特征与位置无关）&lt;/p&gt;
 &lt;p&gt;卷积核是反向传播计算出的参数，卷积：卷积核与输入做点积乘法。步长：卷积核每次在输入上滑动的距离。padding：使输出size不变。&lt;/p&gt;
-&lt;h3 id=&#34;池化操作&#34;&gt;池化操作&lt;/h3&gt;
+&lt;h3 id="池化操作"&gt;池化操作&lt;/h3&gt;
 &lt;p&gt;类似卷积，计算方式不同，最大值池化：池化核滑动覆盖区域的最大值作为结果输出。&lt;/p&gt;
 &lt;p&gt;特点：常使用不重叠（kernal-size=步长）、不补零的操作。参数即为步长和池化核大小。用于减少图像尺寸，从而减少计算量。一定程度平移鲁棒。损失了空间精度。&lt;/p&gt;
-&lt;h2 id=&#34;二实现&#34;&gt;二、实现&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;embedding_dim &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;batch_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnn_model &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;models&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Sequential([
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Embedding(vocab_size,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                               embedding_dim,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                input_length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;max_length),
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Conv1D(filters&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;256&lt;/span&gt;,kernel_size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,kernel_initializer&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;he_normal&amp;#39;&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              strides&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,padding&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SAME&amp;#39;&lt;/span&gt;,activation&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;relu&amp;#39;&lt;/span&gt;),
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;GlobalMaxPooling1D(),
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dropout(rate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;),
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dense(&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;, activation&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;sigmoid&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;])
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnn_model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;summary()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnn_model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;compile(optimizer&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;adam&amp;#39;&lt;/span&gt;, loss&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;binary_crossentropy&amp;#39;&lt;/span&gt;, metrics&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accuracy&amp;#39;&lt;/span&gt;])
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;conv1d&#34;&gt;Conv1D&lt;/h3&gt;
+&lt;h2 id="二实现"&gt;二、实现&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;embedding_dim &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;16&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;batch_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;128&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cnn_model &lt;span style="color:#f92672"&gt;=&lt;/span&gt; keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;models&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Sequential([
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Embedding(vocab_size,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; embedding_dim,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;                input_length&lt;span style="color:#f92672"&gt;=&lt;/span&gt;max_length),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Conv1D(filters&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;256&lt;/span&gt;,kernel_size&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,kernel_initializer&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;he_normal&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;              strides&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,padding&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;SAME&amp;#39;&lt;/span&gt;,activation&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;relu&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;GlobalMaxPooling1D(),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Dropout(rate&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0.5&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;    keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Dense(&lt;span style="color:#ae81ff"&gt;12&lt;/span&gt;, activation&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;sigmoid&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cnn_model&lt;span style="color:#f92672"&gt;.&lt;/span&gt;summary()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cnn_model&lt;span style="color:#f92672"&gt;.&lt;/span&gt;compile(optimizer&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;adam&amp;#39;&lt;/span&gt;, loss&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;binary_crossentropy&amp;#39;&lt;/span&gt;, metrics&lt;span style="color:#f92672"&gt;=&lt;/span&gt;[&lt;span style="color:#e6db74"&gt;&amp;#39;accuracy&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="conv1d"&gt;Conv1D&lt;/h3&gt;
 &lt;p&gt;在文本中，卷积的某一维大小往往为embedding长度，即在宽度上不需要窗口移动，宽度就是整个窗口，所以conv1d默认卷积的宽度就为embedding维度，长度通过kernel_size来指定的，此处为2，即卷积核的大小为2*embedding_size。strides为步长，此处为1，即卷积核每隔一个单词移动一次。filters是卷积核的个数，即输出的维度。padding有valid和same两种选择，valid在长度方向（宽度方向不padding）不进行padding，而same则在长度方向进行padding，保证输入句子长度和卷积后输出的句子长度一致。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//blog.csdn.net/bobobe/article/details/87923618&#34;&gt;//blog.csdn.net/bobobe/article/details/87923618&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//blog.csdn.net/bobobe/article/details/87923618"&gt;//blog.csdn.net/bobobe/article/details/87923618&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;tensorflow fit()方法：参考&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//blog.csdn.net/crazyman2010/article/details/103705318&#34;&gt;//blog.csdn.net/crazyman2010/article/details/103705318&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//blog.csdn.net/crazyman2010/article/details/103705318"&gt;//blog.csdn.net/crazyman2010/article/details/103705318&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;textcnn&#34;&gt;TextCNN&lt;/h3&gt;
+&lt;h3 id="textcnn"&gt;TextCNN&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//blog.csdn.net/u014732537/article/details/79573174&#34;&gt;//blog.csdn.net/u014732537/article/details/79573174&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    <item>
-      <title>MNIST手写数字识别实践</title>
-      <link>https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/</guid> 
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; __future__ &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; absolute_import, division, print_function, unicode_literals
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tensorflow &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; tf
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mnist &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;datasets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mnist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(x_train, y_train), (x_test, y_test) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mnist&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;load_data()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 加载数据&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x_train, x_test &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x_train &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;255.0&lt;/span&gt;, x_test &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;255.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# /255：将RGB数值归一化&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(y_train&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#%%&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;models&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Sequential([
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Flatten(input_shape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;)),  &lt;span style=&#34;color:#75715e&#34;&gt;# 张量扁平化，将28*28的图片矩阵转化为784的向量&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dense(&lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;, activation&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;relu&amp;#39;&lt;/span&gt;),  &lt;span style=&#34;color:#75715e&#34;&gt;# 全连接层，128个神经元，激活函数为relu（The Rectified Linear Unit）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# y=max(0,x)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dropout(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.2&lt;/span&gt;),  &lt;span style=&#34;color:#75715e&#34;&gt;# 防止过拟合，drop out 80% of inputs，使用0.2*cell_size个神经元进行训练&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  tf&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keras&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;layers&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dense(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, activation&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;softmax&amp;#39;&lt;/span&gt;)  &lt;span style=&#34;color:#75715e&#34;&gt;# 全连接层输出 softmax激活函数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;])
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;compile(optimizer&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;adam&amp;#39;&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# 梯度下降策略 adam&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              loss&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;sparse_categorical_crossentropy&amp;#39;&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# 损失函数 sparse:y独热化编码 交叉熵&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              metrics&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accuracy&amp;#39;&lt;/span&gt;])
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# metrics 列表，包含评估模型在训练和测试时的性能的指标，典型用法是metrics=[‘accuracy’]。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 如果要在多输出模型中为不同的输出指定不同的指标，可向该参数传递一个字典，例如metrics={‘output_a’: ‘accuracy’}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fit(x_train, y_train, epochs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)  &lt;span style=&#34;color:#75715e&#34;&gt;# 训练5轮&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;evaluate(x_test,  y_test, verbose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Verbosity mode. 0 = silent, 1 = progress bar.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# fit()用于使用给定输入训练模型.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# evaluate()用于评估已经训练过的模型.返回损失值&amp;amp;模型的度量值.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>机器学习入门基本概念理解</title>
-      <link>https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</guid> 
-      <description>&lt;h2 id=&#34;张量&#34;&gt;张量&lt;/h2&gt;
+&lt;p&gt;&lt;a href="//blog.csdn.net/u014732537/article/details/79573174"&gt;//blog.csdn.net/u014732537/article/details/79573174&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>MNIST手写数字识别实践</title><link>https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/</link><pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; __future__ &lt;span style="color:#f92672"&gt;import&lt;/span&gt; absolute_import, division, print_function, unicode_literals
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; tensorflow &lt;span style="color:#66d9ef"&gt;as&lt;/span&gt; tf
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mnist &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;datasets&lt;span style="color:#f92672"&gt;.&lt;/span&gt;mnist
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;(x_train, y_train), (x_test, y_test) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; mnist&lt;span style="color:#f92672"&gt;.&lt;/span&gt;load_data()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 加载数据&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_train, x_test &lt;span style="color:#f92672"&gt;=&lt;/span&gt; x_train &lt;span style="color:#f92672"&gt;/&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;255.0&lt;/span&gt;, x_test &lt;span style="color:#f92672"&gt;/&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;255.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# /255：将RGB数值归一化&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(y_train&lt;span style="color:#f92672"&gt;.&lt;/span&gt;shape)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#%%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;model &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;models&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Sequential([
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Flatten(input_shape&lt;span style="color:#f92672"&gt;=&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;28&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;28&lt;/span&gt;)), &lt;span style="color:#75715e"&gt;# 张量扁平化，将28*28的图片矩阵转化为784的向量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Dense(&lt;span style="color:#ae81ff"&gt;128&lt;/span&gt;, activation&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;relu&amp;#39;&lt;/span&gt;), &lt;span style="color:#75715e"&gt;# 全连接层，128个神经元，激活函数为relu（The Rectified Linear Unit）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# y=max(0,x)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Dropout(&lt;span style="color:#ae81ff"&gt;0.2&lt;/span&gt;), &lt;span style="color:#75715e"&gt;# 防止过拟合，drop out 80% of inputs，使用0.2*cell_size个神经元进行训练&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tf&lt;span style="color:#f92672"&gt;.&lt;/span&gt;keras&lt;span style="color:#f92672"&gt;.&lt;/span&gt;layers&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Dense(&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;, activation&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;softmax&amp;#39;&lt;/span&gt;) &lt;span style="color:#75715e"&gt;# 全连接层输出 softmax激活函数&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;model&lt;span style="color:#f92672"&gt;.&lt;/span&gt;compile(optimizer&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;adam&amp;#39;&lt;/span&gt;, &lt;span style="color:#75715e"&gt;# 梯度下降策略 adam&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; loss&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;sparse_categorical_crossentropy&amp;#39;&lt;/span&gt;, &lt;span style="color:#75715e"&gt;# 损失函数 sparse:y独热化编码 交叉熵&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; metrics&lt;span style="color:#f92672"&gt;=&lt;/span&gt;[&lt;span style="color:#e6db74"&gt;&amp;#39;accuracy&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# metrics 列表，包含评估模型在训练和测试时的性能的指标，典型用法是metrics=[‘accuracy’]。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 如果要在多输出模型中为不同的输出指定不同的指标，可向该参数传递一个字典，例如metrics={‘output_a’: ‘accuracy’}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;model&lt;span style="color:#f92672"&gt;.&lt;/span&gt;fit(x_train, y_train, epochs&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;) &lt;span style="color:#75715e"&gt;# 训练5轮&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;model&lt;span style="color:#f92672"&gt;.&lt;/span&gt;evaluate(x_test, y_test, verbose&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Verbosity mode. 0 = silent, 1 = progress bar.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# fit()用于使用给定输入训练模型.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# evaluate()用于评估已经训练过的模型.返回损失值&amp;amp;模型的度量值.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>机器学习入门基本概念理解</title><link>https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</link><pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</guid><description>&lt;h2 id="张量"&gt;张量&lt;/h2&gt;
 &lt;p&gt;张量=容器&lt;/p&gt;
 &lt;p&gt;张量是现代机器学习的基础。它的核心是一个数据容器，多数情况下，它包含数字，有时候它也包含字符串，但这种情况比较少。因此把它想象成一个数字的水桶。&lt;/p&gt;
 &lt;p&gt;0维张量=数字；1维张量=向量；2维张量=矩阵；3维张量=公用数据存储在张量，彩色图片等&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001628415031481.jpg&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;one-hot-vector&#34;&gt;one-hot vector&lt;/h2&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001628415031481.jpg"&gt;&lt;/p&gt;
+&lt;h2 id="one-hot-vector"&gt;one-hot vector&lt;/h2&gt;
 &lt;p&gt;独热编码，用于分类标记。比如（猫，狗，鼠）对应（1,0,0）代表猫，（0,1,0）代表狗&amp;hellip;将离散型特征采用独热编码，会使得特征之间的距离计算更加合理。&lt;/p&gt;
-&lt;h2 id=&#34;softmax函数&#34;&gt;softmax函数&lt;/h2&gt;
+&lt;h2 id="softmax函数"&gt;softmax函数&lt;/h2&gt;
 &lt;p&gt;softmax函数的作用主要是：1.通过将模型的预测结果转化到指数函数上将预测结果转化为非负数；2.归一化处理，使各种结果概率之和等于1.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001007247022548-1.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001209608023968-1024x764.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001007247022548-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001209608023968-1024x764.png"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//blog.csdn.net/lz_peter/article/details/84574716%22&#34;&gt;//blog.csdn.net/lz_peter/article/details/84574716&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//blog.csdn.net/lz_peter/article/details/84574716%22"&gt;//blog.csdn.net/lz_peter/article/details/84574716&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;交叉熵&#34;&gt;交叉熵&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582032638884051044.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id="交叉熵"&gt;交叉熵&lt;/h2&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582032638884051044.png"&gt;&lt;/p&gt;
 &lt;p&gt;对于单标签多分类问题，p(x)表示是否为标记的类，如果用独热编码表示分类，则取值0或1；q(x)则是预测结果为该类的概率。用交叉熵做损失函数，值越小，表示模型预测结果与实际情况一致性越高。&lt;/p&gt;
 &lt;p&gt;单标签多分类问题所有类别概率和为1，多标签二分类问题所有类别和不为1，交叉熵的计算针对的是单个类别（即二分类），然后单张样本计算多个二分类交叉熵的和。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//blog.csdn.net/tsyccnh/article/details/79163834&#34;&gt;//blog.csdn.net/tsyccnh/article/details/79163834&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//blog.csdn.net/tsyccnh/article/details/79163834"&gt;//blog.csdn.net/tsyccnh/article/details/79163834&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;欧式空间&#34;&gt;欧式空间&lt;/h2&gt;
+&lt;h2 id="欧式空间"&gt;欧式空间&lt;/h2&gt;
 &lt;p&gt;欧几里得空间就是在对现实空间的规则抽象和推广（从n&amp;lt;=3推广到有限n维空间）。&lt;/p&gt;
 &lt;p&gt;欧几里得几何就是中学学的平面几何、立体几何， &lt;strong&gt;在欧几里得几何中，平行线任何位置的间距相等&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;而中学学的几何空间一般是2维，3维（所以，我们讨论余弦值、点间的距离、内积都是在低纬空间总结的），如果将这些低维空间所总结的规律推广到有限的n维空间，那这些符合定义的空间则被统称为 &lt;strong&gt;欧几里得空间（欧式空间，Euclidean Space）&lt;/strong&gt;。而欧几里得空间主要是定义了 &lt;strong&gt;内积、距离、角&lt;/strong&gt;（没错，就是初中的那些定义），理解了这些再去理解数学定义就很明确了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//www.zhihu.com/question/27903807/answer/699570097&#34;&gt;//www.zhihu.com/question/27903807/answer/699570097&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//www.zhihu.com/question/27903807/answer/699570097"&gt;//www.zhihu.com/question/27903807/answer/699570097&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;梯度弥散与梯度爆炸&#34;&gt;梯度弥散与梯度爆炸&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1081032-20170905101008960-1183527271.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id="梯度弥散与梯度爆炸"&gt;梯度弥散与梯度爆炸&lt;/h2&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1081032-20170905101008960-1183527271.png"&gt;&lt;/p&gt;
 &lt;p&gt;靠近输出层的hidden layer 梯度大，参数更新快，所以很快就会收敛；&lt;/p&gt;
 &lt;p&gt;而靠近输入层的hidden layer 梯度小，参数更新慢，几乎就和初始状态一样，随机分布。&lt;/p&gt;
 &lt;p&gt;在上面的四层隐藏层网络结构中，第一层比第四层慢了接近100倍！！&lt;/p&gt;
 &lt;p&gt;这种现象就是梯度弥散（vanishing gradient problem）。而在另一种情况中，前面layer的梯度通过训练变大，而后面layer的梯度指数级增大，这种现象又叫做梯度爆炸(exploding gradient problem)。&lt;/p&gt;
 &lt;p&gt;总的来说，就是在这个深度网络中，梯度相当不稳定(unstable)。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//www.cnblogs.com/yangmang/p/7477802.html&#34;&gt;//www.cnblogs.com/yangmang/p/7477802.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//www.cnblogs.com/yangmang/p/7477802.html"&gt;//www.cnblogs.com/yangmang/p/7477802.html&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;batch_size&#34;&gt;batch_size&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/f5a6d3b5c4b5a91851f0f8b8735f162d_b.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id="batch_size"&gt;batch_size&lt;/h2&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/f5a6d3b5c4b5a91851f0f8b8735f162d_b.png"&gt;&lt;/p&gt;
 &lt;p&gt;batch的选择首先决定的是下降的方向，batch_size越大，下降的方向越准确。&lt;/p&gt;
 &lt;p&gt;综合考虑数据集的大小，数据集比较小的时候，用整个数据集作为batch_size就可以，这时候下降的方向也是最精准的，数据集比较大的时候，相对小的batch可以达到和用整个数据集相似的全局学习率，综合考量学习的效果以及电脑内存是否撑得住，目的是尽量让学习效果和效率同时最大化。&lt;/p&gt;
 &lt;p&gt;在合理范围内，增大 Batch_Size 有何好处？&lt;/p&gt;
@@ -385,17 +226,14 @@ $$&lt;/p&gt;</description>
 &lt;/ul&gt;
 &lt;p&gt;batch_size增大到一定程度后，再增大则效率变差，下降方向也基本不再变化。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//blog.csdn.net/starzhou/article/details/53692248&#34;&gt;//blog.csdn.net/starzhou/article/details/53692248&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//blog.csdn.net/starzhou/article/details/53692248"&gt;//blog.csdn.net/starzhou/article/details/53692248&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;学习率&#34;&gt;学习率&lt;/h2&gt;
+&lt;h2 id="学习率"&gt;学习率&lt;/h2&gt;
 &lt;p&gt;梯度下降的伪代码如下：&lt;/p&gt;
 &lt;p&gt;重复已下过程，直到收敛为止{ωj=ωj-λF(ωj) /ωj}&lt;/p&gt;
 &lt;p&gt;λ就是学习率，学习率过小，优化效率可能很低，学习率过大则有可能越过最优值，收敛到局部最优解。&lt;/p&gt;
 &lt;p&gt;关于解决学习率的一些问题，如选择合适的学习率，动态调整学习率，归一化等参考：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;//www.cnblogs.com/mazhujun/p/9633576.html&#34;&gt;//www.cnblogs.com/mazhujun/p/9633576.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//www.cnblogs.com/mazhujun/p/9633576.html"&gt;//www.cnblogs.com/mazhujun/p/9633576.html&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;如何通俗地解释欧氏空间？ - 知乎 &lt;a href=&#34;//www.zhihu.com/question/27903807/answer/699570097&#34;&gt;//www.zhihu.com/question/27903807/answer/699570097&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;如何通俗地解释欧氏空间？ - 知乎 &lt;a href="//www.zhihu.com/question/27903807/answer/699570097"&gt;//www.zhihu.com/question/27903807/answer/699570097&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

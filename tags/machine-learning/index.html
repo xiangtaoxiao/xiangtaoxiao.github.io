@@ -1,313 +1,52 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Machine-Learning | Xiangtao&#39;s log</title>
-<meta name="keywords" content="">
-<meta name="description" content="翔涛的个人网站  © 2019-2026">
-<meta name="author" content="">
-<link rel="canonical" href="https://www.xiaoxiangtao.cn/tags/machine-learning/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.68cc99762ed2063cd1a9feba55c896e6bff2796ec123eb7eebd2585cd12e2606.css" integrity="sha256-aMyZdi7SBjzRqf66VciW5r/yeW7BI&#43;t&#43;69JYXNEuJgY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.xiaoxiangtao.cn/smarty.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.xiaoxiangtao.cn/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.xiaoxiangtao.cn/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.xiaoxiangtao.cn/apple-touch-icon.png">
-<link rel="mask-icon" href="https://www.xiaoxiangtao.cn/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.xiaoxiangtao.cn/tags/machine-learning/feed.xml" title="rss">
-<link rel="alternate" hreflang="en" href="https://www.xiaoxiangtao.cn/tags/machine-learning/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  }
-};
-</script><meta property="og:url" content="https://www.xiaoxiangtao.cn/tags/machine-learning/">
-  <meta property="og:site_name" content="Xiangtao&#39;s log">
-  <meta property="og:title" content="Machine-Learning">
-  <meta property="og:description" content="翔涛的个人网站  © 2019-2026">
-  <meta property="og:locale" content="zh_Hans">
-  <meta property="og:type" content="website">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Machine-Learning">
-  <meta name="twitter:description" content="翔涛的个人网站  © 2019-2026">
-
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://www.xiaoxiangtao.cn/" accesskey="h" title="Xiangtao&#39;s log (Alt + H)">Xiangtao&#39;s log</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://www.xiaoxiangtao.cn/archives/" title="Archive">
-                    <span>Archive</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.xiaoxiangtao.cn/tags/" title="Tag">
-                    <span>Tag</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.xiaoxiangtao.cn/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.xiaoxiangtao.cn/about-me/" title="About Me">
-                    <span>About Me</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.xiaoxiangtao.cn/">Home</a>&nbsp;»&nbsp;<a href="https://www.xiaoxiangtao.cn/tags/">Tags</a></div>
-  <h1>
-    Machine-Learning
-    <a href="/tags/machine-learning/feed.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI Agent（从 Chatbot 到生产级 Agent）
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI Agent（从 Chatbot 到生产级 Agent） AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。
+<!doctype html><html lang=en dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Machine-Learning | Xiangtao's log</title><meta name=keywords content><meta name=description content="翔涛的个人网站  © 2019-2026"><meta name=author content><link rel=canonical href=https://www.xiaoxiangtao.cn/tags/machine-learning/><link crossorigin=anonymous href=/assets/css/stylesheet.68cc99762ed2063cd1a9feba55c896e6bff2796ec123eb7eebd2585cd12e2606.css integrity="sha256-aMyZdi7SBjzRqf66VciW5r/yeW7BI+t+69JYXNEuJgY=" rel="preload stylesheet" as=style><link rel=icon href=https://www.xiaoxiangtao.cn/smarty.png><link rel=icon type=image/png sizes=16x16 href=https://www.xiaoxiangtao.cn/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://www.xiaoxiangtao.cn/favicon-32x32.png><link rel=apple-touch-icon href=https://www.xiaoxiangtao.cn/apple-touch-icon.png><link rel=mask-icon href=https://www.xiaoxiangtao.cn/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://www.xiaoxiangtao.cn/tags/machine-learning/feed.xml title=rss><link rel=alternate hreflang=en href=https://www.xiaoxiangtao.cn/tags/machine-learning/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]]}}</script><meta property="og:url" content="https://www.xiaoxiangtao.cn/tags/machine-learning/"><meta property="og:site_name" content="Xiangtao's log"><meta property="og:title" content="Machine-Learning"><meta property="og:description" content="翔涛的个人网站  © 2019-2026"><meta property="og:locale" content="zh_Hans"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Machine-Learning"><meta name=twitter:description content="翔涛的个人网站  © 2019-2026"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://www.xiaoxiangtao.cn/ accesskey=h title="Xiangtao's log (Alt + H)">Xiangtao's log</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://www.xiaoxiangtao.cn/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://www.xiaoxiangtao.cn/tags/ title=Tag><span>Tag</span></a></li><li><a href=https://www.xiaoxiangtao.cn/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://www.xiaoxiangtao.cn/about-me/ title="About Me"><span>About Me</span></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://www.xiaoxiangtao.cn/>Home</a>&nbsp;»&nbsp;<a href=https://www.xiaoxiangtao.cn/tags/>Tags</a></div><h1>Machine-Learning
+<a href=/tags/machine-learning/feed.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>AI Agent（从 Chatbot 到生产级 Agent）</h2></header><div class=entry-content><p>AI Agent（从 Chatbot 到生产级 Agent） AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。
 经典论文：
 Yao, S., et al. (2022). “ReAct: Synergizing Reasoning and Acting in Language Models.” ICLR. [论文链接] - ReAct框架，Agent核心范式 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] Wang, G., et al. (2024). “A Survey on Large Language Model based Autonomous Agents.” arXiv. [论文链接] - Agent综述 一、整体演进路径 Chatbot → Tool Use → Agent → Production Agent（工业级） 演进说明：
-Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具 Agent: 能自主规划并执行多步骤任务 Production Agent: 工业级，具备错误处理、权限控制、监控等能力 二、核心概念拆解 1️⃣ Chatbot LLM &#43; Prompt
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-03-14 00:00:00 +0000 UTC'>March 14, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
-  <a class="entry-link" aria-label="post link to AI Agent（从 Chatbot 到生产级 Agent）" href="https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Prompt Engineering
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Prompt Engineering https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome
+Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具 Agent: 能自主规划并执行多步骤任务 Production Agent: 工业级，具备错误处理、权限控制、监控等能力 二、核心概念拆解 1️⃣ Chatbot LLM + Prompt
+...</p></div><footer class=entry-footer><span title='2026-03-14 00:00:00 +0000 UTC'>March 14, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer><a class=entry-link aria-label="post link to AI Agent（从 Chatbot 到生产级 Agent）" href=https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Prompt Engineering</h2></header><div class=entry-content><p>Prompt Engineering https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome
 Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。
 经典论文：
 Brown, T. B., et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS. [论文链接] - GPT-3论文，首次系统展示了prompt engineering的潜力 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] 1. Prompting Principles（提示原则） Principle 1: Write clear and specific instructions（编写清晰具体的指令） 清晰性（Clarity）和具体性（Specificity）是prompt设计的核心原则。研究表明，模糊的指令会导致模型输出不确定性增加，而具体的指令能显著提升输出质量。
 Tactic 1: Use delimiters to clearly indicate distinct parts of the input
-分隔符（如 ```、&#34;&#34;&#34;、—、&lt;&gt;）能帮助模型识别输入的不同部分，避免混淆。这在处理包含多段文本或代码的任务时尤为重要。
+分隔符（如 ```、"""、—、&lt;>）能帮助模型识别输入的不同部分，避免混淆。这在处理包含多段文本或代码的任务时尤为重要。
 Tactic 2: Ask for a structured output
 要求结构化输出（如JSON、HTML、Markdown表格）便于后续程序处理，是构建AI应用的最佳实践。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-03-12 00:00:00 +0000 UTC'>March 12, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
-  <a class="entry-link" aria-label="post link to Prompt Engineering" href="https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">RAG (Retrieval-Augmented Generation)
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>RAG RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。
+...</p></div><footer class=entry-footer><span title='2026-03-12 00:00:00 +0000 UTC'>March 12, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer><a class=entry-link aria-label="post link to Prompt Engineering" href=https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>RAG (Retrieval-Augmented Generation)</h2></header><div class=entry-content><p>RAG RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。
 经典论文：
-Lewis, P., et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” NeurIPS. [论文链接] - RAG开山之作 Guu, K., et al. (2020). “REALM: Retrieval-Augmented Language Model Pre-Training.” ICML. [论文链接] Izacard, G., &amp; Grave, É. (2021). “Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.” EACL. [论文链接] - RAG的另一种实现 1. Context Window（上下文窗口） 概念 Context Window 指的是 大语言模型在一次推理时能够读取和理解的最大文本长度。
+Lewis, P., et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” NeurIPS. [论文链接] - RAG开山之作 Guu, K., et al. (2020). “REALM: Retrieval-Augmented Language Model Pre-Training.” ICML. [论文链接] Izacard, G., & Grave, É. (2021). “Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.” EACL. [论文链接] - RAG的另一种实现 1. Context Window（上下文窗口） 概念 Context Window 指的是 大语言模型在一次推理时能够读取和理解的最大文本长度。
 经典论文：
 Dai, Z., et al. (2019). “Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.” ACL. [论文链接] - 突破固定上下文长度的开创性工作 通常包含：
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-03-08 00:00:00 +0000 UTC'>March 8, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
-  <a class="entry-link" aria-label="post link to RAG (Retrieval-Augmented Generation)" href="https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Transformer概念与理解
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Transformer：从入门到产品视角 📚 导论：为什么Transformer如此重要？ Transformer模型是由Vaswani等人在2017年发表的论文《Attention Is All You Need》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。
+...</p></div><footer class=entry-footer><span title='2026-03-08 00:00:00 +0000 UTC'>March 8, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer><a class=entry-link aria-label="post link to RAG (Retrieval-Augmented Generation)" href=https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Transformer概念与理解</h2></header><div class=entry-content><p>Transformer：从入门到产品视角 📚 导论：为什么Transformer如此重要？ Transformer模型是由Vaswani等人在2017年发表的论文《Attention Is All You Need》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。
 核心创新：完全抛弃传统的CNN/RNN架构，仅使用注意力机制来捕捉序列依赖关系，实现了两大突破：
 并行计算：解决了RNN无法并行的问题，大幅提升训练速度 长程依赖：解决了RNN/LSTM在处理长序列时的梯度消失问题 🏗️ 一、Transformer整体架构 1.1 编码器-解码器结构 Transformer遵循Seq2Seq模型的编码器-解码器架构：
 编码器（Encoder）：将输入序列（如源语言句子）转换为连续表示
-由N个相同的编码器层堆叠而成（原始论文中N=6） 每层包含：多头自注意力子层 &#43; 前馈神经网络子层 解码器（Decoder）：基于编码器输出生成目标序列（如目标语言句子）
-同样由N个相同的解码器层堆叠而成 每层包含：掩码多头自注意力 &#43; 编码器-解码器注意力 &#43; 前馈神经网络 掩码机制：确保解码器在预测位置i时只能看到位置i之前的输出，防止信息泄露 1.2 核心组件概览 组件 功能 创新点 自注意力机制 捕捉序列内部任意两个位置的关系 全局建模、并行计算 多头注意力 从不同角度关注信息 并行子空间学习 位置编码 为模型提供序列位置信息 弥补注意力机制的位置盲点 前馈网络 对每个位置进行非线性变换 增强模型表达能力 残差连接 将输入直接连接到输出 缓解深层网络退化问题 层归一化 稳定每层的输出分布 加速收敛、提高稳定性 🔍 二、核心机制详解 2.1 自注意力机制（Self-Attention） 核心思想：让序列中的每个词都能直接关注到所有其他词，动态计算词与词之间的相关性。
+由N个相同的编码器层堆叠而成（原始论文中N=6） 每层包含：多头自注意力子层 + 前馈神经网络子层 解码器（Decoder）：基于编码器输出生成目标序列（如目标语言句子）
+同样由N个相同的解码器层堆叠而成 每层包含：掩码多头自注意力 + 编码器-解码器注意力 + 前馈神经网络 掩码机制：确保解码器在预测位置i时只能看到位置i之前的输出，防止信息泄露 1.2 核心组件概览 组件 功能 创新点 自注意力机制 捕捉序列内部任意两个位置的关系 全局建模、并行计算 多头注意力 从不同角度关注信息 并行子空间学习 位置编码 为模型提供序列位置信息 弥补注意力机制的位置盲点 前馈网络 对每个位置进行非线性变换 增强模型表达能力 残差连接 将输入直接连接到输出 缓解深层网络退化问题 层归一化 稳定每层的输出分布 加速收敛、提高稳定性 🔍 二、核心机制详解 2.1 自注意力机制（Self-Attention） 核心思想：让序列中的每个词都能直接关注到所有其他词，动态计算词与词之间的相关性。
 实现步骤： 输入表示：每个输入词$x_i$被转换为嵌入向量 生成Q、K、V：通过三个可训练的权重矩阵$W_Q, W_K, W_V$将输入映射为查询（Query）、键（Key）、值（Value）向量 计算注意力分数：Query与所有Key的点积，表示当前位置对其他位置的关注程度 缩放与归一化：除以$\sqrt{d_k}$（防止点积过大导致梯度消失），经Softmax归一化为权重 加权聚合：用权重对Value进行加权求和，得到最终输出 数学公式： $$ \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V $$
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 00:00:00 +0000 UTC'>February 20, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
-  <a class="entry-link" aria-label="post link to Transformer概念与理解" href="https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">NLP分类效果衡量指标(F1/p/r)
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>概念 为什么要计算F1：避免样本分布带来的偏差，综合考量分类效果，假如有100个样本，其中1个正样本，99个负样本，如果模型的预测只输出0，那么正确率是99%，这时候用正确率来衡量模型的好坏显然是不对的。
+...</p></div><footer class=entry-footer><span title='2026-02-20 00:00:00 +0000 UTC'>February 20, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer><a class=entry-link aria-label="post link to Transformer概念与理解" href=https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>NLP分类效果衡量指标(F1/p/r)</h2></header><div class=entry-content><p>概念 为什么要计算F1：避免样本分布带来的偏差，综合考量分类效果，假如有100个样本，其中1个正样本，99个负样本，如果模型的预测只输出0，那么正确率是99%，这时候用正确率来衡量模型的好坏显然是不对的。
 真实 1真实 0预测 1True Positive(TP)False Positive(FP)预测 0False Negative(FN)True Negative(TN)
 查准率(precision)，预测正确的样本在所有预测为1的样本中的比例，该值反映有多少其他类被错误的归为该类。 召回率(recall)，预测正确的样本在所有真实为1的样本中的比例，该值反映有多少该类被预测为其他类了。 F1(F1-Score)， 精准率和召回率的调和平均数。 Micro-F1与Macro-F1
 针对多标签分类而言衡量分类效果
 Micro-F1：直接计算所有类别的Precision和Recall，然后计算F1。（类别有权重，分到样本数多的类别有更大的影响力） Macro-F1：计算出每一个类的Precision和Recall并分别计算F1，最后将F1平均。（各类别的F1权重相同） 代码实现 二分类
-def f1(y_hat, y_true): &#39;&#39;&#39; 输入张量y_hat是输出层经过sigmoid激活的张量 y_true是label{0,1}的集和 model指的是如果是多任务分类，single会返回每个分类的f1分数，multi会返回所有类的平均f1分数（Marco-F1） 如果只是单个二分类任务，则可以忽略model &#39;&#39;&#39; epsilon = 1e-7 y_hat = tf.round(y_hat)#将经过sigmoid激活的张量四舍五入变为0，1输出 # 输入的数据是矩阵，标签为单行矩阵，预测值为单列矩阵，如果不是需要转换 tp = tf.cast(tf.matmul(y_true,y_hat), &#39;float&#39;) #tn = tf.sum(tf.cast((1-y_hat)&lt;em&gt;(1-y_true), &#39;float&#39;), axis=0) fp = tf.cast(tf.matmul(1-y_true,y_hat), &#39;float&#39;) fn = tf.cast(tf.matmul(y_true,1-y_hat), &#39;float&#39;) print(&#39;tp: &#39;, tp[0][0].numpy(),&#39;fp: &#39;, fp[0][0].numpy(),&#39;fn: &#39;, fn[0][0].numpy()) p = tp/(tp&#43;fp&#43;epsilon)#epsilon的意义在于防止分母为0，否则当分母为0时python会报错 r = tp/(tp&#43;fn&#43;epsilon) f1 = 2&lt;/em&gt;p&lt;em&gt;r/(p&#43;r&#43;epsilon) result = [f1[0][0].numpy(), p[0][0].numpy(), r[0][0].numpy()] return result 多标签
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-22 00:00:00 +0000 UTC'>May 22, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to NLP分类效果衡量指标(F1/p/r)" href="https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">多标签分类(multi-label)分类方法笔记
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>概述 multi-label是相较multi-class的概念，有关研究相对较少，multi-label指一个数据可以被分为多个类，一个输入对应多个输出，例如一篇新闻可以被同时打上娱乐、体育等多个类，类的数目也不确定；
+def f1(y_hat, y_true): ''' 输入张量y_hat是输出层经过sigmoid激活的张量 y_true是label{0,1}的集和 model指的是如果是多任务分类，single会返回每个分类的f1分数，multi会返回所有类的平均f1分数（Marco-F1） 如果只是单个二分类任务，则可以忽略model ''' epsilon = 1e-7 y_hat = tf.round(y_hat)#将经过sigmoid激活的张量四舍五入变为0，1输出 # 输入的数据是矩阵，标签为单行矩阵，预测值为单列矩阵，如果不是需要转换 tp = tf.cast(tf.matmul(y_true,y_hat), 'float') #tn = tf.sum(tf.cast((1-y_hat)&lt;em>(1-y_true), 'float'), axis=0) fp = tf.cast(tf.matmul(1-y_true,y_hat), 'float') fn = tf.cast(tf.matmul(y_true,1-y_hat), 'float') print('tp: ', tp[0][0].numpy(),'fp: ', fp[0][0].numpy(),'fn: ', fn[0][0].numpy()) p = tp/(tp+fp+epsilon)#epsilon的意义在于防止分母为0，否则当分母为0时python会报错 r = tp/(tp+fn+epsilon) f1 = 2&lt;/em>p&lt;em>r/(p+r+epsilon) result = [f1[0][0].numpy(), p[0][0].numpy(), r[0][0].numpy()] return result 多标签
+...</p></div><footer class=entry-footer><span title='2020-05-22 00:00:00 +0000 UTC'>May 22, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer><a class=entry-link aria-label="post link to NLP分类效果衡量指标(F1/p/r)" href=https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>多标签分类(multi-label)分类方法笔记</h2></header><div class=entry-content><p>概述 multi-label是相较multi-class的概念，有关研究相对较少，multi-label指一个数据可以被分为多个类，一个输入对应多个输出，例如一篇新闻可以被同时打上娱乐、体育等多个类，类的数目也不确定；
 对于multi-label问题的处理，主要看到三种思路：
 当类别之间没有较强的联系时，将multi-label转化为多个二分类问题，对于每个类专门训练一个分类器，然后将多个分类器对同个样本进行分类输出结果达到多标签的效果。 当类别之间有一定联系的时候，将multi-label转化为multi-class问题，比如用二进制编码表示三个类：[‘人’, ‘猫’, ‘狗’]，0表示不是该类，1表示是，则对于多标签分类可能有[0, 1, 1]的情况比如一张图片上既有猫又有狗，那么我们可以将每一个向量作为一个类别，比如[0, 1, 1]作为一个类，将[1, 0, 1]作为一个类，这样一来我们得到一个23个类，对单一样本输出的结果一定在这个类别空间中，这样就是一个多分类问题了，总共8个类，可以用长度为8的独热编码表示。
 当然对于类别特别多(n个类)的数据集，这时候类别空间就是2n，显然类别太多了运算压力大，可以选择将类别输出的种类限制在训练集数据中存在的类别中，比如[1, 0, 0]在训练集中没有这个输出，就把他从类别中去除，当然这会影响模型的准确程度，因为它不再识别那些被踢出的可能性。 最后一种就是改进算法使其能够直接处理多标签问题，输出多个类。 多标签分类算法 对于神经网络，简单的做法是在最后输出层使用sigmoid激活函数，输出数目为类别数，每个输出都是一个概率，注意输出的多个类别的概率总和不再是1，因为是多标签问题，然后损失函数用binary_crossentrophy，相当于对每个输出分别判断属不属于该类，从而使每一个可能属于的类的概率都趋近1。
-在简单的单层CNN算法的实验上效果并不是很好，确实得到了多输出的结果，但是出现了某个类概率接近1，另一个所属类概率虽然也比较突出但数值偏小，比如0.5左右的样子，同时属于3个或4个类效果就更差些，可以通过修改阈值比如threshold=0.3，大于0.3就算做该类，但改善不明显。应该和数据集不同类对应存在的样本不同有关。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-22 00:00:00 +0000 UTC'>May 22, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 多标签分类(multi-label)分类方法笔记" href="https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">卷积神经网络(CNN)理论与实现
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、理论 卷积神经网络结构：（卷积层&#43;（可选）池化层）*N&#43;全连接层*M（M&gt;=0），卷积层的输入输出是矩阵，全连接层输入输出是向量，在卷积层的最后一层做一个展平。
+在简单的单层CNN算法的实验上效果并不是很好，确实得到了多输出的结果，但是出现了某个类概率接近1，另一个所属类概率虽然也比较突出但数值偏小，比如0.5左右的样子，同时属于3个或4个类效果就更差些，可以通过修改阈值比如threshold=0.3，大于0.3就算做该类，但改善不明显。应该和数据集不同类对应存在的样本不同有关。</p></div><footer class=entry-footer><span title='2020-05-22 00:00:00 +0000 UTC'>May 22, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer><a class=entry-link aria-label="post link to 多标签分类(multi-label)分类方法笔记" href=https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>卷积神经网络(CNN)理论与实现</h2></header><div class=entry-content><p>一、理论 卷积神经网络结构：（卷积层+（可选）池化层）*N+全连接层*M（M>=0），卷积层的输入输出是矩阵，全连接层输入输出是向量，在卷积层的最后一层做一个展平。
 主要用于分类任务
-全卷积神经网络：（卷积层&#43;（可选）池化层）*N&#43;反卷积层*K，可以做物体分割类任务
+全卷积神经网络：（卷积层+（可选）池化层）*N+反卷积层*K，可以做物体分割类任务
 卷积操作 解决参数过多导致的计算资源不足，容易过拟合的问题。解决方法：局部连接（基于图像的区域性）、参数共享（基于图像特征与位置无关）
 卷积核是反向传播计算出的参数，卷积：卷积核与输入做点积乘法。步长：卷积核每次在输入上滑动的距离。padding：使输出size不变。
 池化操作 类似卷积，计算方式不同，最大值池化：池化核滑动覆盖区域的最大值作为结果输出。
 特点：常使用不重叠（kernal-size=步长）、不补零的操作。参数即为步长和池化核大小。用于减少图像尺寸，从而减少计算量。一定程度平移鲁棒。损失了空间精度。
-二、实现 embedding_dim = 16 batch_size = 128 cnn_model = keras.models.Sequential([ keras.layers.Embedding(vocab_size, embedding_dim, input_length=max_length), keras.layers.Conv1D(filters=256,kernel_size=2,kernel_initializer=&#39;he_normal&#39;, strides=1,padding=&#39;SAME&#39;,activation=&#39;relu&#39;), keras.layers.GlobalMaxPooling1D(), keras.layers.Dropout(rate=0.5), keras.layers.Dense(12, activation=&#39;sigmoid&#39;) ]) cnn_model.summary() cnn_model.compile(optimizer=&#39;adam&#39;, loss=&#39;binary_crossentropy&#39;, metrics=[&#39;accuracy&#39;]) Conv1D 在文本中，卷积的某一维大小往往为embedding长度，即在宽度上不需要窗口移动，宽度就是整个窗口，所以conv1d默认卷积的宽度就为embedding维度，长度通过kernel_size来指定的，此处为2，即卷积核的大小为2*embedding_size。strides为步长，此处为1，即卷积核每隔一个单词移动一次。filters是卷积核的个数，即输出的维度。padding有valid和same两种选择，valid在长度方向（宽度方向不padding）不进行padding，而same则在长度方向进行padding，保证输入句子长度和卷积后输出的句子长度一致。
+二、实现 embedding_dim = 16 batch_size = 128 cnn_model = keras.models.Sequential([ keras.layers.Embedding(vocab_size, embedding_dim, input_length=max_length), keras.layers.Conv1D(filters=256,kernel_size=2,kernel_initializer='he_normal', strides=1,padding='SAME',activation='relu'), keras.layers.GlobalMaxPooling1D(), keras.layers.Dropout(rate=0.5), keras.layers.Dense(12, activation='sigmoid') ]) cnn_model.summary() cnn_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']) Conv1D 在文本中，卷积的某一维大小往往为embedding长度，即在宽度上不需要窗口移动，宽度就是整个窗口，所以conv1d默认卷积的宽度就为embedding维度，长度通过kernel_size来指定的，此处为2，即卷积核的大小为2*embedding_size。strides为步长，此处为1，即卷积核每隔一个单词移动一次。filters是卷积核的个数，即输出的维度。padding有valid和same两种选择，valid在长度方向（宽度方向不padding）不进行padding，而same则在长度方向进行padding，保证输入句子长度和卷积后输出的句子长度一致。
 //blog.csdn.net/bobobe/article/details/87923618
 tensorflow fit()方法：参考
 //blog.csdn.net/crazyman2010/article/details/103705318
-TextCNN //blog.csdn.net/u014732537/article/details/79573174
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-21 00:00:00 +0000 UTC'>May 21, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 卷积神经网络(CNN)理论与实现" href="https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">MNIST手写数字识别实践
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>from __future__ import absolute_import, division, print_function, unicode_literals import tensorflow as tf mnist = tf.keras.datasets.mnist (x_train, y_train), (x_test, y_test) = mnist.load_data() # 加载数据 x_train, x_test = x_train / 255.0, x_test / 255.0 # /255：将RGB数值归一化 #%% print(y_train.shape) #%% model = tf.keras.models.Sequential([ tf.keras.layers.Flatten(input_shape=(28, 28)), # 张量扁平化，将28*28的图片矩阵转化为784的向量 tf.keras.layers.Dense(128, activation=&#39;relu&#39;), # 全连接层，128个神经元，激活函数为relu（The Rectified Linear Unit） # y=max(0,x) tf.keras.layers.Dropout(0.2), # 防止过拟合，drop out 80% of inputs，使用0.2*cell_size个神经元进行训练 tf.keras.layers.Dense(10, activation=&#39;softmax&#39;) # 全连接层输出 softmax激活函数 ]) model.compile(optimizer=&#39;adam&#39;, # 梯度下降策略 adam loss=&#39;sparse_categorical_crossentropy&#39;, # 损失函数 sparse:y独热化编码 交叉熵 metrics=[&#39;accuracy&#39;]) # metrics 列表，包含评估模型在训练和测试时的性能的指标，典型用法是metrics=[‘accuracy’]。 # 如果要在多输出模型中为不同的输出指定不同的指标，可向该参数传递一个字典，例如metrics={‘output_a’: ‘accuracy’} model.fit(x_train, y_train, epochs=5) # 训练5轮 model.evaluate(x_test, y_test, verbose=1) # Verbosity mode. 0 = silent, 1 = progress bar. # fit()用于使用给定输入训练模型. # evaluate()用于评估已经训练过的模型.返回损失值&amp;模型的度量值. </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-20 00:00:00 +0000 UTC'>May 20, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to MNIST手写数字识别实践" href="https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">机器学习入门基本概念理解
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>张量 张量=容器
+TextCNN //blog.csdn.net/u014732537/article/details/79573174</p></div><footer class=entry-footer><span title='2020-05-21 00:00:00 +0000 UTC'>May 21, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer><a class=entry-link aria-label="post link to 卷积神经网络(CNN)理论与实现" href=https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>MNIST手写数字识别实践</h2></header><div class=entry-content><p>from __future__ import absolute_import, division, print_function, unicode_literals import tensorflow as tf mnist = tf.keras.datasets.mnist (x_train, y_train), (x_test, y_test) = mnist.load_data() # 加载数据 x_train, x_test = x_train / 255.0, x_test / 255.0 # /255：将RGB数值归一化 #%% print(y_train.shape) #%% model = tf.keras.models.Sequential([ tf.keras.layers.Flatten(input_shape=(28, 28)), # 张量扁平化，将28*28的图片矩阵转化为784的向量 tf.keras.layers.Dense(128, activation='relu'), # 全连接层，128个神经元，激活函数为relu（The Rectified Linear Unit） # y=max(0,x) tf.keras.layers.Dropout(0.2), # 防止过拟合，drop out 80% of inputs，使用0.2*cell_size个神经元进行训练 tf.keras.layers.Dense(10, activation='softmax') # 全连接层输出 softmax激活函数 ]) model.compile(optimizer='adam', # 梯度下降策略 adam loss='sparse_categorical_crossentropy', # 损失函数 sparse:y独热化编码 交叉熵 metrics=['accuracy']) # metrics 列表，包含评估模型在训练和测试时的性能的指标，典型用法是metrics=[‘accuracy’]。 # 如果要在多输出模型中为不同的输出指定不同的指标，可向该参数传递一个字典，例如metrics={‘output_a’: ‘accuracy’} model.fit(x_train, y_train, epochs=5) # 训练5轮 model.evaluate(x_test, y_test, verbose=1) # Verbosity mode. 0 = silent, 1 = progress bar. # fit()用于使用给定输入训练模型. # evaluate()用于评估已经训练过的模型.返回损失值&模型的度量值.</p></div><footer class=entry-footer><span title='2020-05-20 00:00:00 +0000 UTC'>May 20, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer><a class=entry-link aria-label="post link to MNIST手写数字识别实践" href=https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>机器学习入门基本概念理解</h2></header><div class=entry-content><p>张量 张量=容器
 张量是现代机器学习的基础。它的核心是一个数据容器，多数情况下，它包含数字，有时候它也包含字符串，但这种情况比较少。因此把它想象成一个数字的水桶。
 0维张量=数字；1维张量=向量；2维张量=矩阵；3维张量=公用数据存储在张量，彩色图片等…
 one-hot vector 独热编码，用于分类标记。比如（猫，狗，鼠）对应（1,0,0）代表猫，（0,1,0）代表狗…将离散型特征采用独热编码，会使得特征之间的距离计算更加合理。
@@ -336,89 +75,8 @@ batch_size batch的选择首先决定的是下降的方向，batch_size越大，
 λ就是学习率，学习率过小，优化效率可能很低，学习率过大则有可能越过最优值，收敛到局部最优解。
 关于解决学习率的一些问题，如选择合适的学习率，动态调整学习率，归一化等参考：
 //www.cnblogs.com/mazhujun/p/9633576.html
-如何通俗地解释欧氏空间？ - 知乎 //www.zhihu.com/question/27903807/answer/699570097
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-16 00:00:00 +0000 UTC'>May 16, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 机器学习入门基本概念理解" href="https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://www.xiaoxiangtao.cn/">Xiangtao&#39;s log</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+如何通俗地解释欧氏空间？ - 知乎 //www.zhihu.com/question/27903807/answer/699570097</p></div><footer class=entry-footer><span title='2020-05-16 00:00:00 +0000 UTC'>May 16, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer><a class=entry-link aria-label="post link to 机器学习入门基本概念理解" href=https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://www.xiaoxiangtao.cn/>Xiangtao's log</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
