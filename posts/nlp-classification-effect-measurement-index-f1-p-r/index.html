@@ -110,10 +110,15 @@ def f1(y_hat, y_true):
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/nlp-classification-effect-measurement-index-f1-p-r/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/nlp-classification-effect-measurement-index-f1-p-r/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="NLP分类效果衡量指标(F1/p/r)">
   <meta property="og:description" content="概念 为什么要计算F1：避免样本分布带来的偏差，综合考量分类效果，假如有100个样本，其中1个正样本，99个负样本，如果模型的预测只输出0，那么正确率是99%，这时候用正确率来衡量模型的好坏显然是不对的。

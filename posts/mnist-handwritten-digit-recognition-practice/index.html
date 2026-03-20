@@ -107,10 +107,15 @@ model.evaluate(x_test,  y_test, verbose=1)
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/mnist-handwritten-digit-recognition-practice/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/mnist-handwritten-digit-recognition-practice/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="MNIST手写数字识别实践">
   <meta property="og:description" content="from __future__ import absolute_import, division, print_function, unicode_literals import tensorflow as tf mnist = tf.keras.datasets.mnist (x_train, y_train), (x_test, y_test) = mnist.load_data() # 加载数据 x_train, x_test = x_train / 255.0, x_test / 255.0 # /255：将RGB数值归一化 #%% print(y_train.shape) #%% model = tf.keras.models.Sequential([ tf.keras.layers.Flatten(input_shape=(28, 28)), # 张量扁平化，将28*28的图片矩阵转化为784的向量 tf.keras.layers.Dense(128, activation=&#39;relu&#39;), # 全连接层，128个神经元，激活函数为relu（The Rectified Linear Unit） # y=max(0,x) tf.keras.layers.Dropout(0.2), # 防止过拟合，drop out 80% of inputs，使用0.2*cell_size个神经元进行训练 tf.keras.layers.Dense(10, activation=&#39;softmax&#39;) # 全连接层输出 softmax激活函数 ]) model.compile(optimizer=&#39;adam&#39;, # 梯度下降策略 adam loss=&#39;sparse_categorical_crossentropy&#39;, # 损失函数 sparse:y独热化编码 交叉熵 metrics=[&#39;accuracy&#39;]) # metrics 列表，包含评估模型在训练和测试时的性能的指标，典型用法是metrics=[‘accuracy’]。 # 如果要在多输出模型中为不同的输出指定不同的指标，可向该参数传递一个字典，例如metrics={‘output_a’: ‘accuracy’} model.fit(x_train, y_train, epochs=5) # 训练5轮 model.evaluate(x_test, y_test, verbose=1) # Verbosity mode. 0 = silent, 1 = progress bar. # fit()用于使用给定输入训练模型. # evaluate()用于评估已经训练过的模型.返回损失值&amp;模型的度量值.">

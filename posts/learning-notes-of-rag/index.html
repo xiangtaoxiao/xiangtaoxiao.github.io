@@ -85,10 +85,15 @@ Dai, Z., et al. (2019). &ldquo;Transformer-XL: Attentive Language Models Beyond 
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="RAG (Retrieval-Augmented Generation)">
   <meta property="og:description" content="RAG RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。

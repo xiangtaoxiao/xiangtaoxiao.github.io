@@ -76,10 +76,15 @@ A：此时自不能再扣除10010元了，钱包里只有1万，那从1万里扣
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/thoughts-on-withdrawal-function/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/thoughts-on-withdrawal-function/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="关于提现功能的一点思考">
   <meta property="og:description" content="众所周知，微信零钱的提现会收取千分之一的手续费，有人在使用中专门注意过这个手续费是怎么收的吗？说来惭愧，作为产品经理的我并没有好好研究过这个功能，直到这次碰到要做平台用户账户的提现功能，研究后才发现习以为常的微信零钱提现，也是有些小设计在的。

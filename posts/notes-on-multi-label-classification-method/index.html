@@ -81,10 +81,15 @@ multi-label是相较multi-class的概念，有关研究相对较少，multi-labe
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/notes-on-multi-label-classification-method/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/notes-on-multi-label-classification-method/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="多标签分类(multi-label)分类方法笔记">
   <meta property="og:description" content="概述 multi-label是相较multi-class的概念，有关研究相对较少，multi-label指一个数据可以被分为多个类，一个输入对应多个输出，例如一篇新闻可以被同时打上娱乐、体育等多个类，类的数目也不确定；

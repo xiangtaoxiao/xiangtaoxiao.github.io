@@ -107,10 +107,15 @@ TextCNN
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/theory-and-implementation-of-convolutional-neural-network/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/theory-and-implementation-of-convolutional-neural-network/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="卷积神经网络(CNN)理论与实现">
   <meta property="og:description" content="一、理论 卷积神经网络结构：（卷积层&#43;（可选）池化层）*N&#43;全连接层*M（M&gt;=0），卷积层的输入输出是矩阵，全连接层输入输出是向量，在卷积层的最后一层做一个展平。

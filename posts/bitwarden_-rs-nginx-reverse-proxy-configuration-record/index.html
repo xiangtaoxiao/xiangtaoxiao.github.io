@@ -124,10 +124,15 @@ mkdir /data/nginx/certs
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/bitwarden_-rs-nginx-reverse-proxy-configuration-record/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/bitwarden_-rs-nginx-reverse-proxy-configuration-record/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="bitwarden_rs&#43;nginx反向代理配置记录">
   <meta property="og:description" content="bitwarden是一个开源的密码管理器，可以部署在私有服务器上。官方的bitwarden对服务器配置要求较高，网友开发了bitwardenrs适用于小用户，对配置要求低不怎么占内存。本次采用安装docker后在docker上安装bitwardenrs和nginx，通过nginx反向代理实现HTTPS加密访问bitwarden的方法。

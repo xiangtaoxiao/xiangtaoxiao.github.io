@@ -89,10 +89,15 @@ sess.run(hello)
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-<meta property="og:url" content="https://xiangtaoxiao.github.io/posts/tensorflow2/">
+</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script><meta property="og:url" content="https://xiangtaoxiao.github.io/posts/tensorflow2/">
   <meta property="og:site_name" content="Xiangtao&#39;s log">
   <meta property="og:title" content="TensorFlow2.0安装">
   <meta property="og:description" content="清华镜像源安装 pip install tensorflow-gpu==1.12.0 -i //pypi.tuna.tsinghua.edu.cn/simple #可改成任意版本 CPU版本安装 pip install tensorflow -i //pypi.tuna.tsinghua.edu.cn/simple Pycharm环境配置 （一）导入TensorFlow模块测试 import tensorflow as tf hello = tf.constant() sess = tf.Session() sess.run(hello) 结果如下：ModuleNotFoundError: No module named ’tensorflow&#39;
