@@ -160,6 +160,78 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Agent（从 Chatbot 到生产级 Agent）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Agent（从 Chatbot 到生产级 Agent） AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。
+经典论文：
+Yao, S., et al. (2022). “ReAct: Synergizing Reasoning and Acting in Language Models.” ICLR. [论文链接] - ReAct框架，Agent核心范式 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] Wang, G., et al. (2024). “A Survey on Large Language Model based Autonomous Agents.” arXiv. [论文链接] - Agent综述 一、整体演进路径 Chatbot → Tool Use → Agent → Production Agent（工业级） 演进说明：
+Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具 Agent: 能自主规划并执行多步骤任务 Production Agent: 工业级，具备错误处理、权限控制、监控等能力 二、核心概念拆解 1️⃣ Chatbot LLM &#43; Prompt
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-14 00:00:00 +0000 UTC'>March 14, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to AI Agent（从 Chatbot 到生产级 Agent）" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Prompt Engineering
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Prompt Engineering https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome
+Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。
+经典论文：
+Brown, T. B., et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS. [论文链接] - GPT-3论文，首次系统展示了prompt engineering的潜力 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] 1. Prompting Principles（提示原则） Principle 1: Write clear and specific instructions（编写清晰具体的指令） 清晰性（Clarity）和具体性（Specificity）是prompt设计的核心原则。研究表明，模糊的指令会导致模型输出不确定性增加，而具体的指令能显著提升输出质量。
+Tactic 1: Use delimiters to clearly indicate distinct parts of the input
+分隔符（如 ```、&#34;&#34;&#34;、—、&lt;&gt;）能帮助模型识别输入的不同部分，避免混淆。这在处理包含多段文本或代码的任务时尤为重要。
+Tactic 2: Ask for a structured output
+要求结构化输出（如JSON、HTML、Markdown表格）便于后续程序处理，是构建AI应用的最佳实践。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-12 00:00:00 +0000 UTC'>March 12, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to Prompt Engineering" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">RAG (Retrieval-Augmented Generation)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>RAG RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。
+经典论文：
+Lewis, P., et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” NeurIPS. [论文链接] - RAG开山之作 Guu, K., et al. (2020). “REALM: Retrieval-Augmented Language Model Pre-Training.” ICML. [论文链接] Izacard, G., &amp; Grave, É. (2021). “Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.” EACL. [论文链接] - RAG的另一种实现 1. Context Window（上下文窗口） 概念 Context Window 指的是 大语言模型在一次推理时能够读取和理解的最大文本长度。
+经典论文：
+Dai, Z., et al. (2019). “Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.” ACL. [论文链接] - 突破固定上下文长度的开创性工作 通常包含：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-08 00:00:00 +0000 UTC'>March 8, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to RAG (Retrieval-Augmented Generation)" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Transformer概念与理解
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Transformer：从入门到产品视角 📚 导论：为什么Transformer如此重要？ Transformer模型是由Vaswani等人在2017年发表的论文《Attention Is All You Need》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。
+核心创新：完全抛弃传统的CNN/RNN架构，仅使用注意力机制来捕捉序列依赖关系，实现了两大突破：
+并行计算：解决了RNN无法并行的问题，大幅提升训练速度 长程依赖：解决了RNN/LSTM在处理长序列时的梯度消失问题 🏗️ 一、Transformer整体架构 1.1 编码器-解码器结构 Transformer遵循Seq2Seq模型的编码器-解码器架构：
+编码器（Encoder）：将输入序列（如源语言句子）转换为连续表示
+由N个相同的编码器层堆叠而成（原始论文中N=6） 每层包含：多头自注意力子层 &#43; 前馈神经网络子层 解码器（Decoder）：基于编码器输出生成目标序列（如目标语言句子）
+同样由N个相同的解码器层堆叠而成 每层包含：掩码多头自注意力 &#43; 编码器-解码器注意力 &#43; 前馈神经网络 掩码机制：确保解码器在预测位置i时只能看到位置i之前的输出，防止信息泄露 1.2 核心组件概览 组件 功能 创新点 自注意力机制 捕捉序列内部任意两个位置的关系 全局建模、并行计算 多头注意力 从不同角度关注信息 并行子空间学习 位置编码 为模型提供序列位置信息 弥补注意力机制的位置盲点 前馈网络 对每个位置进行非线性变换 增强模型表达能力 残差连接 将输入直接连接到输出 缓解深层网络退化问题 层归一化 稳定每层的输出分布 加速收敛、提高稳定性 🔍 二、核心机制详解 2.1 自注意力机制（Self-Attention） 核心思想：让序列中的每个词都能直接关注到所有其他词，动态计算词与词之间的相关性。
+实现步骤： 输入表示：每个输入词$x_i$被转换为嵌入向量 生成Q、K、V：通过三个可训练的权重矩阵$W_Q, W_K, W_V$将输入映射为查询（Query）、键（Key）、值（Value）向量 计算注意力分数：Query与所有Key的点积，表示当前位置对其他位置的关注程度 缩放与归一化：除以$\sqrt{d_k}$（防止点积过大导致梯度消失），经Softmax归一化为权重 加权聚合：用权重对Value进行加权求和，得到最终输出 数学公式： $$ \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V $$
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 00:00:00 +0000 UTC'>February 20, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to Transformer概念与理解" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">NLP分类效果衡量指标(F1/p/r)
     </h2>
   </header>

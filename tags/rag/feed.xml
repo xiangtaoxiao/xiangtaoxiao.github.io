@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RAG on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/rag/</link>
+    <description>Recent content in RAG on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/rag/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG (Retrieval-Augmented Generation)</title>
+      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</guid> 
+      <description>&lt;h1 id=&#34;rag&#34;&gt;RAG&lt;/h1&gt;
+&lt;p&gt;RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lewis, P., et al. (2020). &amp;ldquo;Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2005.11401&#34;&gt;论文链接&lt;/a&gt;] - RAG开山之作&lt;/li&gt;
+&lt;li&gt;Guu, K., et al. (2020). &amp;ldquo;REALM: Retrieval-Augmented Language Model Pre-Training.&amp;rdquo; ICML. [&lt;a href=&#34;https://arxiv.org/abs/2002.08909&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Izacard, G., &amp;amp; Grave, É. (2021). &amp;ldquo;Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.&amp;rdquo; EACL. [&lt;a href=&#34;https://arxiv.org/abs/2007.01282&#34;&gt;论文链接&lt;/a&gt;] - RAG的另一种实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-context-window上下文窗口&#34;&gt;1. Context Window（上下文窗口）&lt;/h2&gt;
+&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+&lt;p&gt;Context Window 指的是 &lt;strong&gt;大语言模型在一次推理时能够读取和理解的最大文本长度&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dai, Z., et al. (2019). &amp;ldquo;Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.&amp;rdquo; ACL. [&lt;a href=&#34;https://arxiv.org/abs/1901.02860&#34;&gt;论文链接&lt;/a&gt;] - 突破固定上下文长度的开创性工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通常包含：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

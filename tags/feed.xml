@@ -8,8 +8,57 @@
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
-    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xiangtaoxiao.github.io/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent</title>
+      <link>https://xiangtaoxiao.github.io/tags/ai-agent/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/ai-agent/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Machine-Learning</title>
+      <link>https://xiangtaoxiao.github.io/tags/machine-learning/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/machine-learning/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>学习</title>
+      <link>https://xiangtaoxiao.github.io/tags/%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/%E5%AD%A6%E4%B9%A0/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>计算机</title>
+      <link>https://xiangtaoxiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt Engineering</title>
+      <link>https://xiangtaoxiao.github.io/tags/prompt-engineering/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/prompt-engineering/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>RAG</title>
+      <link>https://xiangtaoxiao.github.io/tags/rag/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/rag/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Transformer</title>
+      <link>https://xiangtaoxiao.github.io/tags/transformer/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/transformer/</guid> 
+      <description></description>
+    </item>
     <item>
       <title>产品</title>
       <link>https://xiangtaoxiao.github.io/tags/%E4%BA%A7%E5%93%81/</link>
@@ -25,24 +74,10 @@
       <description></description>
     </item>
     <item>
-      <title>学习</title>
-      <link>https://xiangtaoxiao.github.io/tags/%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/%E5%AD%A6%E4%B9%A0/</guid> 
-      <description></description>
-    </item>
-    <item>
       <title>建站</title>
       <link>https://xiangtaoxiao.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
        <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/%E5%BB%BA%E7%AB%99/</guid> 
-      <description></description>
-    </item>
-    <item>
-      <title>计算机</title>
-      <link>https://xiangtaoxiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid> 
       <description></description>
     </item>
     <item>
@@ -141,13 +176,6 @@
       <link>https://xiangtaoxiao.github.io/tags/namesilo---%E5%BB%BA%E7%AB%99/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
        <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/namesilo---%E5%BB%BA%E7%AB%99/</guid> 
-      <description></description>
-    </item>
-    <item>
-      <title>Machine-Learning</title>
-      <link>https://xiangtaoxiao.github.io/tags/machine-learning/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/tags/machine-learning/</guid> 
       <description></description>
     </item>
     <item>

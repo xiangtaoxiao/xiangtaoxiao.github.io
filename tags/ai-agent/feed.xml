@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI Agent on Xiangtao&#39;s log</title>
+    <link>https://xiangtaoxiao.github.io/tags/ai-agent/</link>
+    <description>Recent content in AI Agent on Xiangtao&#39;s log</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
+    <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
+    <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xiangtaoxiao.github.io/tags/ai-agent/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent（从 Chatbot 到生产级 Agent）</title>
+      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</guid> 
+      <description>&lt;h1 id=&#34;ai-agent从-chatbot-到生产级-agent&#34;&gt;AI Agent（从 Chatbot 到生产级 Agent）&lt;/h1&gt;
+&lt;p&gt;AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yao, S., et al. (2022). &amp;ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.&amp;rdquo; ICLR. [&lt;a href=&#34;https://arxiv.org/abs/2210.01691&#34;&gt;论文链接&lt;/a&gt;] - ReAct框架，Agent核心范式&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wang, G., et al. (2024). &amp;ldquo;A Survey on Large Language Model based Autonomous Agents.&amp;rdquo; arXiv. [&lt;a href=&#34;https://arxiv.org/abs/2308.11432&#34;&gt;论文链接&lt;/a&gt;] - Agent综述&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;一整体演进路径&#34;&gt;一、整体演进路径&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Chatbot → Tool Use → Agent → Production Agent（工业级）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;演进说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chatbot&lt;/strong&gt;: 仅能对话，无法执行外部操作&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool Use&lt;/strong&gt;: 能调用单一工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agent&lt;/strong&gt;: 能自主规划并执行多步骤任务&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Production Agent&lt;/strong&gt;: 工业级，具备错误处理、权限控制、监控等能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二核心概念拆解&#34;&gt;二、核心概念拆解&lt;/h2&gt;
+&lt;h3 id=&#34;1-chatbot&#34;&gt;1️⃣ Chatbot&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;LLM + Prompt&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>AI Agent（从 Chatbot 到生产级 Agent） | Xiangtao&#39;s log</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="AI Agent, Machine-learning, 计算机, 学习">
 <meta name="description" content="AI Agent（从 Chatbot 到生产级 Agent）
 AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。
 经典论文：
@@ -105,6 +105,10 @@ Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2026-03-14T00:00:00+00:00">
     <meta property="article:modified_time" content="2026-03-14T00:00:00+00:00">
+    <meta property="article:tag" content="AI Agent">
+    <meta property="article:tag" content="Machine-Learning">
+    <meta property="article:tag" content="计算机">
+    <meta property="article:tag" content="学习">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AI Agent（从 Chatbot 到生产级 Agent）">
@@ -142,7 +146,7 @@ Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具
   "name": "AI Agent（从 Chatbot 到生产级 Agent）",
   "description": "AI Agent（从 Chatbot 到生产级 Agent） AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。\n经典论文：\nYao, S., et al. (2022). \u0026ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.\u0026rdquo; ICLR. [论文链接] - ReAct框架，Agent核心范式 Wei, J., et al. (2022). \u0026ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.\u0026rdquo; NeurIPS. [论文链接] Wang, G., et al. (2024). \u0026ldquo;A Survey on Large Language Model based Autonomous Agents.\u0026rdquo; arXiv. [论文链接] - Agent综述 一、整体演进路径 Chatbot → Tool Use → Agent → Production Agent（工业级） 演进说明：\nChatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具 Agent: 能自主规划并执行多步骤任务 Production Agent: 工业级，具备错误处理、权限控制、监控等能力 二、核心概念拆解 1️⃣ Chatbot LLM + Prompt\n",
   "keywords": [
-    
+    "AI Agent", "Machine-learning", "计算机", "学习"
   ],
   "articleBody": "AI Agent（从 Chatbot 到生产级 Agent） AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。\n经典论文：\nYao, S., et al. (2022). “ReAct: Synergizing Reasoning and Acting in Language Models.” ICLR. [论文链接] - ReAct框架，Agent核心范式 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] Wang, G., et al. (2024). “A Survey on Large Language Model based Autonomous Agents.” arXiv. [论文链接] - Agent综述 一、整体演进路径 Chatbot → Tool Use → Agent → Production Agent（工业级） 演进说明：\nChatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具 Agent: 能自主规划并执行多步骤任务 Production Agent: 工业级，具备错误处理、权限控制、监控等能力 二、核心概念拆解 1️⃣ Chatbot LLM + Prompt\n特点：\n只能对话 无法执行外部操作 无状态或弱状态 经典论文：\nVinyals, O., \u0026 Le, Q. (2015). “A Neural Conversational Model.” ICML Deep Learning Workshop. [论文链接] 2️⃣ Function / Tool / Function Calling Function 真实执行代码的最小单元。\nTool Function 的 LLM 可调用接口描述。\n经典论文：\nSchick, T., et al. (2023). “Toolformer: Language Models Can Teach Themselves to Use Tools.” NeurIPS. [论文链接] - 工具学习开创性工作 Parisi, A., et al. (2022). “TALM: Tool Augmented Language Models.” arXiv. [论文链接] Function Calling LLM 生成结构化调用请求，Runtime 执行函数。\n技术实现：\nOpenAI Function Calling API Anthropic Tool Use LangChain Tools 三、Agent 的本质 LLM + Tools + Loop\n经典论文：\nYao, S., et al. (2022). “ReAct: Synergizing Reasoning and Acting in Language Models.” ICLR. [论文链接] Shinn, N., et al. (2023). “Reflexion: Language Agents with Verbal Reinforcement Learning.” NeurIPS. [论文链接] Agent Loop Thought（思考）→ Action（行动）→ Observation（观察）→ Thought... ReAct框架示例：\nQuestion: What is the elevation range for the area that the eastern sector of the Colorado orogeny extends into? Thought 1: I need to search Colorado orogeny, find the area that the eastern sector of the Colorado orogeny extends into, then find the elevation range of that area. Action 1: Search[Colorado orogeny] Observation 1: The Colorado orogeny was an episode of mountain building... Thought 2: I need to search eastern sector of the Colorado orogeny. Action 2: Search[eastern sector of Colorado orogeny] ... 四、Agent Runtime Agent Runtime是执行Agent逻辑的核心基础设施。\n核心职责：\n解析 tool call 执行函数/API 控制循环（循环次数限制、超时控制） 错误处理 权限控制 状态管理 主流框架：\nLangChain AutoGPT BabyAGI CrewAI Microsoft AutoGen 经典论文：\nRichards, T. (2023). “AutoGPT.” [GitHub] Nakajima, Y. (2023). “BabyAGI.” [GitHub] 五、Tool Retrieval 通过 embedding 做语义匹配，从大量工具中选 Top-K 给 LLM。\n经典论文：\nQin, Y., et al. (2023). “Tool Learning with Foundation Models.” arXiv. [论文链接] - 工具学习综述 流程：\n用户问题 → Embedding → 工具库检索 → Top-K Tools → LLM选择调用 六、Skill Skill = 多个 Tools 的组合能力\nSkill是对复杂任务能力的封装，类似于人类的\"技能\"。\n示例：\n“写博客” Skill = 搜索工具 + 写作工具 + 图片生成工具 “数据分析” Skill = 数据查询工具 + 可视化工具 + 报告生成工具 七、生产级 Agent 架构 User → Retriever → LLM → Runtime → Tool → Observation → LLM → Response 生产级要求：\n错误处理与重试 监控与日志 权限控制 成本控制 安全审计 八、关键原则 Agent 上限由模型决定，下限由 Runtime 决定\n模型能力决定Agent能做什么，Runtime质量决定Agent的稳定性和可靠性。\n先检索再推理\n在执行任务前先检索相关信息和工具。\nSkill 用于封装复杂能力\n将常用复杂任务封装为Skill，提高复用性和可靠性。\n九、终极模型 组件 类比 作用 LLM 大脑 推理、规划、决策 Tools 手 执行具体操作 Skills 肌肉记忆 封装的复杂能力 Retriever 感知系统 获取信息和工具 Runtime 神经系统 协调执行、传递信息 十、总结 Agent = LLM + Tools + Loop + Runtime + Retrieval (+ Skills)\nAI Agent代表了LLM应用的高级形态，从简单的对话系统进化为能够自主规划、执行复杂任务的智能体。随着技术发展，Agent将在更多场景中发挥重要作用。\n参考文献 Prompt Engineering Brown, T. B., et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS. Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. Kojima, T., et al. (2022). “Large Language Models are Zero-Shot Reasoners.” NeurIPS. Zhou, Y., et al. (2022). “Large Language Models Are Human-Level Prompt Engineers.” ICLR. RAG Lewis, P., et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” NeurIPS. Guu, K., et al. (2020). “REALM: Retrieval-Augmented Language Model Pre-Training.” ICML. Karpukhin, V., et al. (2020). “Dense Passage Retrieval for Open-Domain Question Answering.” EMNLP. Johnson, J., Douze, M., \u0026 Jégou, H. (2019). “Billion-scale similarity search with GPUs.” IEEE TBD. AI Agent Yao, S., et al. (2022). “ReAct: Synergizing Reasoning and Acting in Language Models.” ICLR. Schick, T., et al. (2023). “Toolformer: Language Models Can Teach Themselves to Use Tools.” NeurIPS. Shinn, N., et al. (2023). “Reflexion: Language Agents with Verbal Reinforcement Learning.” NeurIPS. Wang, G., et al. (2024). “A Survey on Large Language Model based Autonomous Agents.” arXiv. ",
   "wordCount" : "616",
@@ -513,6 +517,10 @@ Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://xiangtaoxiao.github.io/tags/ai-agent/">AI Agent</a></li>
+      <li><a href="https://xiangtaoxiao.github.io/tags/machine-learning/">Machine-Learning</a></li>
+      <li><a href="https://xiangtaoxiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a></li>
+      <li><a href="https://xiangtaoxiao.github.io/tags/%E5%AD%A6%E4%B9%A0/">学习</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/">
@@ -526,7 +534,7 @@ Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent（从 Chatbot 到生产级 Agent） on x"
-            href="https://x.com/intent/tweet/?text=AI%20Agent%ef%bc%88%e4%bb%8e%20Chatbot%20%e5%88%b0%e7%94%9f%e4%ba%a7%e7%ba%a7%20Agent%ef%bc%89&amp;url=https%3a%2f%2fxiangtaoxiao.github.io%2fposts%2flearning-notes-of-ai-agent%2f&amp;hashtags=">
+            href="https://x.com/intent/tweet/?text=AI%20Agent%ef%bc%88%e4%bb%8e%20Chatbot%20%e5%88%b0%e7%94%9f%e4%ba%a7%e7%ba%a7%20Agent%ef%bc%89&amp;url=https%3a%2f%2fxiangtaoxiao.github.io%2fposts%2flearning-notes-of-ai-agent%2f&amp;hashtags=AIAgent%2cMachine-learning%2c%e8%ae%a1%e7%ae%97%e6%9c%ba%2c%e5%ad%a6%e4%b9%a0">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
