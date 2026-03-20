@@ -162,6 +162,90 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Arduino 入门基础知识总结
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>根据arduino uno板子的接口进行解释，如图
+L指示灯 - 接13号引脚（13号引脚内置了电阻），arduino出厂烧录了闪烁程度，板子通电后L灯闪烁。
+TX/RX指示灯 - 串口通信时闪烁，分别在传输数据与接收数据时闪烁。
+上排0~13接口 - 数字I/O口，可以接受以及接受数字信号（二进制形式表示的信号），arduino用电平高低来表示0,1，低电平（-0.51.5V）表示0，高电平（35.5V）表示1。用 pinMode(pin, mode) 函数来指定要用的引脚编号以及其配置模式（INPUT 输入0，OUTPUT 输出1，INPUT_PULLUP输入上拉模式）。在输入模式下，可以用 digitalRead(pin) 读取输入的数字信号；在输出模式下，用 digitalWrite(pin, value) 来指定引脚及输出的电平高低（LOW 0， HIGH 1）。
+？digitalRead()函数返回什么，！digitalRead()代表什么？如果代表true，则digitalRead（）返回一个false，人体热释电持续输出低电平，在检测到人时输出高电平（范围和持续时间可以用电位器来调节），则正常情况下！digitalRead是！低电平，其代表了什么，还是说没有输出值，做个试验检测。
+PWM Pulse Width Modulation 脉冲宽度调制 ~符号
+- 模拟信号Output，模拟信号用连续变化的物理量来表示信息，上排接口中有 ~ 标志的接口可用于输出模拟信号。Arduino用05V的电压来表示模拟信号，通过输出周期固定（约490HZ）的方波，通过改变高低电平在每个周期中的比例（占空比）来得到近似输出不同电压的效果。具体方法为调用analogWrite(pin, value)函数，pin为指定引脚，value是PWM的脉冲宽度，范围为0255（将5v电压模拟成255段进行调整，8位精度，255=11111111）。
+下排A0~A5 - 模拟信号输入引脚，用analogRead(pin)函数读取引脚上输入电压的大小。模拟输入引脚带有ADC（Analog-to-Digital Converter，模/数转换器）功能，arduino的模拟输入功能有10位精度，可以将读取到的05V电压转换为01023（1023的二进制为1111111111）的整数形式表示。
+TX/RX引脚（1,0号） - transmit/receive，用于串行通信，Arduino的USB口通过一个转换芯片（通常为ATmege16u2）与这两个串口的引脚连接。该转换芯片通过USB接口在计算机上虚拟出一个用于与arduino通信的串口。串行通信是相对于并行通信的概念，并行通信占用的I/O口较多，而arduino的I/O口资源较少，因此采用串行通信方式。
+下排左侧 - VCC表示电源，有3.5和5V两个接口，GND（阴极，接地）两个比较常用。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-10-13 00:00:00 +0000 UTC'>October 13, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
+  <a class="entry-link" aria-label="post link to Arduino 入门基础知识总结" href="https://xiangtaoxiao.github.io/posts/summary-of-basic-knowledge-of-arduino/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">摄影技术分享网站
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Fuji X Weekly 关于富士x系列的博客，提供富士胶片模拟参数设置教程，各种胶片风格模拟，图片质量很不错。
+点此前往
+150胶片模拟参数表 摄影师David收集并整理，谷歌文档。
+查看
+f16.click 富士官方X摄影师，有许多关于富士相机的体验与使用经验。提供了一组适用X70与XF10的胶片模拟参数。其中 黑白&#43;红色滤镜 的设置效果是我比较喜欢的。
+点此前往
+知乎胶片模拟参数设置回答 提供了一个日系参数设置感觉效果还不错。
+FILM:ASTIA　DR:400%　WB:AUTO　HIGHLIGHT:-2　SHADOW:-2　COLOR:&#43;1　SHARP:-2　NR:0
+点此前往
+持续更新ing…
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-07-03 00:00:00 +0000 UTC'>July 3, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
+  <a class="entry-link" aria-label="post link to 摄影技术分享网站" href="https://xiangtaoxiao.github.io/posts/photography-technology-sharing-website/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">设计杂志类网站
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Core77 / Industrial Design Magazine 关于工业设计的新闻、点子、访谈等各种内容，网站很好看，访问不是很快。
+点此前往
+不断更新ing…
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-07-03 00:00:00 +0000 UTC'>July 3, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
+  <a class="entry-link" aria-label="post link to 设计杂志类网站" href="https://xiangtaoxiao.github.io/posts/core77-industrial-design-magazine/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fujifilm XF10 对比 Panasonic LX10
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>大学伊始，买了全画幅canon 6D &#43; 24-105套头，玩了四年，让我从一个摄影小白逐步了解了摄影的各种技术，也见识了全画幅的威力——扛着一个红圈大单反出门好不威风，旅游的时候路人看到我在拍什么，常常也跟上来到同样的位置看看；同学老师们也乐意让我拍拍。尽管如此，四年下来，我对这台笨重的相机却有些厌倦了，它实在太重，加上三脚架，如果不是有重要活动，实在不想再扛着到处跑。
+6D我用的其实并不多，主要用来拍了学校班级的活动以及难得出去旅游用用，现在随着对摄影的了解更加深入，逐步意识到自己在技术和审美上还存在不足，要多拍才行——我需要一个能随身带着的可以到处拍的玩意儿来提高自己的拍摄频率。那么手机不行吗？不行，手机可玩性太低，参数调整远不如相机的拨盘来的方便，目前大多数手机画质也不及相机，用手机拍照着实差了点感觉，学摄影还得相机。
+预算2000元以下的卡片机，二手基本就是在XF10和LX10之间做选择。在网上看了一些测评，键盘摄影师太多 ，还是自己都买来尝试一下吧。
+先说结论：我留下了XF10，根本原因在于画质与可玩性：
+画质 我的目的是为了提升摄影技术，我有全幅了对变焦需求不大，定焦反而能让我专注构图拍照。XF10的APS-C画幅能与手机的画质拉开明显的差距，LX10的一英寸底则不能，特别是在手机摄影快速发展的今天，面对华为P40 pro&#43;，即使光学变焦也不是一个很明显的优势。（说实话，华为的这款手机确实让人惊艳，也让我下定决心放弃了LX10），再过两年，把LX10的预算加在手机上买个拍照旗舰，日常拍摄发朋友圈完全够用。对比6D，XF10，LX10，可以看到画质上还是有非常明显的区别，放大画面在细节的保留上底大一级压死人的定律非常明显。XF10对细节的反映以及画面锐度是手机无法比拟的，这台相机给我的感觉更加专业，而LX10则更像是一台家用产品。
+可玩性 简单来说就是好不好折腾，我是喜欢折腾的，所以这些在我来看一些缺点也能当做优点。
+胶片模拟 富士的胶片模拟可用性很高，XF10提供了11种胶片模拟，并可对高光阴影对比度降噪等做进一步调整，jpeg直出色彩确实不错，不过在锐化和降噪上稍显激进导致一些网友认为涂抹感太强，实际上用raw格式在富士提供的专业软件如capture one里可以精细调整，不存在这个问题，其raw格式后期空间大，色彩丰富，同时2420万像素给了后期很大的剪裁空间，基本可以当做3倍变焦来用。LX10的raw则稍显不足，色彩不够丰富，宽容度较低，细节有所损失，因此后期空间相对较小。
+快拍模式 XF10的快拍模式被许多人吐槽只有5m和2m两种模式并且不支持更改光圈，但是说实话2000元要啥自行车，和GR比完全没必要，另外在手动对焦模式下，XF10提供了对焦距离标尺，通过设置不同光圈及对焦距离，想要什么距离和景深的快拍都是可以做到的，无非是没有一个快捷键快速设置的功能，但我认为可用性也不错了（自己也不是很有街拍经验）。LX10则没有快拍模式，其开机时间也比较长（镜头要伸出来），不过考虑到对焦速度快，也是用其拍照的一种优势。
+重量 在重量方面，XF10只有280g，而LX10有340g，同时LX10的镜头相较XF10凸起更加明显，就实际放在口袋里的感受来说，XF10要舒服的多，LX10会把口袋撑起来，并且让裤子有严重下坠感，在夏天，LX10放在口袋里出门并不是很方便。
+性能 至于网上频繁吐槽的XF10的对焦性能与操控，坦白说个人使用绝没有网上说的那么夸张。LX10毫无疑问是完胜的，对焦迅速，触屏强大流畅，维纳斯芯片性能强劲处理速度快。XF10的对焦比较慢，但在较好光线的情况下速度不错，手动峰值对焦也可以接受，无非就是拍摄节奏比较慢。
+唯一让我诟病的就是XF10的芯片显然速度不行，拍raw&#43;fine jpg格式的照片，每一张都要处理个三四秒，这是限制拍摄节奏与连拍的最大问题，因为在处理器处理照片时，相机的触屏将失效，也就是说如果你想触屏改变模式或者对焦点，你必须等几秒相机处理完上一张照片，很多时候让我以为相机失灵了，但一般情况下，只要掌握了节奏或者不拍这么大的照片（加起来50多M）就还好。
+LX10的优势 选择XF10并不代表我不喜欢LX10，实际上这款相机在我看来是一款性价比极高的相机。一般提的比较多的就是它的翻转屏，4K录制功能，5轴防抖等，这些都是XF10没有的，如果是喜欢录制视频的朋友，LX10性价比极高值得尝试。
+我要着重赞美一下LX10的操控，松下的菜单以及操控实在是极其清晰简单，上手非常快，我认为这款相机很适合新手入门，去学习熟练控制光圈、快门以及感光度。并且其支持步进变焦，可以在35mm，50mm，75mm间进行切换，对熟悉焦段很有帮助。LX10在明亮环境下色彩还原度较高，用来旅行或者办公记录，都会是不错的选择。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-07-01 00:00:00 +0000 UTC'>July 1, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
+  <a class="entry-link" aria-label="post link to Fujifilm XF10 对比 Panasonic LX10" href="https://xiangtaoxiao.github.io/posts/fujifilm-xf10-vs-panasonic-lx10/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">2019巴塞尔艺术展（香港）
     </h2>
   </header>
@@ -295,101 +379,12 @@ def f1(y_hat, y_true): &#39;&#39;&#39; 输入张量y_hat是输出层经过sigm
   <footer class="entry-footer"><span title='2020-05-22 00:00:00 +0000 UTC'>May 22, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
   <a class="entry-link" aria-label="post link to 多标签分类(multi-label)分类方法笔记" href="https://xiangtaoxiao.github.io/posts/notes-on-multi-label-classification-method/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Natural Language Processing相关概念理解
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>NLP一般流程 文本预处理-&gt;词向量与文本表示-&gt;特征选择与特征抽取-&gt;分类算法
-词向量与文本表示 词袋模型（BOW） 将所有词汇放进一个袋子里，假设有n个词，则每个句子表示为一个长度为n的词频向量，词频即对应词在句子里出现的次数，如果没有出现就是0。这种方法句子里的语义信息被完全遗失了。
-word based encodings 另一种思路是表示句子，这样就可以把词在句子中的位置关系考虑进去，例如 “我 喜欢 猫”和 “我 喜欢 狗”分别表示为（0 1 2）和（0 1 3），这里的数字不再是词频，而是对应单词被分配的编码，如果词重复了，显然在数组中对应的数字也会重复。
-padding 句子长度不同时，需要将他们转化为统一长度的向量输入到神经网络中训练，这时就要padding，设置一个长度n，如果句子长度小于n，就在数组左侧或右侧填充0，如果句子长了，就把左侧或右侧多余的部分忽略，具体方位由自己选择。
-词向量模型（word embedding） 考虑词与词之间的位置关系。原本用随机分配的数字代表每一个词，词与词之间是完全独立的，而embedding使得每一个词成为了一个n维空间中的向量，如果两个词的含义相近，那么相应的向量距离也就进，这样就考虑到了词的含义。
-word2Vec ： 底层采用基于CBOW和Skip-Gram算法的神经网络模型。
-CBOW模型：
-CBOW模型的训练输入是某一个特征词的上下文相关的词对应的词向量，而输出就是这特定的一个词的词向量。由于CBOW使用的是词袋模型，因此上下文的几个词都是平等的，也就是不考虑他们和我们关注的词之间的距离大小，只要在我们上下文之内即可。
-这样我们这个CBOW的例子里，我们的输入是上下文选定的词向量，输出是所有词的softmax概率（训练的目标是期望训练样本特定词对应的softmax概率最大），对应的CBOW神经网络模型输入层有4个神经元，输出层有词汇表大小个神经元。隐藏层的神经元个数我们可以自己指定。通过DNN的反向传播算法，我们可以求出DNN模型的参数，同时得到所有的词对应的词向量。这样当我们有新的需求，要求出某4个词对应的最可能的输出中心词时，我们可以通过一次DNN前向传播算法并通过softmax激活函数找到概率最大的词对应的神经元即可。
-Skip-Gram模型：
-Skip-Gram模型和CBOW的思路是反着来的，即输入是特定的一个词的词向量，而输出是特定词对应的上下文词向量。
-这样我们这个Skip-Gram的例子里，我们的输入是特定词， 输出是softmax概率排前几的词，对应的Skip-Gram神经网络模型输入层有1个神经元，输出层有词汇表大小个神经元。隐藏层的神经元个数我们可以自己指定。通过DNN的反向传播算法，我们可以求出DNN模型的参数，同时得到所有的词对应的词向量。这样当我们有新的需求，要求出某1个词对应的最可能的4个上下文词时，我们可以通过一次DNN前向传播算法得到概率大小排前4的softmax概率对应的神经元所对应的词即可。
-词向量模型突出特点：
-在词向量模型中，词向量与词向量之间有这非常特殊的特性。例如现在存在国王、男生、女人、皇后四个词向量，那么一个完善的词向量模型，就存在“国王-男人&#43;女人=皇后”这样的关系。
-参考： 词袋模型（BOW，bag of words）和词向量模型（Word Embedding）概念介绍
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-21 00:00:00 +0000 UTC'>May 21, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to Natural Language Processing相关概念理解" href="https://xiangtaoxiao.github.io/posts/understanding-of-related-concepts-of-natural-language/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">NLP数据准备相关代码记录
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>csv文件 什么是csv文件 csv既逗号分隔符文件，行数据用’,‘分隔，列数据用换行符’\n’分隔
-读取与写入csv文件 with open(filename, &#39;r&#39;, encoding=&#39;gbk&#39;) as rf: reader = csv.reader(rf, dialect=csv.excel) # 按行读取，读取的是存储为excel可读格式的csv文件，这个文件可以用excel打开查看 with open(r&#39;clean_data\clean_data_0.5_no_repeat.csv&#39;, &#39;w&#39;, encoding=&#39;gbk&#39;, newline=&#39;&#39;) as f: writer = csv.writer(f, dialect=csv.excel, delimiter=&#39;,&#39;) for data in final_dataset: writer.writerow(data) # 按行写入，写入格式也是csv.excel，会把一个二维列表自动存储为表格，行列对应，存储的内容是原封不动的 csv文件存储格式与换行问题 用以上方法读取的csv文件每一行每一列取出的都是字符串’str’格式，对于字典要用eval()函数自动转回原本对应的格式，而int等也要用对应函数转换
-newline=’’“设置存储的行与行之间没有空行，否则会隔行存储。
-json格式 json格式文件特点 json格式文本对{对象:值}，例如： {“name”: “John Doe”, “age”: 18, “address”: {“country” : “china”, “zip-code”: “10000”}}，和字典有些相似，存储的值可以是字符串，数组，字典等，这个格式好处在于可以存储结构相对复杂的数据并且易于存取。
-json与str，json的读取 在实际操作中似乎直接把json放在列表里就可以和其他数据一样存储到csv文件中，在使用csv.writer方法时，双引号的问题被自动解决了，取出以后和其他数据一样都是str，使用json.loads()方法即可转换为json格式数据，写入的时候可以用同样的方法转换。
-转换后的json格式数据按对象取值的方法与字典相似，即data[‘对象名’]-&gt;值
-python集合、列表、字典 在处理重复数据时（这里指字符串或数值的数据），可以采用集合进行存储，因为集合中元素不能重复，可以很简单的使用set()或list()方法将集合和列表相互转换，因此可以利用集合去重后在转换为list存储。
-要注意的是，创建空的集合要使用a = set()方法，如果是a={}则是一个空的字典。
-当存储集合时如果集合为空会存储一个空集，内容为set()。
-集合增加元素要用add()方法，集合没有列表的append()方法。
-在处理数据时，字典一个很大的用处在于给出的key是有语义的，这提高了代码的可读性，list[1]中的数据是什么我们是不知道的，而dict[‘key’]则很好懂。
-tensorflow输入数据格式转化 constant方法生成张量，tensorflow搭建的算法输入数据都是相应格式的张量，而不是列表，因此如果采用csv.reader读取csv文件而不是tensorflow自带的方法读取csv文件的话，要用对应的tensorflow或者numpy方法将数据转化为张量，通常为[None,*]None为数据量比如有2000条训练文本，None就是2000，后面的就是处理后的数据格式，比如设置的padding，maxlen=500的embedding size=12后的文本数据，格式就是[None,500,12]，label数据格式也要与之相对应。
-tensorflow自带的读取csv文件的方法可以直接得到tensor格式的数据，但是由于我要处理的csv文件是文本文件并且包含json，这个时候还是先用csv的方法处理完比较好。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-21 00:00:00 +0000 UTC'>May 21, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to NLP数据准备相关代码记录" href="https://xiangtaoxiao.github.io/posts/nlp-data-preparation-related-code-record/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">TensorFlow基础API
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>看网课视频老师讲的一些，实际上官方文档有非常详细的介绍
-import numpy as np import tensorflow as tf # tf基础api：常量 t = tf.constant([[1., 2., 3.], [4., 5., 6.]]) # index索引操作 print(t) print(t[:, 1:]) print(t[..., 1]) #%% # ops算数操作 print(t&#43;10) print(tf.square(t)) print(t @ tf.transpose(t)) # 乘转置 #%% # numpy conversion print(t.numpy()) print(np.square(t)) np_t = np.array([[1., 2., 3.], [4., 5., 6.]]) print(tf.constant(np_t)) #%% # Scalars tensor可以使0维、1维... t = tf.constant(2.718) print(t.numpy()) print(t.shape) #%% # strings t = tf.constant(&#39;cafe&#39;) print(t) print(tf.strings.length(t)) print(tf.strings.length(t, unit=&#39;UTF8_CHAR&#39;)) print(tf.strings.unicode_decode(t, &#39;UTF8&#39;)) #%% # string array t = tf.constant([&#39;cafe&#39;, &#39;coffee&#39;, &#39;咖啡&#39;]) print(tf.strings.length(t, unit=&#39;UTF8_CHAR&#39;)) r = tf.strings.unicode_decode(t, &#39;UTF8&#39;) print(r) #%% # ragged tensor r = tf.ragged.constant([[11, 12], [21, 22, 23], [], [41]]) # index op print(r) print(r[1]) print(r[1:2]) #%% # ops on ragged tensor r2 = tf.ragged.constant([[51, 52], [], [71]]) print(tf.concat([r, r2], axis=0)) r3 = tf.ragged.constant([[13, 14], [15], [], [41, 42, 43]]) print(tf.concat([r, r3], axis=1)) # ragged tensor 变成 普通tensor 空位用0补齐，注意0永远在正常值的后面 print(r.to_tensor()) #%% # sparse tensor 0可以在正常值前面 s = tf.SparseTensor(indices=[[0, 1], [1, 0], [2, 3]], values=[1., 2., 3.], dense_shape=[3, 4]) print(s) print(tf.sparse.to_dense(s)) # 稀疏矩阵转密集矩阵，这样的稀疏矩阵不能用ragged tensor来表示 #%% # ops on sparse tensors s2 = s * 2.0 print(s2) try: s3 = s &#43; 1 except TypeError as ex: print(ex) s4 = tf.constant([[10., 20.], [30., 40.], [50., 60.], [70., 80.]]) print(tf.sparse.sparse_dense_matmul(s, s4)) #%% s5 = tf.SparseTensor(indices=[[0, 2], [0, 1], [2, 3]], # 没有排好序的稀疏矩阵无法被转换为密集矩阵 values=[1., 2., 3.], dense_shape=[3, 4]) print(s5) s6 = tf.sparse.reorder(s5) # 对s5进行排序 print(tf.sparse.to_dense(s6)) #%% # Variable 变量 v = tf.Variable([[1., 2., 3.], [4., 5., 6.]]) print(v) print(v.value()) print(v.numpy()) #%% # assign value 变量重新赋值 v.assign(2*v) print(v.numpy()) v[0, 1].assign(42) print(v.numpy()) v[1].assign([7., 8., 9.]) print(v.numpy()) #%% # 不能用=号，只能用assign()重新赋值 try: v[1] = [7., 8., 9.] except TypeError as ex: print(ex) # &#39;ResourceVariable&#39; object does not support item assignment </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-21 00:00:00 +0000 UTC'>May 21, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to TensorFlow基础API" href="https://xiangtaoxiao.github.io/posts/tensorflow-basic-api/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">卷积神经网络(CNN)理论与实现
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、理论 卷积神经网络结构：（卷积层&#43;（可选）池化层）*N&#43;全连接层*M（M&gt;=0），卷积层的输入输出是矩阵，全连接层输入输出是向量，在卷积层的最后一层做一个展平。
-主要用于分类任务
-全卷积神经网络：（卷积层&#43;（可选）池化层）*N&#43;反卷积层*K，可以做物体分割类任务
-卷积操作 解决参数过多导致的计算资源不足，容易过拟合的问题。解决方法：局部连接（基于图像的区域性）、参数共享（基于图像特征与位置无关）
-卷积核是反向传播计算出的参数，卷积：卷积核与输入做点积乘法。步长：卷积核每次在输入上滑动的距离。padding：使输出size不变。
-池化操作 类似卷积，计算方式不同，最大值池化：池化核滑动覆盖区域的最大值作为结果输出。
-特点：常使用不重叠（kernal-size=步长）、不补零的操作。参数即为步长和池化核大小。用于减少图像尺寸，从而减少计算量。一定程度平移鲁棒。损失了空间精度。
-二、实现 embedding_dim = 16 batch_size = 128 cnn_model = keras.models.Sequential([ keras.layers.Embedding(vocab_size, embedding_dim, input_length=max_length), keras.layers.Conv1D(filters=256,kernel_size=2,kernel_initializer=&#39;he_normal&#39;, strides=1,padding=&#39;SAME&#39;,activation=&#39;relu&#39;), keras.layers.GlobalMaxPooling1D(), keras.layers.Dropout(rate=0.5), keras.layers.Dense(12, activation=&#39;sigmoid&#39;) ]) cnn_model.summary() cnn_model.compile(optimizer=&#39;adam&#39;, loss=&#39;binary_crossentropy&#39;, metrics=[&#39;accuracy&#39;]) Conv1D 在文本中，卷积的某一维大小往往为embedding长度，即在宽度上不需要窗口移动，宽度就是整个窗口，所以conv1d默认卷积的宽度就为embedding维度，长度通过kernel_size来指定的，此处为2，即卷积核的大小为2*embedding_size。strides为步长，此处为1，即卷积核每隔一个单词移动一次。filters是卷积核的个数，即输出的维度。padding有valid和same两种选择，valid在长度方向（宽度方向不padding）不进行padding，而same则在长度方向进行padding，保证输入句子长度和卷积后输出的句子长度一致。
-//blog.csdn.net/bobobe/article/details/87923618
-tensorflow fit()方法：参考
-//blog.csdn.net/crazyman2010/article/details/103705318
-TextCNN //blog.csdn.net/u014732537/article/details/79573174
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-05-21 00:00:00 +0000 UTC'>May 21, 2020</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 卷积神经网络(CNN)理论与实现" href="https://xiangtaoxiao.github.io/posts/theory-and-implementation-of-convolutional-neural-network/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://xiangtaoxiao.github.io/page/2/">
-      «&nbsp;Prev&nbsp;2/4
+      «&nbsp;Prev&nbsp;2/5
     </a>
-    <a class="next" href="https://xiangtaoxiao.github.io/page/4/">Next&nbsp;4/4&nbsp;»
+    <a class="next" href="https://xiangtaoxiao.github.io/page/4/">Next&nbsp;4/5&nbsp;»
     </a>
   </nav>
 </footer>

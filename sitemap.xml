@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xiangtaoxiao.github.io/posts/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+    <loc>https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xiangtaoxiao.github.io/tags/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+    <loc>https://xiangtaoxiao.github.io/posts/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xiangtaoxiao.github.io/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</loc>
+    <lastmod>2026-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</loc>
+    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xiangtaoxiao.github.io/tags/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xiangtaoxiao.github.io/tags/%E4%BA%A7%E5%93%81/</loc>

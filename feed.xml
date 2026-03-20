@@ -8,48 +8,215 @@
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
-    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xiangtaoxiao.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent（从 Chatbot 到生产级 Agent）</title>
+      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</guid> 
+      <description>&lt;h1 id=&#34;ai-agent从-chatbot-到生产级-agent&#34;&gt;AI Agent（从 Chatbot 到生产级 Agent）&lt;/h1&gt;
+&lt;p&gt;AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yao, S., et al. (2022). &amp;ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.&amp;rdquo; ICLR. [&lt;a href=&#34;https://arxiv.org/abs/2210.01691&#34;&gt;论文链接&lt;/a&gt;] - ReAct框架，Agent核心范式&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wang, G., et al. (2024). &amp;ldquo;A Survey on Large Language Model based Autonomous Agents.&amp;rdquo; arXiv. [&lt;a href=&#34;https://arxiv.org/abs/2308.11432&#34;&gt;论文链接&lt;/a&gt;] - Agent综述&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;一整体演进路径&#34;&gt;一、整体演进路径&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Chatbot → Tool Use → Agent → Production Agent（工业级）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;演进说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chatbot&lt;/strong&gt;: 仅能对话，无法执行外部操作&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool Use&lt;/strong&gt;: 能调用单一工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agent&lt;/strong&gt;: 能自主规划并执行多步骤任务&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Production Agent&lt;/strong&gt;: 工业级，具备错误处理、权限控制、监控等能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二核心概念拆解&#34;&gt;二、核心概念拆解&lt;/h2&gt;
+&lt;h3 id=&#34;1-chatbot&#34;&gt;1️⃣ Chatbot&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;LLM + Prompt&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI产品经理概念学习笔记</title>
+      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</guid> 
+      <description>&lt;h1 id=&#34;prompt-engineering&#34;&gt;Prompt Engineering&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&#34;&gt;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brown, T. B., et al. (2020). &amp;ldquo;Language Models are Few-Shot Learners.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2005.14165&#34;&gt;论文链接&lt;/a&gt;] - GPT-3论文，首次系统展示了prompt engineering的潜力&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-prompting-principles提示原则&#34;&gt;1. Prompting Principles（提示原则）&lt;/h2&gt;
+&lt;h3 id=&#34;principle-1-write-clear-and-specific-instructions编写清晰具体的指令&#34;&gt;Principle 1: Write clear and specific instructions（编写清晰具体的指令）&lt;/h3&gt;
+&lt;p&gt;清晰性（Clarity）和具体性（Specificity）是prompt设计的核心原则。研究表明，模糊的指令会导致模型输出不确定性增加，而具体的指令能显著提升输出质量。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tactic 1: Use delimiters to clearly indicate distinct parts of the input&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分隔符（如 ```、&amp;quot;&amp;quot;&amp;quot;、&amp;mdash;、&amp;lt;&amp;gt;）能帮助模型识别输入的不同部分，避免混淆。这在处理包含多段文本或代码的任务时尤为重要。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tactic 2: Ask for a structured output&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;要求结构化输出（如JSON、HTML、Markdown表格）便于后续程序处理，是构建AI应用的最佳实践。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG (Retrieval-Augmented Generation)</title>
+      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</guid> 
+      <description>&lt;h1 id=&#34;rag&#34;&gt;RAG&lt;/h1&gt;
+&lt;p&gt;RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lewis, P., et al. (2020). &amp;ldquo;Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.&amp;rdquo; NeurIPS. [&lt;a href=&#34;https://arxiv.org/abs/2005.11401&#34;&gt;论文链接&lt;/a&gt;] - RAG开山之作&lt;/li&gt;
+&lt;li&gt;Guu, K., et al. (2020). &amp;ldquo;REALM: Retrieval-Augmented Language Model Pre-Training.&amp;rdquo; ICML. [&lt;a href=&#34;https://arxiv.org/abs/2002.08909&#34;&gt;论文链接&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Izacard, G., &amp;amp; Grave, É. (2021). &amp;ldquo;Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.&amp;rdquo; EACL. [&lt;a href=&#34;https://arxiv.org/abs/2007.01282&#34;&gt;论文链接&lt;/a&gt;] - RAG的另一种实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-context-window上下文窗口&#34;&gt;1. Context Window（上下文窗口）&lt;/h2&gt;
+&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+&lt;p&gt;Context Window 指的是 &lt;strong&gt;大语言模型在一次推理时能够读取和理解的最大文本长度&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dai, Z., et al. (2019). &amp;ldquo;Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.&amp;rdquo; ACL. [&lt;a href=&#34;https://arxiv.org/abs/1901.02860&#34;&gt;论文链接&lt;/a&gt;] - 突破固定上下文长度的开创性工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通常包含：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI产品经理概念学习笔记</title>
+      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
+       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</guid> 
+      <description>&lt;h1 id=&#34;transformer-完全学习笔记从入门到产品视角&#34;&gt;Transformer 完全学习笔记：从入门到产品视角&lt;/h1&gt;
+&lt;h2 id=&#34;-导论为什么transformer如此重要&#34;&gt;📚 导论：为什么Transformer如此重要？&lt;/h2&gt;
+&lt;p&gt;Transformer模型是由Vaswani等人在2017年发表的论文《&lt;strong&gt;Attention Is All You Need&lt;/strong&gt;》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心创新&lt;/strong&gt;：完全抛弃传统的CNN/RNN架构，仅使用&lt;strong&gt;注意力机制&lt;/strong&gt;来捕捉序列依赖关系，实现了两大突破：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;并行计算&lt;/strong&gt;：解决了RNN无法并行的问题，大幅提升训练速度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;长程依赖&lt;/strong&gt;：解决了RNN/LSTM在处理长序列时的梯度消失问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-一transformer整体架构&#34;&gt;🏗️ 一、Transformer整体架构&lt;/h2&gt;
+&lt;h3 id=&#34;11-编码器-解码器结构&#34;&gt;1.1 编码器-解码器结构&lt;/h3&gt;
+&lt;p&gt;Transformer遵循Seq2Seq模型的编码器-解码器架构：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;编码器（Encoder）&lt;/strong&gt;：将输入序列（如源语言句子）转换为连续表示&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;由N个相同的编码器层堆叠而成（原始论文中N=6）&lt;/li&gt;
+&lt;li&gt;每层包含：多头自注意力子层 + 前馈神经网络子层&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;解码器（Decoder）&lt;/strong&gt;：基于编码器输出生成目标序列（如目标语言句子）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同样由N个相同的解码器层堆叠而成&lt;/li&gt;
+&lt;li&gt;每层包含：掩码多头自注意力 + 编码器-解码器注意力 + 前馈神经网络&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;掩码机制&lt;/strong&gt;：确保解码器在预测位置i时只能看到位置i之前的输出，防止信息泄露&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;12-核心组件概览&#34;&gt;1.2 核心组件概览&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;组件&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;功能&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;创新点&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;自注意力机制&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;捕捉序列内部任意两个位置的关系&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全局建模、并行计算&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;多头注意力&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;从不同角度关注信息&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;并行子空间学习&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;位置编码&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;为模型提供序列位置信息&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;弥补注意力机制的位置盲点&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;前馈网络&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;对每个位置进行非线性变换&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;增强模型表达能力&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;残差连接&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;将输入直接连接到输出&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;缓解深层网络退化问题&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;层归一化&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;稳定每层的输出分布&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;加速收敛、提高稳定性&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-二核心机制详解&#34;&gt;🔍 二、核心机制详解&lt;/h2&gt;
+&lt;h3 id=&#34;21-自注意力机制self-attention&#34;&gt;2.1 自注意力机制（Self-Attention）&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：让序列中的每个词都能直接关注到所有其他词，动态计算词与词之间的相关性。&lt;/p&gt;
+&lt;h4 id=&#34;实现步骤&#34;&gt;实现步骤：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;输入表示&lt;/strong&gt;：每个输入词$x_i$被转换为嵌入向量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生成Q、K、V&lt;/strong&gt;：通过三个可训练的权重矩阵$W_Q, W_K, W_V$将输入映射为查询（Query）、键（Key）、值（Value）向量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;计算注意力分数&lt;/strong&gt;：Query与所有Key的点积，表示当前位置对其他位置的关注程度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缩放与归一化&lt;/strong&gt;：除以$\sqrt{d_k}$（防止点积过大导致梯度消失），经Softmax归一化为权重&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加权聚合&lt;/strong&gt;：用权重对Value进行加权求和，得到最终输出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;数学公式&lt;/strong&gt;：
+$$
+\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>国内电商平台支付方式对比</title>
       <link>https://xiangtaoxiao.github.io/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</link>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
        <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</guid> 
-      <description>&lt;h4 id=&#34;一主流支付方式对比&#34;&gt;一、主流支付方式对比&lt;/h4&gt;
-&lt;h5 id=&#34;1-公对公现金支付&#34;&gt;1. 公对公现金支付&lt;/h5&gt;
+      <description>&lt;h1 id=&#34;一主流支付方式对比&#34;&gt;一、主流支付方式对比&lt;/h1&gt;
+&lt;h2 id=&#34;1-公对公现金支付&#34;&gt;1. 公对公现金支付&lt;/h2&gt;
 &lt;p&gt;方式：柜台或网银主动转账、通过银行分账系统支付并获取回单&lt;/p&gt;
 &lt;p&gt;限额：可大额转账，5万以上走人行大额支付系统周末和假期不开可能受影响（工作日是前天晚上20:30一直跑到当天17:15）&lt;/p&gt;
 &lt;p&gt;到账时效：一般能及时到账&lt;/p&gt;
 &lt;p&gt;电商平台核验收款成功：财务手工核查银行账户、通过识别汇款备注里与订单关联的唯一代码自动核查、通过银行分账系统支付一般可实时确认&lt;/p&gt;
-&lt;h5 id=&#34;2-网关支付&#34;&gt;2. 网关支付&lt;/h5&gt;
+&lt;h2 id=&#34;2-网关支付&#34;&gt;2. 网关支付&lt;/h2&gt;
 &lt;p&gt;前往第三方支付公司或银行提供的统一收银台，跳转指定银行网银支付&lt;/p&gt;
 &lt;p&gt;限额：取决于支付卡类型及安全等级&lt;/p&gt;
 &lt;p&gt;支持银行：取决于统一收银台的服务提供方的合作银行数量&lt;/p&gt;
-&lt;h5 id=&#34;3-聚合码扫码支付&#34;&gt;3. 聚合码/扫码支付&lt;/h5&gt;
+&lt;h2 id=&#34;3-聚合码扫码支付&#34;&gt;3. 聚合码/扫码支付&lt;/h2&gt;
 &lt;p&gt;分主扫（客户手机APP唤起摄像头扫描商家二维码）和被扫（客户出示支付码给商家），电商网页用主扫的方案。&lt;/p&gt;
 &lt;p&gt;由聚合支付服务提供商提供的聚合码一般支持多个支付方式（比如微信、支付宝等），接入聚合码对商户更加方便。&lt;/p&gt;
 &lt;p&gt;由支付公司提供的单一渠道比如微信收款码、支付宝收款码只能支持指定APP扫码支付，好处是服务更稳定，体验更好。&lt;/p&gt;
-&lt;h5 id=&#34;4-第三方app支付&#34;&gt;4. 第三方APP支付&lt;/h5&gt;
+&lt;h2 id=&#34;4-第三方app支付&#34;&gt;4. 第三方APP支付&lt;/h2&gt;
 &lt;p&gt;唤起第三方APP付款，国内头部的三家是微信、支付宝、云闪付，其中微信在线下场景覆盖广，支付宝依托淘宝生态、碰一碰支付创新持续和微信抢占市场，云闪付作为国家队，目前依托消费补贴、一站式银行卡管理功能也有一定流量且铺的比较广。其他的比如京东支付、连连支付等，体量和前三有一定差距，在特定场景有自身优势。&lt;/p&gt;
 &lt;p&gt;支持银行：基本齐全，且都支持余额、信用支付等方式。微信目前侧重个人支付，不支持绑定公账，支付宝可以创建企业账户绑定公账支付。&lt;/p&gt;
-&lt;h5 id=&#34;5-移动快捷支付&#34;&gt;5. 移动快捷支付&lt;/h5&gt;
+&lt;h2 id=&#34;5-移动快捷支付&#34;&gt;5. 移动快捷支付&lt;/h2&gt;
 &lt;p&gt;打开支付渠道H5页面绑定银行卡付款，目前用的较少，主流支付公司都有该形式，但H5页面安全风险相较APP支付更高，且用户体验较差（需重复登录）。&lt;/p&gt;
-&lt;h5 id=&#34;6-银行卡快捷支付&#34;&gt;6. 银行卡快捷支付&lt;/h5&gt;
+&lt;h2 id=&#34;6-银行卡快捷支付&#34;&gt;6. 银行卡快捷支付&lt;/h2&gt;
 &lt;p&gt;通过和支付公司合作，平台对接支付公司，用户在平台绑卡后选卡支付。&lt;/p&gt;
 &lt;p&gt;部分渠道可以免密支付，平台需承担部分风控责任，但用户体验好，支付速度快。&lt;/p&gt;
 &lt;p&gt;支持银行：取决于服务提供方的合作银行数量。&lt;/p&gt;
-&lt;h5 id=&#34;7-账户余额支付&#34;&gt;7. 账户余额支付&lt;/h5&gt;
+&lt;h2 id=&#34;7-账户余额支付&#34;&gt;7. 账户余额支付&lt;/h2&gt;
 &lt;p&gt;购买支付牌照或通过和第三方支付公司合作提供钱包功能，支持用户充值余额支付。&lt;/p&gt;
 &lt;p&gt;平台需要针对充值、支付、提现做一定风控措施。该方式对用户体验好，且有助于提高用户粘性。&lt;/p&gt;
-&lt;h5 id=&#34;8-金融白条支付&#34;&gt;8. 金融白条支付&lt;/h5&gt;
+&lt;h2 id=&#34;8-金融白条支付&#34;&gt;8. 金融白条支付&lt;/h2&gt;
 &lt;p&gt;比较知名的有花呗、京东白条、美团月付等，通过金融机构授信一定额度给用户支付，C端大部分有一个月的平台贴息。该方式可以大幅提升用户粘性，特别是一些B端客户对现金流比较重视，提供账期可以建立紧密合作关系，但这对信用评估和风控有较高要求。&lt;/p&gt;
-&lt;h5 id=&#34;9-月结&#34;&gt;9. 月结&lt;/h5&gt;
+&lt;h2 id=&#34;9-月结&#34;&gt;9. 月结&lt;/h2&gt;
 &lt;p&gt;由商家针对指定客户允许其赊账或签订月结的协议，商家自行记账并要求客户定期还款，平台如果有自营业务，也会考虑设计相关功能。该方式交易不受第三方担保，可以不经过电商平台，通常是商家与合作紧密熟悉的客户采用该方式。&lt;/p&gt;
-&lt;h5 id=&#34;10-数字人民币&#34;&gt;10. 数字人民币&lt;/h5&gt;
+&lt;h2 id=&#34;10-数字人民币&#34;&gt;10. 数字人民币&lt;/h2&gt;
 &lt;p&gt;等同于现金支付，目前支付APP和扫码支付，使用量较低。&lt;/p&gt;
-&lt;h5 id=&#34;11-代付&#34;&gt;11. 代付&lt;/h5&gt;
+&lt;h2 id=&#34;11-代付&#34;&gt;11. 代付&lt;/h2&gt;
 &lt;p&gt;生成订单并将代付收银台分享给其他用户进行支付。代付收银台页面提供的支付方式需要考虑代付用户的身份，设备环境等因素。&lt;/p&gt;
-&lt;h5 id=&#34;12-先用后付&#34;&gt;12. 先用后付&lt;/h5&gt;
+&lt;h2 id=&#34;12-先用后付&#34;&gt;12. 先用后付&lt;/h2&gt;
 &lt;p&gt;授信门槛低，通常额度小，不计入央行征信，由平台担保并向商家收取交易服务费，C端通常用户要开通了绑定银行卡代扣支付方式，个人认为该方式可以降低用户的下单决策成本，同时不像花呗等信用支付方式那么重。&lt;/p&gt;</description>
     </item>
     <item>

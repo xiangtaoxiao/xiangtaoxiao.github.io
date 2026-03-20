@@ -201,6 +201,78 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Agent（从 Chatbot 到生产级 Agent）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Agent（从 Chatbot 到生产级 Agent） AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。
+经典论文：
+Yao, S., et al. (2022). “ReAct: Synergizing Reasoning and Acting in Language Models.” ICLR. [论文链接] - ReAct框架，Agent核心范式 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] Wang, G., et al. (2024). “A Survey on Large Language Model based Autonomous Agents.” arXiv. [论文链接] - Agent综述 一、整体演进路径 Chatbot → Tool Use → Agent → Production Agent（工业级） 演进说明：
+Chatbot: 仅能对话，无法执行外部操作 Tool Use: 能调用单一工具 Agent: 能自主规划并执行多步骤任务 Production Agent: 工业级，具备错误处理、权限控制、监控等能力 二、核心概念拆解 1️⃣ Chatbot LLM &#43; Prompt
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-14 00:00:00 +0000 UTC'>March 14, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to AI Agent（从 Chatbot 到生产级 Agent）" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI产品经理概念学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Prompt Engineering https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome
+Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。
+经典论文：
+Brown, T. B., et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS. [论文链接] - GPT-3论文，首次系统展示了prompt engineering的潜力 Wei, J., et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS. [论文链接] 1. Prompting Principles（提示原则） Principle 1: Write clear and specific instructions（编写清晰具体的指令） 清晰性（Clarity）和具体性（Specificity）是prompt设计的核心原则。研究表明，模糊的指令会导致模型输出不确定性增加，而具体的指令能显著提升输出质量。
+Tactic 1: Use delimiters to clearly indicate distinct parts of the input
+分隔符（如 ```、&#34;&#34;&#34;、—、&lt;&gt;）能帮助模型识别输入的不同部分，避免混淆。这在处理包含多段文本或代码的任务时尤为重要。
+Tactic 2: Ask for a structured output
+要求结构化输出（如JSON、HTML、Markdown表格）便于后续程序处理，是构建AI应用的最佳实践。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-12 00:00:00 +0000 UTC'>March 12, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to AI产品经理概念学习笔记" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">RAG (Retrieval-Augmented Generation)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>RAG RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。
+经典论文：
+Lewis, P., et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” NeurIPS. [论文链接] - RAG开山之作 Guu, K., et al. (2020). “REALM: Retrieval-Augmented Language Model Pre-Training.” ICML. [论文链接] Izacard, G., &amp; Grave, É. (2021). “Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.” EACL. [论文链接] - RAG的另一种实现 1. Context Window（上下文窗口） 概念 Context Window 指的是 大语言模型在一次推理时能够读取和理解的最大文本长度。
+经典论文：
+Dai, Z., et al. (2019). “Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.” ACL. [论文链接] - 突破固定上下文长度的开创性工作 通常包含：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-08 00:00:00 +0000 UTC'>March 8, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to RAG (Retrieval-Augmented Generation)" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI产品经理概念学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Transformer 完全学习笔记：从入门到产品视角 📚 导论：为什么Transformer如此重要？ Transformer模型是由Vaswani等人在2017年发表的论文《Attention Is All You Need》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。
+核心创新：完全抛弃传统的CNN/RNN架构，仅使用注意力机制来捕捉序列依赖关系，实现了两大突破：
+并行计算：解决了RNN无法并行的问题，大幅提升训练速度 长程依赖：解决了RNN/LSTM在处理长序列时的梯度消失问题 🏗️ 一、Transformer整体架构 1.1 编码器-解码器结构 Transformer遵循Seq2Seq模型的编码器-解码器架构：
+编码器（Encoder）：将输入序列（如源语言句子）转换为连续表示
+由N个相同的编码器层堆叠而成（原始论文中N=6） 每层包含：多头自注意力子层 &#43; 前馈神经网络子层 解码器（Decoder）：基于编码器输出生成目标序列（如目标语言句子）
+同样由N个相同的解码器层堆叠而成 每层包含：掩码多头自注意力 &#43; 编码器-解码器注意力 &#43; 前馈神经网络 掩码机制：确保解码器在预测位置i时只能看到位置i之前的输出，防止信息泄露 1.2 核心组件概览 组件 功能 创新点 自注意力机制 捕捉序列内部任意两个位置的关系 全局建模、并行计算 多头注意力 从不同角度关注信息 并行子空间学习 位置编码 为模型提供序列位置信息 弥补注意力机制的位置盲点 前馈网络 对每个位置进行非线性变换 增强模型表达能力 残差连接 将输入直接连接到输出 缓解深层网络退化问题 层归一化 稳定每层的输出分布 加速收敛、提高稳定性 🔍 二、核心机制详解 2.1 自注意力机制（Self-Attention） 核心思想：让序列中的每个词都能直接关注到所有其他词，动态计算词与词之间的相关性。
+实现步骤： 输入表示：每个输入词$x_i$被转换为嵌入向量 生成Q、K、V：通过三个可训练的权重矩阵$W_Q, W_K, W_V$将输入映射为查询（Query）、键（Key）、值（Value）向量 计算注意力分数：Query与所有Key的点积，表示当前位置对其他位置的关注程度 缩放与归一化：除以$\sqrt{d_k}$（防止点积过大导致梯度消失），经Softmax归一化为权重 加权聚合：用权重对Value进行加权求和，得到最终输出 数学公式： $$ \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V $$
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 00:00:00 +0000 UTC'>February 20, 2026</span>&nbsp;·&nbsp;<span>Xiao Xiangtao</span></footer>
+  <a class="entry-link" aria-label="post link to AI产品经理概念学习笔记" href="https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">国内电商平台支付方式对比
     </h2>
   </header>
@@ -342,111 +414,9 @@ coze生产环境的参数是部署时系统自动赋值的，不需要自己填A
   <footer class="entry-footer"><span title='2023-05-05 00:00:00 +0000 UTC'>May 5, 2023</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
   <a class="entry-link" aria-label="post link to 初识跨境支付" href="https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">关于提现功能的一点思考
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>众所周知，微信零钱的提现会收取千分之一的手续费，有人在使用中专门注意过这个手续费是怎么收的吗？说来惭愧，作为产品经理的我并没有好好研究过这个功能，直到这次碰到要做平台用户账户的提现功能，研究后才发现习以为常的微信零钱提现，也是有些小设计在的。
-Q：假设你要提现1万元，现在钱包里有两万，微信会怎么扣款呢？
-A：你的银行卡会到账1万元，但是钱包会有两条流水：1万元提现，以及10元的服务费，钱包里还剩下9990元。
-Q：假设你还是要提现1万元，现在钱包里正好有1万元，微信又是怎么处理的呢？
-A：此时自不能再扣除10010元了，钱包里只有1万，那从1万里扣10元手续费，银行卡到账9990元不就好了，真是如此吗？实际上，此时微信计算的手续费为9.99元，银行卡到账9990.01元。
-为什么是9.99？因为你会发现，第一种情况手续费比例可以算作 10/（10000&#43;10），在第二种情况下，手续费比例则算做了 10/10000，当用户想把钱包里的钱全部提走，手续费变相的变高了，这是不合理的，遇到深究的用户，可能有法律风险。可是要避开第二种手续费情况，如何处理比较合适呢？此时用户输入的提现金额就是钱包余额，要扣除手续费，到账金额已经不可能与用户输入的提现金额相等了。
-微信的方案是计算出了一个区分情况1和情况2的提现金额，即 情况1下 到账金额加上手续费正好等于钱包余额对应的提现金额。输入的提现金额再大，就会变成情况2，这时系统自动把提现金额改为临界值，不管输入多大的提现金额，实际提现始终是 到账 &#43; 手续费 = 全部余额 的情况。比如上述例子里，9990.01就是这个分界线，9990.01～10000元输入此间任意提现金额，到账金额都是9990.01，手续费都是9.99元。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-12-28 00:00:00 +0000 UTC'>December 28, 2021</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 关于提现功能的一点思考" href="https://xiangtaoxiao.github.io/posts/thoughts-on-withdrawal-function/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">印象｜长坪沟
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>国庆期间想要避开人潮，就只有走的够高够远了吧。像天堂一般的地方，希望下次来可以露营。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-10-17 00:00:00 +0000 UTC'>October 17, 2021</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 印象｜长坪沟" href="https://xiangtaoxiao.github.io/posts/impression-of-changping-ditch/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">新人产品经理入职总结
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>总结一下新入职要做哪些准备，踩过的坑加深印象。
-1.软件安装
-了解公司常用的软件，如果有现成安装好的更好，把必备软件安装好并准备好账号。如果是陌生的软件，有空的话最好学一下使用方式，找同事问。
-2.工作模式了解
-了解公司的组织架构，一般的工作流程，产品开发是使用内部系统，还是使用文档，或者使用第三方软件等，公司部门如何协作。
-对公司技术部门的情况有一个大概的了解，条件允许的话了解下大概技术水平，主要技术路线等。
-3.认识同事
-同事不用急于熟络，也不可能一下子记住所有人，这个环节更重要的是让对方认识你。但是要记住接下来和你合作会比较密切的同事，留下好印象。
-感受一下部门氛围与工作节奏，了解自己上级的工作风格。
-有机会请同事或上级吃个饭，进一步请教了解公司的情况以及对自己的要求。
-4.熟悉业务*
-几个需要背下来的：公司的基本业务板块、公司价值观、公司内部常用术语、公司主要业绩指标数值、公司主要竞争对手、市场行情与政府政策。一般公司会有一份介绍文档或PPT，一些额外信息需要向相关同事请教。
-需要熟悉的产品：对于自己所在部门的产品，主要流程都走一遍，用一用，最好能用思维导图做个归纳思路会清晰很多。主要竞品也要用一用，了解异同。
-对于自己负责接手的产品，要整个用一便，每个功能，每个状态都要试用，并画出对应的流程图，对于不清晰的地方找对接同事确认清楚。对于自己感到疑惑或者功能比较复杂的，如果公司需求文档有保留，看一下以前的需求文档，顺便了解一下公司对需求文档的要求，以及写作规范。
-对于自己负责产品涉及到的业务，最好能够亲自体验，至少基本了解业务的情况：现有缺陷，发展目标，核心竞争力/价值，商业模式等。
-要具备对数据的敏感性，拿到相关埋点数据与统计数据做分析，做到心中有数。
-5.需求文档撰写基本要求
-工作很忙，不要重复造轮子，如果已有成熟的相关产品，或者网络上有相关介绍文档，务必了解，也能应对其他人后续对产品的挑战。
-写清楚需求的背景——开发更容易理解，也证明自己不是乱提需求。
-写清楚功能的入口——开发可能也是新接手，未必了解清楚。
-写清楚不同状态、交互的流转——技术在实现时可能不会注意到这些，即便是显而易见的逻辑，也要写清楚。
-涉及到数字或选项等，写清楚：极值、默认值、格式要求、格式要求的实现形式——基本要求。
-写清楚异常情况处理——对于能够预见的异常情况，写清楚如何避免或处理。每一步都必须要考虑可能存在的异常情况。
-很重要的——一定要给图。
-6.行事准则
-低调谦虚，对同事和开发有礼貌。对于日常遇到的问题，要换位思考，请对方办事注意措辞和时间，大家工作都很忙。
-需求要一定要和开发和测试同事确认清楚，确保开发和测试知情。不能写完就完事。
-开发完成后，一定要亲自测试，上线后要亲自确认效果无误。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-07-30 00:00:00 +0000 UTC'>July 30, 2021</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 新人产品经理入职总结" href="https://xiangtaoxiao.github.io/posts/new-product-manager-induction-summary/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">产品需求分析与管理笔记
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>在发掘用户需求时，用户需求未必是具体而明确的，比如老生常谈的福特的‘用户不会想要一辆汽车’，但到了实际开发产品的阶段，针对发掘的用户需求还是需要落到实处，要通过产品的具体功能来满足用户需求。因此在这里的产品需求分析与管理，是指分析表面需求后得出深层次需求，对应需求评估后给出特定的解决方案，被交给开发人员和设计师实现最终呈现为实际产品。另外toB和toC产品有所不同。
-软件需求可以简单分为功能性需求以及非功能性需求，功能性需求指需要软件实现的具体功能，比如注册，回滚操作等，非功能性需求指对软件的稳定性、应对用户高并发的能力等的需求。软件需求是具有优先级并且定量化的。重要的需求要优先被满足，同时要量化需求：比如我们应该告诉开发人员一个具体的系统相应速度要求，而不是说把系统做快一点。
-1 需求分析 1.1 需求过程中的角色 用户直接操作软件的人员客户委托公司开发软件产品的人员市场分析人员市场分析人员根据市场的需要，对实际客户进行模拟高层相关下达指示领导
-1.2 需求变更 由于需求分析的失误，客户环境和业务流程的改变，市场趋势的变化，难以避免会出现需求变更的情况。合理的需求变更未必是坏事，虽然意味着工作量的增加，但也有助于产品不断发展。应对需求变更，一方面，当需求发生变化，需要经过需求评审、比较分析后才能实施，而不是随意的根据客户要求或者想法简单变更，对于异想天开的想法应该据理力争尽量避免无谓的工作；另一方面，在编写需求文档时，要了解业务细节全盘考虑，要有模块化思想和发展的思维，提前想好产品的框架，尽量预设各种正面和负面的可能性，预留修改的空间。前期考虑全面有助于后期工作开展的顺利，比如注册功能，除了注册成功，注册失败的各种情况包括一些恶意注册的行为都应当考虑在内，比如账号已存在，密码不安全，注册项未填，账号密码格式或内容不合规，防止机器人，验证码验证邮件未收到，邮件链接无法打开等各种情况。
-1.3 需求来源 高层意志：公司高层下达的目标，产品经理的职责需要对目标进行评估分析，对于确认的目标分解划分优先级。 行业知识：产品经理需要及时跟进行业动向，新技术新概念的产生与运用会带来新的需求，或者与已有需求矛盾，这需要产品经理依靠行业知识来判断。比如AI技术的火热会造成产品需要提供一些相关的新功能或者对已有功能提供的服务进行升级，如果竞品率先运用某优势技术并广泛宣传，则可能对本公司产品造成竞争威胁。 用户群体：用户直接提出的需求或者分析用户得到的需求。产品的用户群体常常是成分复杂的，不同用户角色，不同用户文化，组织结构差异会产生不同的需求，需要仔细辨别，做接地气的产品。 运行环境：用户规模的变化，地域基础建设的情况比如网络性能等会要求产品做出适应变化。 组织环境：一些toB产品，相关政策，企业文化，企业工作流程与组织结构等会对产品产生定制需求。 1.4 需求获取 亲自体验 亲自参加业务工作、亲自体验产品。 调查会 邀请相关人士开会，提前设计好讨论流程和问题，并做好记录。 询问专业人士 询问该领域的专业人士，比如某业务的主管。 头脑风暴 一对一或一对多，集思广益，最后对提出的需求进行归纳整理，取有用的。 问卷调查 向用户发放问卷。 查阅资料 查看公司资料数据等，从资料中了解发现需求 1.5 需求分析模型 1.5.1 卡诺(KANO)模型 卡诺模型将需求分为5个层次：
-基本需求：用户认为必须要有的基本功能，没有此功能用户满意度大幅降低，优化此功能用户满意度提升不明显。 期望需求：用户期望的功能，有则用户满意，无则用户不满。 兴奋需求：用户预料之外的功能，很好的满足的某个需求，有则用户惊喜，满意度提升，没有满意度不会下降。 无差异需求：用户感知不强，有无对满意度影响都不大。 反向需求：普遍用户没有该需求，提供后用户感到不满，比如在CCTV播耽美剧必然导致用户不满，也不可能。 在对需求划分优先级时，应该遵照优先满足基本需求，其后开发期望需求、兴奋需求，避免无差异需求及反向需求。一些情况下需要开发一些无差异需求对应的功能，以使产品丰满另甲方满意。
-用户调研过程中，用户常常提出期望需求，而基本需求和兴奋需求则需要我们去挖掘归纳，因为这些需要是用户认为理所当然或者意向不到的。
-随着时间的推移，一些兴奋需求和期望需求会逐渐转变为基本需求，比如以前手机提供拍照功能用户觉得很惊艳，后来拍照功能逐渐成为各大厂商的卖点，旗舰手机拍照不行用户就无法接受了。
-1.5.2 马斯洛需求层次理论-Y模型 马斯洛需求反应的是深层次的基本需求，当我们得到一个用户提出的需求，基于Y模型，我们可以分析这个需求对应的用户目标即用户实际要通过满足该需求达到什么目的，进一步挖掘该动机是基于马斯洛需求层次的什么需求，通过该人性需求去设计开发对应的产品功能。一般来讲，马斯洛层次底部的功能会更加基础，工具属性更强，比如地图，外卖app等，该层次的需求也应当被优先满足。
-①是代表用户需求场景，是起点，是表象，是需求的第一种深度，观点和行为，即在什么场景下什么目标用户的什么时间操作下的什么需求；
-②是代表用户需求背后的目标和动机，需求的第二种深度，用户为什么要提出这个需求，最底层的动机是什么？我们在思考用户目标时也要综合考虑公司、产品的目标；
-③是代表产品功能，是我们根据用户需求深度剖析得出的解决方案，是实施人员能看懂的描述；
-④是代表人性需求，即马斯洛需求，或者说是需求的第三种深度价值观，是人性的需求；
-运用Y模型的一个主要的好处在于它不能跳过流程②而直接从流程①到流程③，对用户的需求有更深层次的分析有助于：不被伪需求欺骗；能够解决需求冲突；能够发现更多用户目标；能够抓住恒定的人性；能够在成熟市场中找机会；
-//zhuanlan.zhihu.com/p/123364228
-1.5.3 用户旅程图 我们获取的需求往往是零散的，用户旅程图有助于将用户需求故事化以及可视化，将需求归纳总结起来，从而帮助形成完整的用户体验设计。用户旅程图上同时可以通过梳理用户体验过程，使需求易于发现，结合用户心情或者成本等地图，发现产品或者服务流程中的用户痛点。
-用户旅程图包含明确的用户，业务场景，操作、心态和情绪，接触点和通道（用户与产品或者服务交互的时间点以及渠道），见解和所有权（某个节点有什么问题，有哪些相关者）。
-http://www.woshipm.com/user-research/1089015.html
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-03-30 00:00:00 +0000 UTC'>March 30, 2021</span>&nbsp;·&nbsp;<span>Xiangtao XIAO</span></footer>
-  <a class="entry-link" aria-label="post link to 产品需求分析与管理笔记" href="https://xiangtaoxiao.github.io/posts/learning-notes-on-product-requirement-analysis-and-management/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="https://xiangtaoxiao.github.io/page/2/">Next&nbsp;2/4&nbsp;»
+    <a class="next" href="https://xiangtaoxiao.github.io/page/2/">Next&nbsp;2/5&nbsp;»
     </a>
   </nav>
 </footer>
