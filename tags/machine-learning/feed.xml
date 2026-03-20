@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Machine-Learning on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/machine-learning/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/machine-learning/</link>
     <description>Recent content in Machine-Learning on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/machine-learning/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/machine-learning/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Agent（从 Chatbot 到生产级 Agent）</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</link>
       <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</guid> 
       <description>&lt;h1 id=&#34;ai-agent从-chatbot-到生产级-agent&#34;&gt;AI Agent（从 Chatbot 到生产级 Agent）&lt;/h1&gt;
 &lt;p&gt;AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>Prompt Engineering</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</guid> 
       <description>&lt;h1 id=&#34;prompt-engineering&#34;&gt;Prompt Engineering&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&#34;&gt;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。&lt;/p&gt;
@@ -64,9 +64,9 @@
     </item>
     <item>
       <title>RAG (Retrieval-Augmented Generation)</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</link>
       <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</guid> 
       <description>&lt;h1 id=&#34;rag&#34;&gt;RAG&lt;/h1&gt;
 &lt;p&gt;RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;
@@ -86,9 +86,9 @@
     </item>
     <item>
       <title>Transformer概念与理解</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid> 
       <description>&lt;h1 id=&#34;transformer从入门到产品视角&#34;&gt;Transformer：从入门到产品视角&lt;/h1&gt;
 &lt;h2 id=&#34;-导论为什么transformer如此重要&#34;&gt;📚 导论：为什么Transformer如此重要？&lt;/h2&gt;
 &lt;p&gt;Transformer模型是由Vaswani等人在2017年发表的论文《&lt;strong&gt;Attention Is All You Need&lt;/strong&gt;》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。&lt;/p&gt;
@@ -179,9 +179,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>NLP分类效果衡量指标(F1/p/r)</title>
-      <link>https://xiangtaoxiao.github.io/posts/nlp-classification-effect-measurement-index-f1-p-r/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/nlp-classification-effect-measurement-index-f1-p-r/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/nlp-classification-effect-measurement-index-f1-p-r/</guid> 
       <description>&lt;h2 id=&#34;概念&#34;&gt;概念&lt;/h2&gt;
 &lt;p&gt;为什么要计算F1：避免样本分布带来的偏差，综合考量分类效果，假如有100个样本，其中1个正样本，99个负样本，如果模型的预测只输出0，那么正确率是99%，这时候用正确率来衡量模型的好坏显然是不对的。&lt;/p&gt;
 &lt;p&gt;真实 1真实 0预测 1True Positive(TP)False Positive(FP)预测 0False Negative(FN)True Negative(TN)&lt;/p&gt;
@@ -226,9 +226,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>多标签分类(multi-label)分类方法笔记</title>
-      <link>https://xiangtaoxiao.github.io/posts/notes-on-multi-label-classification-method/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/notes-on-multi-label-classification-method/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/notes-on-multi-label-classification-method/</guid> 
       <description>&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
 &lt;p&gt;multi-label是相较multi-class的概念，有关研究相对较少，multi-label指一个数据可以被分为多个类，一个输入对应多个输出，例如一篇新闻可以被同时打上娱乐、体育等多个类，类的数目也不确定；&lt;/p&gt;
 &lt;p&gt;对于multi-label问题的处理，主要看到三种思路：&lt;/p&gt;
@@ -244,9 +244,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>卷积神经网络(CNN)理论与实现</title>
-      <link>https://xiangtaoxiao.github.io/posts/theory-and-implementation-of-convolutional-neural-network/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/theory-and-implementation-of-convolutional-neural-network/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/theory-and-implementation-of-convolutional-neural-network/</guid> 
       <description>&lt;h2 id=&#34;一理论&#34;&gt;一、理论&lt;/h2&gt;
 &lt;p&gt;卷积神经网络结构：（卷积层+（可选）池化层）*N+全连接层*M（M&amp;gt;=0），卷积层的输入输出是矩阵，全连接层输入输出是向量，在卷积层的最后一层做一个展平。&lt;/p&gt;
 &lt;p&gt;主要用于分类任务&lt;/p&gt;
@@ -288,9 +288,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>MNIST手写数字识别实践</title>
-      <link>https://xiangtaoxiao.github.io/posts/mnist-handwritten-digit-recognition-practice/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/mnist-handwritten-digit-recognition-practice/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/mnist-handwritten-digit-recognition-practice/</guid> 
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; __future__ &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; absolute_import, division, print_function, unicode_literals
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tensorflow &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; tf
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -332,25 +332,25 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>机器学习入门基本概念理解</title>
-      <link>https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</guid> 
       <description>&lt;h2 id=&#34;张量&#34;&gt;张量&lt;/h2&gt;
 &lt;p&gt;张量=容器&lt;/p&gt;
 &lt;p&gt;张量是现代机器学习的基础。它的核心是一个数据容器，多数情况下，它包含数字，有时候它也包含字符串，但这种情况比较少。因此把它想象成一个数字的水桶。&lt;/p&gt;
 &lt;p&gt;0维张量=数字；1维张量=向量；2维张量=矩阵；3维张量=公用数据存储在张量，彩色图片等&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/1582001628415031481.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001628415031481.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;one-hot-vector&#34;&gt;one-hot vector&lt;/h2&gt;
 &lt;p&gt;独热编码，用于分类标记。比如（猫，狗，鼠）对应（1,0,0）代表猫，（0,1,0）代表狗&amp;hellip;将离散型特征采用独热编码，会使得特征之间的距离计算更加合理。&lt;/p&gt;
 &lt;h2 id=&#34;softmax函数&#34;&gt;softmax函数&lt;/h2&gt;
 &lt;p&gt;softmax函数的作用主要是：1.通过将模型的预测结果转化到指数函数上将预测结果转化为非负数；2.归一化处理，使各种结果概率之和等于1.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/1582001007247022548-1.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/1582001209608023968-1024x764.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001007247022548-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582001209608023968-1024x764.png&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;//blog.csdn.net/lz_peter/article/details/84574716%22&#34;&gt;//blog.csdn.net/lz_peter/article/details/84574716&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;交叉熵&#34;&gt;交叉熵&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/1582032638884051044.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1582032638884051044.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;对于单标签多分类问题，p(x)表示是否为标记的类，如果用独热编码表示分类，则取值0或1；q(x)则是预测结果为该类的概率。用交叉熵做损失函数，值越小，表示模型预测结果与实际情况一致性越高。&lt;/p&gt;
 &lt;p&gt;单标签多分类问题所有类别概率和为1，多标签二分类问题所有类别和不为1，交叉熵的计算针对的是单个类别（即二分类），然后单张样本计算多个二分类交叉熵的和。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -364,7 +364,7 @@ $$&lt;/p&gt;</description>
 &lt;p&gt;&lt;a href=&#34;//www.zhihu.com/question/27903807/answer/699570097&#34;&gt;//www.zhihu.com/question/27903807/answer/699570097&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;梯度弥散与梯度爆炸&#34;&gt;梯度弥散与梯度爆炸&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/1081032-20170905101008960-1183527271.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/1081032-20170905101008960-1183527271.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;靠近输出层的hidden layer 梯度大，参数更新快，所以很快就会收敛；&lt;/p&gt;
 &lt;p&gt;而靠近输入层的hidden layer 梯度小，参数更新慢，几乎就和初始状态一样，随机分布。&lt;/p&gt;
 &lt;p&gt;在上面的四层隐藏层网络结构中，第一层比第四层慢了接近100倍！！&lt;/p&gt;
@@ -374,7 +374,7 @@ $$&lt;/p&gt;</description>
 &lt;p&gt;&lt;a href=&#34;//www.cnblogs.com/yangmang/p/7477802.html&#34;&gt;//www.cnblogs.com/yangmang/p/7477802.html&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;batch_size&#34;&gt;batch_size&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/basic-concept-understanding-of-machine-learning/f5a6d3b5c4b5a91851f0f8b8735f162d_b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/f5a6d3b5c4b5a91851f0f8b8735f162d_b.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;batch的选择首先决定的是下降的方向，batch_size越大，下降的方向越准确。&lt;/p&gt;
 &lt;p&gt;综合考虑数据集的大小，数据集比较小的时候，用整个数据集作为batch_size就可以，这时候下降的方向也是最精准的，数据集比较大的时候，相对小的batch可以达到和用整个数据集相似的全局学习率，综合考量学习的效果以及电脑内存是否撑得住，目的是尽量让学习效果和效率同时最大化。&lt;/p&gt;
 &lt;p&gt;在合理范围内，增大 Batch_Size 有何好处？&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>RAG on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/rag/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/rag/</link>
     <description>Recent content in RAG on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/rag/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/rag/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RAG (Retrieval-Augmented Generation)</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</link>
       <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-rag/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</guid> 
       <description>&lt;h1 id=&#34;rag&#34;&gt;RAG&lt;/h1&gt;
 &lt;p&gt;RAG (Retrieval-Augmented Generation) 是一种结合信息检索与文本生成的AI架构，通过检索外部知识库来增强LLM的回答能力。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;

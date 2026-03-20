@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Prompt Engineering on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/prompt-engineering/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/prompt-engineering/</link>
     <description>Recent content in Prompt Engineering on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/prompt-engineering/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/prompt-engineering/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prompt Engineering</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-prompt-engineering/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</guid> 
       <description>&lt;h1 id=&#34;prompt-engineering&#34;&gt;Prompt Engineering&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&#34;&gt;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Prompt Engineering（提示工程）是设计和优化输入提示（prompts）以引导大语言模型生成期望输出的技术。这一领域随着GPT-3的发布而兴起，是连接用户意图与模型能力的关键桥梁。&lt;/p&gt;

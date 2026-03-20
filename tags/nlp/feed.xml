@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nlp on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/nlp/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/nlp/</link>
     <description>Recent content in Nlp on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/nlp/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/nlp/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gensim训练词向量与Embedding相关知识</title>
-      <link>https://xiangtaoxiao.github.io/posts/gensim-training-word-vector-and-embedding-related-knowledge/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/gensim-training-word-vector-and-embedding-related-knowledge/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/gensim-training-word-vector-and-embedding-related-knowledge/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/gensim-training-word-vector-and-embedding-related-knowledge/</guid> 
       <description>&lt;p&gt;在进行文本分类的时候，预处理我们可以自己做一个词向量模型，也可以采用预训练的模型。采用预训练的模型比如谷歌基于goole news训练的Word2vec模型，由于在大量文本数据中训练过，所以词的概率分布会比较准确，当自己的数据集比较小的时候，用预训练数据有利于提升模型的准确度。&lt;/p&gt;
 &lt;p&gt;以下内容使用了tensorflow。&lt;/p&gt;
 &lt;h2 id=&#34;训练文本生成word2vec模型&#34;&gt;训练文本生成word2vec模型&lt;/h2&gt;
@@ -52,9 +52,9 @@
     </item>
     <item>
       <title>Natural Language Processing相关概念理解</title>
-      <link>https://xiangtaoxiao.github.io/posts/understanding-of-related-concepts-of-natural-language/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/understanding-of-related-concepts-of-natural-language/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/understanding-of-related-concepts-of-natural-language/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/understanding-of-related-concepts-of-natural-language/</guid> 
       <description>&lt;h2 id=&#34;nlp一般流程&#34;&gt;NLP一般流程&lt;/h2&gt;
 &lt;p&gt;文本预处理-&amp;gt;词向量与文本表示-&amp;gt;特征选择与特征抽取-&amp;gt;分类算法&lt;/p&gt;
 &lt;h2 id=&#34;词向量与文本表示&#34;&gt;词向量与文本表示&lt;/h2&gt;
@@ -79,9 +79,9 @@
     </item>
     <item>
       <title>NLP数据准备相关代码记录</title>
-      <link>https://xiangtaoxiao.github.io/posts/nlp-data-preparation-related-code-record/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/nlp-data-preparation-related-code-record/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/nlp-data-preparation-related-code-record/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/nlp-data-preparation-related-code-record/</guid> 
       <description>&lt;h2 id=&#34;csv文件&#34;&gt;csv文件&lt;/h2&gt;
 &lt;h3 id=&#34;什么是csv文件&#34;&gt;什么是csv文件&lt;/h3&gt;
 &lt;p&gt;csv既逗号分隔符文件，行数据用&amp;rsquo;,&amp;lsquo;分隔，列数据用换行符&amp;rsquo;\n&amp;rsquo;分隔&lt;/p&gt;

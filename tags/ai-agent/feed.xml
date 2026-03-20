@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI Agent on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/ai-agent/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/ai-agent/</link>
     <description>Recent content in AI Agent on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/ai-agent/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/ai-agent/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Agent（从 Chatbot 到生产级 Agent）</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</link>
       <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-ai-agent/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</guid> 
       <description>&lt;h1 id=&#34;ai-agent从-chatbot-到生产级-agent&#34;&gt;AI Agent（从 Chatbot 到生产级 Agent）&lt;/h1&gt;
 &lt;p&gt;AI Agent是LLM应用的高级形态，能够自主规划、执行任务并与环境交互。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;经典论文：&lt;/strong&gt;&lt;/p&gt;

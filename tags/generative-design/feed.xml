@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Generative-Design on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/generative-design/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/generative-design/</link>
     <description>Recent content in Generative-Design on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/generative-design/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/generative-design/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Generative Design?</title>
-      <link>https://xiangtaoxiao.github.io/posts/what-is-generative-design/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/what-is-generative-design/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/what-is-generative-design/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/what-is-generative-design/</guid> 
       <description>&lt;p&gt;Generative design is an &lt;a href=&#34;%22//en.wikipedia.org/wiki/Iteration%22&#34;&gt;iterative&lt;/a&gt; &lt;a href=&#34;%22//en.wikipedia.org/wiki/Design%22&#34;&gt;design&lt;/a&gt; &lt;a href=&#34;%22//en.wikipedia.org/wiki/Process_(engineering)%22&#34;&gt;process&lt;/a&gt; that involves a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Computer_program%22&#34;&gt;program&lt;/a&gt; that will &lt;a href=&#34;%22//en.wikipedia.org/wiki/Generator_(mathematics)%22&#34;&gt;generate&lt;/a&gt; a certain number of &lt;a href=&#34;%22//en.wikipedia.org/wiki/Output_(computing)%22&#34;&gt;outputs&lt;/a&gt; that meet certain &lt;a href=&#34;%22//en.wikipedia.org/wiki/Constraint_(mathematics)%22&#34;&gt;constraints&lt;/a&gt;, and a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Designer%22&#34;&gt;designer&lt;/a&gt; that will fine tune the &lt;a href=&#34;%22//en.wikipedia.org/wiki/Feasible_region%22&#34;&gt;feasible region&lt;/a&gt; by changing &lt;a href=&#34;%22//en.wikipedia.org/wiki/Maxima_and_minima%22&#34;&gt;minimal and maximal&lt;/a&gt; values of an &lt;a href=&#34;%22//en.wikipedia.org/wiki/Interval_(mathematics)%22&#34;&gt;interval&lt;/a&gt; in which a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Variable_(mathematics)%22&#34;&gt;variable&lt;/a&gt; of the program meets the &lt;a href=&#34;%22//en.wikipedia.org/wiki/Set_(mathematics)%22&#34;&gt;set&lt;/a&gt; of constraints, in order to reduce or augment the number of outputs to &lt;a href=&#34;%22//en.wikipedia.org/wiki/Choice%22&#34;&gt;choose&lt;/a&gt; from. The program doesn&amp;rsquo;t need to be run on a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Machine%22&#34;&gt;machine&lt;/a&gt; like a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Digital_computer%22&#34;&gt;digital computer&lt;/a&gt;, it can be run by a human for example with &lt;a href=&#34;%22//en.wikipedia.org/wiki/Pen_and_paper%22&#34;&gt;pen and paper&lt;/a&gt;. &lt;a href=&#34;%22//en.wikipedia.org/wiki/Generative_Design#cite_note-1%22&#34;&gt;[1]&lt;/a&gt; The designer doesn&amp;rsquo;t need to be a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Human%22&#34;&gt;human&lt;/a&gt;, it can be a &lt;a href=&#34;%22//en.wikipedia.org/wiki/Test_(assessment)%22&#34;&gt;test&lt;/a&gt; program in a testing environment or an &lt;a href=&#34;%22//en.wikipedia.org/wiki/Artificial_intelligence%22&#34;&gt;artificial intelligence&lt;/a&gt; (see for example &lt;a href=&#34;%22//en.wikipedia.org/wiki/Generative_adversarial_network%22&#34;&gt;Generative adversarial networks&lt;/a&gt;). The designer &lt;a href=&#34;%22//en.wikipedia.org/wiki/Learning%22&#34;&gt;learns&lt;/a&gt; to &lt;a href=&#34;%22//en.wikipedia.org/wiki/Refinement_(computing)%22&#34;&gt;refine&lt;/a&gt; the program (usually involving &lt;a href=&#34;%22//en.wikipedia.org/wiki/Algorithm%22&#34;&gt;algorithms&lt;/a&gt;) with each iteration as his design &lt;a href=&#34;%22//en.wikipedia.org/wiki/Goal%22&#34;&gt;goals&lt;/a&gt; become better &lt;a href=&#34;%22//en.wikipedia.org/wiki/Definition%22&#34;&gt;defined&lt;/a&gt; over time.&lt;/p&gt;</description>
     </item>
   </channel>

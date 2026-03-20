@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jsp on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/jsp/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/jsp/</link>
     <description>Recent content in Jsp on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/jsp/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/jsp/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>理解MVC模式</title>
-      <link>https://xiangtaoxiao.github.io/posts/lijiemvcmoshi/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/lijiemvcmoshi/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/lijiemvcmoshi/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/lijiemvcmoshi/</guid> 
       <description>&lt;p&gt;M：Model&lt;/p&gt;
 &lt;p&gt;V：View&lt;/p&gt;
 &lt;p&gt;C：Controller&lt;/p&gt;

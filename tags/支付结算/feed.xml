@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>支付结算 on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/%E6%94%AF%E4%BB%98%E7%BB%93%E7%AE%97/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/%E6%94%AF%E4%BB%98%E7%BB%93%E7%AE%97/</link>
     <description>Recent content in 支付结算 on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/%E6%94%AF%E4%BB%98%E7%BB%93%E7%AE%97/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/%E6%94%AF%E4%BB%98%E7%BB%93%E7%AE%97/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>初识跨境支付</title>
-      <link>https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/introduction-to-cross-border-payment/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/introduction-to-cross-border-payment/</guid> 
       <description>&lt;p&gt;从《跨境电子商务支付与结算》一书出发，了解跨境支付领域。&lt;/p&gt;
 &lt;h2 id=&#34;跨境支付的几个基本概念&#34;&gt;跨境支付的几个基本概念&lt;/h2&gt;
 &lt;h3 id=&#34;汇外汇&#34;&gt;汇（外汇）&lt;/h3&gt;
@@ -45,7 +45,7 @@
 &lt;/ol&gt;
 &lt;h4 id=&#34;信用证letter-of-creditlc&#34;&gt;信用证（Letter of Credit，L/C）&lt;/h4&gt;
 &lt;p&gt;信用证属于银行信用。信用证不依赖于买卖商业合同（自足文件，self-sufficient instrument)，不和货物关联（纯单据业务），开证银行有首要付款责任。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/introduction-to-cross-border-payment/2023100402013367-designaxt-1024x739.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/introduction-to-cross-border-payment/2023100402013367-designaxt-1024x739.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;新型跨境支付方式&#34;&gt;新型跨境支付方式&lt;/h3&gt;
 &lt;p&gt;传统的跨境支付贸易主要为B2B大额贸易，支付手段多依靠银行完成。伴随着互联网的发展与普及，B2B、C2C跨境电子商务以及小额B2B贸易市场不断发展，涌现了许多新型跨境支付方式，就国内来说，这些支付方式多为持有支付业务许可证（央行颁发）和外汇管理局准许开展跨境电子商务外汇支付业务试点的批复文件的第三方支付机构所开发。&lt;/p&gt;
 &lt;p&gt;以下列举了主流的新型跨境支付方式：&lt;/p&gt;

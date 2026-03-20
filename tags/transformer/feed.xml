@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Transformer on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/transformer/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/transformer/</link>
     <description>Recent content in Transformer on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/transformer/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/transformer/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transformer概念与理解</title>
-      <link>https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/learning-notes-of-transformer-ai-generated/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid> 
       <description>&lt;h1 id=&#34;transformer从入门到产品视角&#34;&gt;Transformer：从入门到产品视角&lt;/h1&gt;
 &lt;h2 id=&#34;-导论为什么transformer如此重要&#34;&gt;📚 导论：为什么Transformer如此重要？&lt;/h2&gt;
 &lt;p&gt;Transformer模型是由Vaswani等人在2017年发表的论文《&lt;strong&gt;Attention Is All You Need&lt;/strong&gt;》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。&lt;/p&gt;

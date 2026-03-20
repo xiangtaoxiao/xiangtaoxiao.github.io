@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ueditor on Xiangtao&#39;s log</title>
-    <link>https://xiangtaoxiao.github.io/tags/ueditor/</link>
+    <link>https://www.xiaoxiangtao.cn/tags/ueditor/</link>
     <description>Recent content in Ueditor on Xiangtao&#39;s log</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor>
     <webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster>
     <lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xiangtaoxiao.github.io/tags/ueditor/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xiaoxiangtao.cn/tags/ueditor/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UEditor部署到个人站点</title>
-      <link>https://xiangtaoxiao.github.io/posts/ueditorbushudaogerenzhandian/</link>
+      <link>https://www.xiaoxiangtao.cn/posts/ueditorbushudaogerenzhandian/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author>
-       <guid isPermaLink="false">https://xiangtaoxiao.github.io/posts/ueditorbushudaogerenzhandian/</guid> 
+       <guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/ueditorbushudaogerenzhandian/</guid> 
       <description>&lt;h2 id=&#34;一下载ueditor&#34;&gt;一、下载UEditor&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;//ueditor.baidu.com/website/download.html&#34;&gt;//ueditor.baidu.com/website/download.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在以上链接下载，选择自己需要的语言版本，我用的是jsp，就下载jsp版本。将下载的压缩包解压，可以直接将解压的文件导入到Eclipse中自己的项目中，导入到文件夹WebContent中即可。&lt;/p&gt;
 &lt;h2 id=&#34;二配置&#34;&gt;二、配置&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://xiangtaoxiao.github.io/posts/ueditorbushudaogerenzhandian/1563207389404033187.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.xiaoxiangtao.cn/posts/ueditorbushudaogerenzhandian/1563207389404033187.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;将jsp/lib中的jar包全部复制到WEB-INF/lib下&lt;/p&gt;
 &lt;p&gt;修改输入字符数统计、上限，自定义工具栏可以参考官方说明文档，配置项可在ueditor.config.js中修改。&lt;/p&gt;
 &lt;p&gt;修改图片上传路径等在官方说明文档中有详细的介绍。&lt;/p&gt;
