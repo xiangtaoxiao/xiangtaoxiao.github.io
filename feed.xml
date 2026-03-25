@@ -51,7 +51,7 @@
 &lt;ul&gt;
 &lt;li&gt;Dai, Z., et al. (2019). &amp;ldquo;Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.&amp;rdquo; ACL. [&lt;a href="https://arxiv.org/abs/1901.02860"&gt;论文链接&lt;/a&gt;] - 突破固定上下文长度的开创性工作&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;通常包含：&lt;/p&gt;</description></item><item><title>Transformer概念与理解</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid><description>Transformer模型彻底改变了自然语言处理领域，成为现代大语言模型的基石。本文从产品视角深入解析Transformer的核心概念。</description></item><item><title>国内电商平台支付方式对比</title><link>https://www.xiaoxiangtao.cn/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</guid><description>&lt;h1 id="一主流支付方式对比"&gt;一、主流支付方式对比&lt;/h1&gt;
+&lt;p&gt;通常包含：&lt;/p&gt;</description></item><item><title>国内电商平台支付方式对比</title><link>https://www.xiaoxiangtao.cn/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</guid><description>&lt;h1 id="一主流支付方式对比"&gt;一、主流支付方式对比&lt;/h1&gt;
 &lt;h2 id="1-公对公现金支付"&gt;1. 公对公现金支付&lt;/h2&gt;
 &lt;p&gt;方式：柜台或网银主动转账、通过银行分账系统支付并获取回单&lt;/p&gt;
 &lt;p&gt;限额：可大额转账，5万以上走人行大额支付系统周末和假期不开可能受影响（工作日是前天晚上20:30一直跑到当天17:15）&lt;/p&gt;
@@ -1198,4 +1198,24 @@
 &lt;li&gt;&lt;strong&gt;跨团队协作与项目管理&lt;/strong&gt;：善于与财务、法务、供应链等部门紧密配合，推动复杂项目落地，具备结果导向的执行力。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我对 AI 技术充满热情，为了系统提升 AI 能力，我选择攻读应用人工智能硕士，期待能在 AI 产品领域从 0 到 1 学习和实践，将过往的业务理解与 AI 技术深度融合，创造真正解决用户问题的产品。&lt;/p&gt;
-&lt;p&gt;如果你正在寻找一位有业务sense的 AI 产品，我很期待能加入你的团队，共同成长！&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;如果你正在寻找一位有业务sense的 AI 产品，我很期待能加入你的团队，共同成长！&lt;/p&gt;</description></item><item><title/><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid><description>&lt;hr&gt;
+&lt;p&gt;title: Transformer概念与理解
+date: &amp;ldquo;2026-02-20&amp;rdquo;
+author: Xiao Xiangtao
+tags:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transformer&lt;/li&gt;
+&lt;li&gt;Machine-learning&lt;/li&gt;
+&lt;li&gt;计算机&lt;/li&gt;
+&lt;li&gt;学习
+description: &amp;ldquo;Transformer模型彻底改变了自然语言处理领域，成为现代大语言模型的基石。本文从产品视角深入解析Transformer的核心概念。&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="transformer从入门到产品视角"&gt;Transformer：从入门到产品视角&lt;/h1&gt;
+&lt;h2 id="-导论为什么transformer如此重要"&gt;📚 导论：为什么Transformer如此重要？&lt;/h2&gt;
+&lt;p&gt;Transformer模型是由Vaswani等人在2017年发表的论文《&lt;strong&gt;Attention Is All You Need&lt;/strong&gt;》中提出的神经网络架构。它彻底改变了自然语言处理领域，成为现代大语言模型（如GPT、BERT、LLaMA等）的基石。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心创新&lt;/strong&gt;：完全抛弃传统的CNN/RNN架构，仅使用&lt;strong&gt;注意力机制&lt;/strong&gt;来捕捉序列依赖关系，实现了两大突破：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;并行计算&lt;/strong&gt;：解决了RNN无法并行的问题，大幅提升训练速度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;长程依赖&lt;/strong&gt;：解决了RNN/LSTM在处理长序列时的梯度消失问题&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
