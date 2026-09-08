@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Technology on Xiangtao's log</title><link>https://www.xiaoxiangtao.cn/tags/technology/</link><description>Recent content in Technology on Xiangtao's log</description><generator>Hugo</generator><language>en-US</language><managingEditor>15989119660@163.com (Xiangtao XIAO)</managingEditor><webMaster>15989119660@163.com (Xiangtao XIAO)</webMaster><lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xiaoxiangtao.cn/tags/technology/feed.xml" rel="self" type="application/rss+xml"/><item><title>Deploying and Using OpenClaw</title><link>https://www.xiaoxiangtao.cn/posts/openclaw-deployment-and-application/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/openclaw-deployment-and-application/</guid><description>&lt;p&gt;&lt;a href="https://docs.openclaw.ai/concepts/multi-agent"&gt;https://docs.openclaw.ai/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="deploying-openclaw"&gt;Deploying OpenClaw&lt;/h1&gt;
+&lt;h2 id="server-and-system-setup"&gt;Server and system setup&lt;/h2&gt;
+&lt;p&gt;Tencent Cloud Lighthouse instance: 4 CPU cores, 4GB RAM, 70GB system disk&lt;/p&gt;
+&lt;p&gt;Ubuntu 22.04.5 LTS 64-bit — ChatGPT recommended this as the most compatible option.&lt;/p&gt;
+&lt;h2 id="installing-openclaw"&gt;Installing OpenClaw&lt;/h2&gt;
+&lt;h3 id="update-the-system-and-install-dependencies"&gt;Update the system and install dependencies&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Update the system&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Install base dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt install -y git curl wget unzip build-essential
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Install nvm&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh &lt;span class="p"&gt;|&lt;/span&gt; bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Install Node.js&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nvm install --lts
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nvm use --lts
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Verify the install and check versions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;node -v
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm -v
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="install-openclaw"&gt;Install OpenClaw&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm install -g openclaw@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="start-openclaw"&gt;Start OpenClaw&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Initialise config and install&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;openclaw onboard --install-daemon
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# install-daemon registers the OpenClaw Gateway as a background daemon: it runs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# silently, starts on boot, and restarts itself if it crashes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From ChatGPT:&lt;/p&gt;</description></item><item><title>AI Agents, From Chatbot to Production</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</link><pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-ai-agent/</guid><description>&lt;h1 id="ai-agents-from-chatbot-to-production"&gt;AI Agents, From Chatbot to Production&lt;/h1&gt;
+&lt;p&gt;An AI agent is the LLM application taken further — something that can plan on its own, carry out tasks, and interact with its environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Foundational papers:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yao, S., et al. (2022). &amp;ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.&amp;rdquo; ICLR. [&lt;a href="https://arxiv.org/abs/2210.01691"&gt;paper&lt;/a&gt;] — the ReAct framework, the core pattern behind most agents&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2201.11903"&gt;paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wang, G., et al. (2024). &amp;ldquo;A Survey on Large Language Model based Autonomous Agents.&amp;rdquo; arXiv. [&lt;a href="https://arxiv.org/abs/2308.11432"&gt;paper&lt;/a&gt;] — a survey of the agent landscape&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="1-the-overall-progression"&gt;1. The Overall Progression&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Chatbot → Tool Use → Agent → Production Agent
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What each stage means:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Prompt Engineering</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-prompt-engineering/</guid><description>&lt;h1 id="prompt-engineering"&gt;Prompt Engineering&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome"&gt;https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/welcome&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Prompt engineering is the practice of designing and refining the input you give a large language model so it produces the output you actually want. It took off after GPT-3 came out, and it&amp;rsquo;s basically the bridge between what a user wants and what the model can do.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key papers:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brown, T. B., et al. (2020). &amp;ldquo;Language Models are Few-Shot Learners.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2005.14165"&gt;link&lt;/a&gt;] — the GPT-3 paper, the first to really demonstrate the potential of prompt engineering&lt;/li&gt;
+&lt;li&gt;Wei, J., et al. (2022). &amp;ldquo;Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2201.11903"&gt;link&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="1-prompting-principles"&gt;1. Prompting Principles&lt;/h2&gt;
+&lt;h3 id="principle-1-write-clear-and-specific-instructions"&gt;Principle 1: Write clear and specific instructions&lt;/h3&gt;
+&lt;p&gt;Clarity and specificity are the two things that matter most when writing a prompt. Vague instructions tend to produce unpredictable outputs, while specific ones noticeably improve output quality.&lt;/p&gt;</description></item><item><title>RAG (Retrieval-Augmented Generation)</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-rag/</guid><description>&lt;h1 id="rag"&gt;RAG&lt;/h1&gt;
+&lt;p&gt;RAG (Retrieval-Augmented Generation) combines information retrieval with text generation — it pulls in an external knowledge base to make an LLM&amp;rsquo;s answers better.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Foundational papers:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lewis, P., et al. (2020). &amp;ldquo;Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.&amp;rdquo; NeurIPS. [&lt;a href="https://arxiv.org/abs/2005.11401"&gt;paper&lt;/a&gt;] — the paper that started RAG&lt;/li&gt;
+&lt;li&gt;Guu, K., et al. (2020). &amp;ldquo;REALM: Retrieval-Augmented Language Model Pre-Training.&amp;rdquo; ICML. [&lt;a href="https://arxiv.org/abs/2002.08909"&gt;paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Izacard, G., &amp;amp; Grave, É. (2021). &amp;ldquo;Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.&amp;rdquo; EACL. [&lt;a href="https://arxiv.org/abs/2007.01282"&gt;paper&lt;/a&gt;] — a different take on RAG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="1-context-window"&gt;1. Context Window&lt;/h2&gt;
+&lt;h3 id="what-it-is"&gt;What it is&lt;/h3&gt;
+&lt;p&gt;The context window is &lt;strong&gt;the maximum amount of text an LLM can read and reason over in a single pass&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Understanding the Transformer, From a Product Manager's Angle</title><link>https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/learning-notes-of-transformer-ai-generated/</guid><description>The Transformer reshaped NLP and became the backbone of every modern LLM. This post walks through its core ideas from a product perspective.</description></item><item><title>Getting the Basic Concepts of Machine Learning Straight</title><link>https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</link><pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/posts/basic-concept-understanding-of-machine-learning/</guid><description>&lt;h2 id="tensors"&gt;Tensors&lt;/h2&gt;
+&lt;p&gt;Tensor = container&lt;/p&gt;
+&lt;p&gt;Tensors are the foundation everything in modern machine learning sits on. At its core a tensor is just a container — usually of numbers, occasionally of strings, though that&amp;rsquo;s rarer. Think of it as a bucket of numbers.&lt;/p&gt;
+&lt;p&gt;A 0-D tensor is a scalar; a 1-D tensor is a vector; a 2-D tensor is a matrix; a 3-D tensor (and up) is what you use for shared data storage — things like color images.&lt;/p&gt;</description></item></channel></rss>
