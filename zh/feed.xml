@@ -1213,7 +1213,7 @@
 &lt;p&gt;[1]胡飞,李顽强.定义“服务设计”[J].包装工程,2019,40(10):37-51.&lt;/p&gt;</description></item><item><title>关于我</title><link>https://www.xiaoxiangtao.cn/zh/about-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/about-me/</guid><description>&lt;p&gt;你好，我是&lt;strong&gt;肖翔涛&lt;/strong&gt;（Shawn）。过去四年，我一直从事 B2B 电商、支付与结算产品工作。目前，我在新加坡&lt;strong&gt;南洋理工大学全日制攻读计算机硕士（应用人工智能）&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;我熟悉资金如何在交易平台中流转，也知道如何把模糊的业务问题变成真正上线的产品。来到 NTU 后，我正通过实际项目把这套经验延伸到 AI 产品。&lt;strong&gt;我正在寻找一份为期六个月、与 AI 产品或应用 AI 相关的实习，可立即到岗。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="我能带来的经验"&gt;我能带来的经验&lt;/h2&gt;
-&lt;p&gt;四年的产品工作让我形成了一套完整的做事方式：先理解业务问题，明确取舍，推动相关方达成一致，再一直跟进到产品上线。我把这套方法用在了支付结算、B2B 电商和风控工具上，也直接负责过银行和支付机构的商务谈判，并在涉及真实资金流的项目中协调财务、法务、供应链和研发。&lt;/p&gt;
+&lt;p&gt;四年来，我一直在国内领先的 B2B 医药交易平台药师帮从事产品工作。在支付结算、B2B 电商和风控工具等工作中取得成果的同时，我也逐渐形成了贴近业务的商业判断、挖掘真实用户需求的能力和系统架构思维。期间，我直接负责过银行和支付机构的商务谈判，并在涉及真实资金流的项目中协调财务、法务、供应链和研发。&lt;/p&gt;
 &lt;p&gt;现在，我也在亲手搭建和比较 AI 系统，逐步形成对模型可靠性、评估方法和原型落地的技术判断。&lt;/p&gt;
 &lt;h2 id="我现在在做什么"&gt;我现在在做什么&lt;/h2&gt;
 &lt;p&gt;在 NTU 读应用 AI（2026 年 8 月 – 2027 年 7 月），课余靠动手项目学习：本地 LLM 流水线、agent 工作流，以及一些「同一个 prompt 下不同模型到底表现如何」的小实验。学到的东西大多会整理成笔记发在这个站上——&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-ai-agent/"&gt;AI Agent&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-rag/"&gt;RAG&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-prompt-engineering/"&gt;提示词工程&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer/"&gt;Transformer&lt;/a&gt;。&lt;/p&gt;
@@ -1221,7 +1221,7 @@
 &lt;p&gt;&lt;strong&gt;本地翻译与字幕工作流&lt;/strong&gt; · 独立项目 · 2026 年 9 月&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;对比五个本地翻译模型在课程字幕上的表现，综合权衡输出质量、处理耗时与上下文处理能力。&lt;/li&gt;
-&lt;li&gt;设计了基于词级时间戳的重分段、缩写与数字校验，以及由第二个模型选择性审校的可断点续跑流水线。&lt;/li&gt;
+&lt;li&gt;提出更清晰的字幕分段方式，以及由第二个模型复核部分输出的方案。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;多智能体对话游戏&lt;/strong&gt; · EAZO 黑客松 · 2026 年 8 月&lt;/p&gt;
 &lt;ul&gt;
