@@ -78,7 +78,7 @@
 &lt;ul&gt;
 &lt;li&gt;Dai, Z., et al. (2019). &amp;ldquo;Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.&amp;rdquo; ACL. [&lt;a href="https://arxiv.org/abs/1901.02860"&gt;论文链接&lt;/a&gt;] - 突破固定上下文长度的开创性工作&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;通常包含：&lt;/p&gt;</description></item><item><title>Transformer概念与理解</title><link>https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer-ai-generated/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer-ai-generated/</guid><description>Transformer模型彻底改变了自然语言处理领域，成为现代大语言模型的基石。本文从产品视角深入解析Transformer的核心概念。</description></item><item><title>国内电商平台支付方式对比</title><link>https://www.xiaoxiangtao.cn/zh/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</guid><description>&lt;h1 id="一主流支付方式对比"&gt;一、主流支付方式对比&lt;/h1&gt;
+&lt;p&gt;通常包含：&lt;/p&gt;</description></item><item><title>Transformer概念与理解</title><link>https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer/</guid><description>Transformer模型彻底改变了自然语言处理领域，成为现代大语言模型的基石。本文从产品视角深入解析Transformer的核心概念。</description></item><item><title>国内电商平台支付方式对比</title><link>https://www.xiaoxiangtao.cn/zh/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/posts/comparison-of-payment-methods-on-domestic-e-commerce-platforms/</guid><description>&lt;h1 id="一主流支付方式对比"&gt;一、主流支付方式对比&lt;/h1&gt;
 &lt;h2 id="1-公对公现金支付"&gt;1. 公对公现金支付&lt;/h2&gt;
 &lt;p&gt;方式：柜台或网银主动转账、通过银行分账系统支付并获取回单&lt;/p&gt;
 &lt;p&gt;限额：可大额转账，5万以上走人行大额支付系统周末和假期不开可能受影响（工作日是前天晚上20:30一直跑到当天17:15）&lt;/p&gt;
@@ -1210,10 +1210,13 @@
 服务设计的外延：服务设计引导人员、环境、设施、信息等要素创新及其综合集成&lt;br&gt;
 服务设计的作用：提升服务体验、效率和价值&lt;/p&gt;
 &lt;h2 id="参考文献"&gt;参考文献&lt;/h2&gt;
-&lt;p&gt;[1]胡飞,李顽强.定义“服务设计”[J].包装工程,2019,40(10):37-51.&lt;/p&gt;</description></item><item><title>关于我</title><link>https://www.xiaoxiangtao.cn/zh/about-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/about-me/</guid><description>&lt;p&gt;你好，我是&lt;strong&gt;肖翔涛&lt;/strong&gt;（Shawn）。做了四年产品经理，深耕 B2B 电商的支付、结算与交易场景，目前在新加坡&lt;strong&gt;南洋理工大学攻读应用人工智能硕士&lt;/strong&gt;（全日制）。&lt;/p&gt;
-&lt;p&gt;一句话概括：我懂钱在一个交易平台里怎么流动，也懂怎么把一个混乱的业务诉求变成真正上线的产品——现在我正围绕 AI 重建这套能力。&lt;strong&gt;我在找一份为期六个月的 AI 实习，产品或应用研究方向均可，可立即到岗。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[1]胡飞,李顽强.定义“服务设计”[J].包装工程,2019,40(10):37-51.&lt;/p&gt;</description></item><item><title>关于我</title><link>https://www.xiaoxiangtao.cn/zh/about-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>15989119660@163.com (Xiangtao XIAO)</author><guid isPermaLink="false">https://www.xiaoxiangtao.cn/zh/about-me/</guid><description>&lt;p&gt;你好，我是&lt;strong&gt;肖翔涛&lt;/strong&gt;（Shawn）。过去四年，我一直从事 B2B 电商、支付与结算产品工作。目前，我在新加坡&lt;strong&gt;南洋理工大学全日制攻读计算机硕士（应用人工智能）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;我熟悉资金如何在交易平台中流转，也知道如何把模糊的业务问题变成真正上线的产品。来到 NTU 后，我正通过实际项目把这套经验延伸到 AI 产品。&lt;strong&gt;我正在寻找一份为期六个月、与 AI 产品或应用 AI 相关的实习，可立即到岗。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="我能带来的经验"&gt;我能带来的经验&lt;/h2&gt;
+&lt;p&gt;四年的产品工作让我形成了一套完整的做事方式：先理解业务问题，明确取舍，推动相关方达成一致，再一直跟进到产品上线。我把这套方法用在了支付结算、B2B 电商和风控工具上，也直接负责过银行和支付机构的商务谈判，并在涉及真实资金流的项目中协调财务、法务、供应链和研发。&lt;/p&gt;
+&lt;p&gt;现在，我也在亲手搭建和比较 AI 系统，逐步形成对模型可靠性、评估方法和原型落地的技术判断。&lt;/p&gt;
 &lt;h2 id="我现在在做什么"&gt;我现在在做什么&lt;/h2&gt;
-&lt;p&gt;在 NTU 读应用 AI（2026 年 8 月 – 2027 年 7 月），课余靠动手项目学习：本地 LLM 流水线、agent 工作流，以及一些「同一个 prompt 下不同模型到底表现如何」的小实验。学到的东西大多会整理成笔记发在这个站上——&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-ai-agent/"&gt;AI Agent&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-rag/"&gt;RAG&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-prompt-engineering/"&gt;提示词工程&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer-ai-generated/"&gt;Transformer&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;在 NTU 读应用 AI（2026 年 8 月 – 2027 年 7 月），课余靠动手项目学习：本地 LLM 流水线、agent 工作流，以及一些「同一个 prompt 下不同模型到底表现如何」的小实验。学到的东西大多会整理成笔记发在这个站上——&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-ai-agent/"&gt;AI Agent&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-rag/"&gt;RAG&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-prompt-engineering/"&gt;提示词工程&lt;/a&gt;、&lt;a href="https://www.xiaoxiangtao.cn/zh/posts/learning-notes-of-transformer/"&gt;Transformer&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id="ai-项目"&gt;AI 项目&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;本地翻译与字幕工作流&lt;/strong&gt; · 独立项目 · 2026 年 9 月&lt;/p&gt;
 &lt;ul&gt;
@@ -1225,11 +1228,4 @@
 &lt;li&gt;基于《论语》构建互动哲学游戏，包含 12 个人格 agent、结构化群体讨论与用户介入机制。&lt;/li&gt;
 &lt;li&gt;对比不同模型面对相同 prompt 时的回应风格与指令遵循差异，并据此设计对话流程。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;隐私政策文本分类&lt;/strong&gt; · 本科毕业论文 · 2019 年 10 月 – 2020 年 6 月&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;针对 App 隐私政策文本做分类，对比 Word2Vec 与 Doc2Vec 两种表示方法，配合 SVM、CNN 与引入注意力机制的 Bi-LSTM 分类器。&lt;/li&gt;
-&lt;li&gt;通过对照实验与参数调优，厘清表示方法与分类器选择各自对分类效果的影响。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="产品经验"&gt;产品经验&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;药师帮（港交所：9885）&lt;/strong&gt; · 产品经理 · 2021 年 4 月 – 2025 年 4 月；2026 年 4 – 7 月
-&lt;em&gt;B2B 医药交易平台。2026 年回归做探索性风控分析。&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;隐私政策文本分类&lt;/strong&gt; · 本科毕业论文 · 2019 年 10 月 – 2020 年 6 月&lt;/p&gt;</description></item></channel></rss>
